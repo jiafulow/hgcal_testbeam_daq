@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module encode_function(
-    input [63:0] signal,
+    input [71:0] signal,
     input bitclk,
     output reg sigOut,
     output reg clkOut,
@@ -12,7 +12,6 @@ module encode_function(
 wire[9:0] ten_out;
 wire [8:0] signal_in[7:0]	
 reg[9:0] loop = 10'b0000000001;
-reg[8:0] com_char = 9'b100111100;
 reg[8:0] data;
 integer o_cnt;
 reg d_in, start;
