@@ -69,7 +69,8 @@ always@(posedge byteclk) begin
 		if ((tenb==tenpos)||(tenb==tenneg))	begin
 			if (tenb==tenpos) dispin<=1;
 			else dispin<=0;
-			out<=0;
+			signal <=eghtb;
+			out<=1;
 			end			
 		else if(!((disp_err)||(code_err))) begin
 			signal <= eghtb;
