@@ -45,12 +45,6 @@ always @(negedge bitclk) begin
 		end
 	end
 
-always @(posedge byteclk) begin
-	if(link) begin
-		tenb<=fifo[j];
-		end
-	end
-	
 always@(posedge bitclk) begin
 	if(!link) begin
 		if (fifo[0]==tenpos) link<=1;
@@ -65,23 +59,27 @@ always@(posedge bitclk) begin
 	end
 
 always@(posedge byteclk) begin
-	if (link&&!(tenb==0)) begin
-		if ((tenb==tenpos)||(tenb==tenneg))	begin
-			if (tenb==tenpos) dispin<=1;
-			else dispin<=0;
-			signal <=eghtb;
-			out<=1;
-			end			
-		else if(!((disp_err)||(code_err))) begin
-			signal <= eghtb;
-			out<=1;
-			dispin<=dispout;
-			end
-		else begin 
-			err<=1;
-			out<=0;
-			end
-		end	
+	if (link) begin
+		tenb<=fifo[j];
+		if (!(tenb==0)) begin
+			if ((tenb==tenpos)||(tenb==tenneg))	begin
+				if (tenb==tenpos) dispin<=1;
+				else dispin<=0;
+				signal <=eghtb;
+				out<=1;
+				end			
+			else if(!((disp_err)||(code_err))) begin
+				signal <= eghtb;
+				out<=1;
+				dispin<=dispout;
+				end
+			else begin 
+				err<=1;
+				out<=0;
+				end
+			end	
+		end
+	else tenb<=tenb;
 	if (err) err<=0;
 	end
 
