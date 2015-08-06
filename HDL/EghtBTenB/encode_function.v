@@ -1,46 +1,71 @@
 `timescale 1ns / 1ps
+
 //////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
 
-module encode_function(
-    input [71:0] signal,
+module encode_function (
+	 input [7:0] byteIn,
     input bitclk,
+	 input isK,
+	 input idle,
     output reg sigOut,
-    output reg clkOut,
+    output clkOut
     );
 
-wire[9:0] ten_out;
-wire [8:0] signal_in[7:0]	
-reg[9:0] loop = 10'b0000000001;
+wire[9:0] ten_out;	
+reg[3:0] count;
+reg[8:0] com_char = 9'b100111100;
 reg[8:0] data;
-integer o_cnt;
-reg d_in, start;
+reg d_in;
 wire d_out;
-integer i,j;
+integer i = 0;
+integer j = 2;
+reg[9:0] outp[2:0];
+reg[9:0] loop = 10'b0000100001;
+integer k;
+reg b_clk;
 
-assign {signal_in[7],signal_in[6],signal_in[5],signal_in[4],signal_in[3],signal_in[2],signal_in[1],signal_in[0]} = signal;
+enc Encode(.datain(data), .dispin(d_in), .dataout(ten_out), .dispout(d_out));
 
-encode Encode(.datain(data), .dispin(d_in), .dataout(ten_out), .dispout(d_out));
+always @(posedge bitclk) begin
+	for (k=1; k<10; k=k+1) loop[k]<=loop[k-1];
+	loop[0]<=loop[9];
+	if (loop[0]) b_clk<=!(b_clk);
+	else b_clk<=b_clk;
+	end
 
-always @(posedge loop[0]) begin
-	if (o_cnt<7) o_cnt<=o_cnt+1;
-	else o_cnt<=0;
-	data[8:0]<=signal_in[o_cnt];
-	d_in<=d_out;
+assign clkOut = bitclk;
+
+always @(posedge b_clk) begin
+	if (idle) begin
+		data<=com_char;
+		d_in<=d_out;
+		end
+	else begin
+		data[7:0]<=byteIn;
+		data[8]<=isK;
+		d_in<=d_out;
+		end
 	end
 	
-always @(bitclk)
-	clkOut<=bitclk;
-
-always @(posedge bitclk) begin
-	for (i=1; i<10; i=i+1) loop[i]<=loop[i-1];
-	loop[0]<=loop[9];
+always @(posedge b_clk) begin
+	if (j<2) j<=j+1;
+	else j<=0;
+	outp[j] <= ten_out;
 	end
 
 always @(posedge bitclk) begin
-	for (j=0; j<10; j=j+1) begin
-		if (loop[j]) sigOut<=ten_out[j];
+	if (count<9) count<=count+1;
+	else count <=0;
+	sigOut <= outp[i][count];
+	end
+
+always @(posedge bitclk) begin
+	if (count==9) begin
+		if (i<2) i<=i+1;
+		else i<=0;
 		end
+	else i<=i;
 	end
 	
 endmodule

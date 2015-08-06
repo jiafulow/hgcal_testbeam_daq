@@ -2,12 +2,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
 module decode_function(
-    input byteclk,
-    input bitclk,
     input sigIn,
-    output reg LinkOut,
-	 output reg [8:0] signal,
-	 output reg out
+    input bitclk,
+    input byteclk,
+    output reg linkOk,
+    output reg [7:0] byteOut,
+    output reg isK
     );
 	 
 reg [9:0] tenb;
@@ -15,7 +15,6 @@ reg [9:0] fifo[3:0];
 reg [9:0] tenpos = 10'b1001111100;
 reg [9:0] tenneg = 10'b0110000011;
 wire [8:0] eghtb;
-reg[31:0] test;
 reg [3:0] count, cnt;
 reg err;
 reg dispin, link, rst;
@@ -55,7 +54,7 @@ always@(posedge bitclk) begin
 		link<=0;
 		rst<=1;
 		end
-	LinkOut<=link;
+	LinkOk<=link;
 	end
 
 always@(posedge byteclk) begin
@@ -65,17 +64,16 @@ always@(posedge byteclk) begin
 			if ((tenb==tenpos)||(tenb==tenneg))	begin
 				if (tenb==tenpos) dispin<=1;
 				else dispin<=0;
-				signal <=eghtb;
-				out<=1;
+				byteOut <= eghtb[7:0];
+				isK <= eghtb[8];
 				end			
 			else if(!((disp_err)||(code_err))) begin
-				signal <= eghtb;
-				out<=1;
+				byteOut <= eghtb[7:0];
+				isK <=eghtb[8];
 				dispin<=dispout;
 				end
 			else begin 
 				err<=1;
-				out<=0;
 				end
 			end	
 		end
