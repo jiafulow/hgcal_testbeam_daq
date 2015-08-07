@@ -7,13 +7,14 @@ module controlLinkMaster(input [31:0] dataOut,
 			 output            done, 	   
 			 output 	   error,
 			 output reg [31:0] dataIn,
+			 input byte_clk, bit_clk,
 			 output 	   clk_link_out,
 			 output 	   data_link_out,
 			 input 		   clk_link_in,
 			 input 		   data_link_in);
 
 
-   wire 			       ack;
+   reg 			       ack;
       
    // state machine for the link
    reg [2:0] 			       state;
@@ -23,7 +24,7 @@ module controlLinkMaster(input [31:0] dataOut,
    parameter ST_WAIT_NOACK = 3'h3;   
    parameter ST_DONE = 3'h4;
 
-   always @(posedge clk)
+   always @(posedge byte_clk)
      if (reset) state<=ST_IDLE;
      else if (state==ST_IDLE && initiateRequest) 
        state<=ST_BEGIN_REQ;
@@ -44,9 +45,9 @@ module controlLinkMaster(input [31:0] dataOut,
    // payload outbound
    reg [7:0] outbound_payload [7:0];
 
-   always @(posedge clk)
+   always @(posedge byte_clk)
      if (state==ST_BEGIN_REQ) begin
-	outbound_payload[0]<=8'hbc;
+	outbound_payload[0]<=8'h3c;
 	outbound_payload[1]<={6'h0,requestIsWrite,1'h1};	
 	outbound_payload[2]<=address[7:0];
 	outbound_payload[3]<=address[15:8];
@@ -55,6 +56,7 @@ module controlLinkMaster(input [31:0] dataOut,
 	outbound_payload[6]<=dataOut[23:16];
 	outbound_payload[7]<=dataOut[31:24];
      end else if (state==ST_IDLE || state==ST_WAIT_NOACK || state==ST_DONE) begin
+	outbound_payload[0]<=8'h3c;
 	outbound_payload[1]<={6'h0,1'h0,1'h0};	
      end
 
@@ -71,7 +73,7 @@ module controlLinkMaster(input [31:0] dataOut,
       k_to_send<=(outbound_ptr==3'h0);      
    end
 
-   encode_function encoder(.byteIn(data_to_send),.isK(k_to_send),
+   encode_function encoder(.byteIn(data_to_send),.isK(k_to_send),.bitclk(bit_clk), .byteclk(byte_clk), .idle(state==ST_IDLE),
 			   .sigOut(data_link_out),.clkOut(clk_link_out));
 
 // receiver
@@ -93,7 +95,7 @@ module controlLinkMaster(input [31:0] dataOut,
    reg [7:0]  rdata [4:0];
 
    always @(posedge byte_clk)
-     if (data_recv==8'hbc && k_recv) wptr<=3'h7;
+     if (data_recv==8'h3c && k_recv) wptr<=3'h7;
      else wptr<=wptr+3'h1;
 
    always @(posedge byte_clk)
@@ -104,15 +106,17 @@ module controlLinkMaster(input [31:0] dataOut,
    
 
    always @(posedge byte_clk)
+     if (~linkOk || reset) ack<=1'h0;
+     else if (linkOk && wptr!=3'h7 && data_recv==8'h3c && k_recv) ack<=rdata[0][0];
+     else ack<=ack;
+
+   always @(posedge byte_clk)
      if (~linkOk || reset) begin
-	ack<=1'h0;
-	dataIn<=32'h0;
-     end else if (linkOk && wptr!=3'h7 && data_recv==8'hbc && k_recv) begin
-	dataIn<={rdata[4],rdata[3],rdata[2],rdata[1]};
-	ack<=rdata[0][0];
+			dataIn<=32'h0;
+     end else if (linkOk && wptr!=3'h7 && data_recv==8'h3c && k_recv && rdata[0][0]) begin
+			dataIn<={rdata[4],rdata[3],rdata[2],rdata[1]};
      end else begin
-	dataIn<=dataIn;
-	ack<=ack;
+			dataIn<=dataIn;
      end
       
        
