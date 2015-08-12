@@ -22,6 +22,7 @@ reg i;
 reg[9:0] outp[1:0];
 integer k;
 reg b_clk;
+reg [9:0] loop = 10'b0000100001;
 
 enc Encode(.datain(data), .dispin(d_in), .dataout(ten_out), .dispout(d_out));
 
@@ -58,8 +59,11 @@ always @(posedge bitclk) begin
 	end
 
 always @(posedge bitclk) begin
-	if (i==0) i<=1;
-	else i<=0;
+	if (count==9) begin
+		if (i==0) i<=1;
+		else i<=0;
+	end
+	else i<=i;
 	end
 	
 endmodule
