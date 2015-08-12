@@ -18,10 +18,8 @@ reg[8:0] com_char = 9'b100111100;
 reg[8:0] data;
 reg d_in;
 wire d_out;
-integer i = 0;
-integer j = 2;
-reg[9:0] outp[2:0];
-reg[9:0] loop = 10'b0000100001;
+reg i;
+reg[9:0] outp[1:0];
 integer k;
 reg b_clk;
 
@@ -49,9 +47,8 @@ always @(posedge b_clk) begin
 	end
 	
 always @(posedge b_clk) begin
-	if (j<2) j<=j+1;
-	else j<=0;
-	outp[j] <= ten_out;
+	if(!(i)) outp[1] <= ten_out;
+	else outp[0]<=ten_out;
 	end
 
 always @(posedge bitclk) begin
@@ -61,11 +58,8 @@ always @(posedge bitclk) begin
 	end
 
 always @(posedge bitclk) begin
-	if (count==9) begin
-		if (i<2) i<=i+1;
-		else i<=0;
-		end
-	else i<=i;
+	if (i==0) i<=1;
+	else i<=0;
 	end
 	
 endmodule
