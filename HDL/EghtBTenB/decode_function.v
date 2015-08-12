@@ -54,8 +54,9 @@ always@(posedge bitclk) begin
 		link<=0;
 		rst<=1;
 		end
-	LinkOk<=link;
 	end
+
+assign linkOk = link;
 
 always@(posedge byteclk) begin
 	if (link) begin
