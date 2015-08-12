@@ -8,7 +8,9 @@ module controlLinkSlave(output reg [31:0] dataOut,
 			 output 	   clk_link_out,
 			 output 	   data_link_out,
 			 input 		   clk_link_in,
-			 input 		   data_link_in);
+			 input 		   data_link_in
+			 output		   linkOk
+			);
 
 
    // payload outbound
