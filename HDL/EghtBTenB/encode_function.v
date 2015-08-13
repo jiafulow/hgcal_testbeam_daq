@@ -9,7 +9,8 @@ module encode_function (
 	 input isK,
 	 input idle,
     output reg sigOut,
-    output clkOut
+    output clkOut,
+    input byte_clk
     );
 
 wire[9:0] ten_out;	
@@ -21,21 +22,20 @@ wire d_out;
 reg i;
 reg[9:0] outp[1:0];
 integer k;
-reg b_clk;
-reg [9:0] loop = 10'b0000100001;
 
-enc Encode(.datain(data), .dispin(d_in), .dataout(ten_out), .dispout(d_out));
 
-always @(posedge bitclk) begin
+encode Encode(.datain(data), .dispin(d_in), .dataout(ten_out), .dispout(d_out));
+
+/*always @(posedge bitclk) begin
 	for (k=1; k<10; k=k+1) loop[k]<=loop[k-1];
 	loop[0]<=loop[9];
 	if (loop[0]) b_clk<=!(b_clk);
 	else b_clk<=b_clk;
 	end
-
+*/
 assign clkOut = bitclk;
 
-always @(posedge b_clk) begin
+always @(posedge byte_clk) begin
 	if (idle) begin
 		data<=com_char;
 		d_in<=d_out;
@@ -47,7 +47,7 @@ always @(posedge b_clk) begin
 		end
 	end
 	
-always @(posedge b_clk) begin
+always @(posedge byte_clk) begin
 	if(!(i)) outp[1] <= ten_out;
 	else outp[0]<=ten_out;
 	end

@@ -1,7 +1,7 @@
 
 `timescale 1 ns / 1 ps
 
-	module control_link_master_v1_0_S00_AXI #
+	module control_link_slave_v1_0_S00_AXI #
 	(
 		// Users to add parameters here
 
@@ -20,7 +20,7 @@
         input CLK_IN_P,
         input CLK_IN_N,
         output SIG_OUT_P,
-        output SIG_OUT_N,
+        output SIG_OUT_N, 
         input SIG_IN_P,
         input SIG_IN_N,
         input clkSys,
@@ -113,12 +113,12 @@
 	//-- Signals for user logic register space example
 	//------------------------------------------------
 	//-- Number of Slave Registers 6
-	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg0;
-	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg1;
-	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg2;
+	wire [C_S_AXI_DATA_WIDTH-1:0]	slv_reg0;
+	wire [C_S_AXI_DATA_WIDTH-1:0]	slv_reg1;
+	wire [C_S_AXI_DATA_WIDTH-1:0]	slv_reg2;
 	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg3;
-	wire [C_S_AXI_DATA_WIDTH-1:0]	slv_reg4;
-	wire [C_S_AXI_DATA_WIDTH-1:0]	slv_reg5;
+	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg4;
+	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg5;
 	wire	 slv_reg_rden;
 	wire	 slv_reg_wren;
 	reg [C_S_AXI_DATA_WIDTH-1:0]	 reg_data_out;
@@ -223,18 +223,18 @@
 	begin
 	  if ( S_AXI_ARESETN == 1'b0 )
 	    begin
-	      slv_reg0 <= 0;
-	      slv_reg1 <= 0;
-	      slv_reg2 <= 0;
+	      //slv_reg0 <= 0;
+	      //slv_reg1 <= 0;
+	     // slv_reg2 <= 0;
 	      slv_reg3 <= 0;
-	      // slv_reg4 <= 0;
-	      // slv_reg5 <= 0;
+	      slv_reg4 <= 0;
+	      slv_reg5 <= 0;
 	    end 
 	  else begin
 	    if (slv_reg_wren)
 	      begin
 	        case ( axi_awaddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB] )
-	          3'h0:
+	         /* 3'h0:
 	            for ( byte_index = 0; byte_index <= (C_S_AXI_DATA_WIDTH/8)-1; byte_index = byte_index+1 )
 	              if ( S_AXI_WSTRB[byte_index] == 1 ) begin
 	                // Respective byte enables are asserted as per write strobes 
@@ -247,14 +247,14 @@
 	                // Respective byte enables are asserted as per write strobes 
 	                // Slave register 1
 	                slv_reg1[(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
-	              end  
-	          3'h2:
+	              end  */
+	          /*3'h2:
 	            for ( byte_index = 0; byte_index <= (C_S_AXI_DATA_WIDTH/8)-1; byte_index = byte_index+1 )
 	              if ( S_AXI_WSTRB[byte_index] == 1 ) begin
 	                // Respective byte enables are asserted as per write strobes 
 	                // Slave register 2
 	                slv_reg2[(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
-	              end  
+	              end  */
 	          3'h3:
 	            for ( byte_index = 0; byte_index <= (C_S_AXI_DATA_WIDTH/8)-1; byte_index = byte_index+1 )
 	              if ( S_AXI_WSTRB[byte_index] == 1 ) begin
@@ -262,7 +262,7 @@
 	                // Slave register 3
 	                slv_reg3[(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
 	              end  
-	          /*3'h4:
+	          3'h4:
 	            for ( byte_index = 0; byte_index <= (C_S_AXI_DATA_WIDTH/8)-1; byte_index = byte_index+1 )
 	              if ( S_AXI_WSTRB[byte_index] == 1 ) begin
 	                // Respective byte enables are asserted as per write strobes 
@@ -275,14 +275,14 @@
 	                // Respective byte enables are asserted as per write strobes 
 	                // Slave register 5
 	                slv_reg5[(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
-	              end */ 
+	              end  
 	          default : begin
-	                      slv_reg0 <= slv_reg0;
-	                      slv_reg1 <= slv_reg1;
-	                      slv_reg2 <= slv_reg2;
+	                     // slv_reg0 <= slv_reg0;
+	                     // slv_reg1 <= slv_reg1;
+	                     // slv_reg2 <= slv_reg2;
 	                      slv_reg3 <= slv_reg3;
-	                      // slv_reg4 <= slv_reg4;
-	                      // slv_reg5 <= slv_reg5;
+	                      slv_reg4 <= slv_reg4;
+	                      slv_reg5 <= slv_reg5;
 	                    end
 	        endcase
 	      end
@@ -421,34 +421,24 @@
 	end    
 
 	// Add user logic here
-
-	wire error;
-	assign linkOk = !error;
-	
-	/*wire busy;
-	wire done;
-	wire[31:0] dataIn;
-	
-	reg[31:0] dataOut;
-	reg[15:0] address;
-	reg requestIsWrite;
-	reg initiateRequest;
-	reg reset;
-	*/
-	
-    BUFR bufr_inst(.O(CLK_IN), .I(CLK_IN_TMP));
+	BUFR bufr_inst(.O(CLK_IN), .I(CLK_IN_TMP));
     
     IBUFDS #(.IOSTANDARD("LVDS_25")) buf_clk_in (.I(CLK_IN_P),.IB(CLK_IN_N),.O(CLK_IN_TMP));
     IBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_in (.I(SIG_IN_P),.IB(SIG_IN_N),.O(SIG_IN));
     OBUFDS #(.IOSTANDARD("LVDS_25")) buf_clk_out (.O(CLK_OUT_P),.OB(CLK_OUT_N),.I(CLK_OUT));
     OBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_out (.O(SIG_OUT_P),.OB(SIG_OUT_N),.I(SIG_OUT));
     
-    controlLinkMaster clm(.dataOut(slv_reg1), .address(slv_reg2[15:0]), .requestIsWrite(slv_reg0[1]), 
-    .initiateRequest(slv_reg0[2]), .reset(slv_reg0[0]), .busy(slv_reg4[0]), .done(slv_reg4[1]), .error(error),
-    .dataIn(slv_reg5), .byte_clk(byte_clk), .bit_clk(bit_clk), .clk_link_out(CLK_OUT), .data_link_out(SIG_OUT),
-    .clk_link_in(CLK_IN), .data_link_in(SIG_IN));
-    
+    controlLinkSlave cls(.dataOut(slv_reg1),.address(slv_reg2[15:0]),.requestIsWrite(slv_reg0[1]),.strobe(slv_reg0[2]),
+    .reset(slv_reg3[0]), .ack(slv_reg3[1]), .dataIn(slv_reg4), .clk_link_out(CLK_OUT), .data_link_out(SIG_OUT), 
+    .clk_link_in(CLK_IN), .data_link_in(SIG_IN),.linkOk(linkOk),.byte_clk(byte_clk), .bitclk(bit_clk));
     wire pll_clk, bit_clk_lcl, byte_clk_lcl;
+    
+    /*wire[31:0] dataOut;
+    wire[15:0] address;
+    wire requestIsWrite, strobe;
+    reg reset, ack;
+    wire [31:0] dataIn; */
+
     
        PLLE2_BASE #(
           .BANDWIDTH("OPTIMIZED"),  // OPTIMIZED, HIGH, LOW
@@ -500,8 +490,9 @@
           .CLKFBIN(pll_clk)    // 1-bit input: Feedback clock
        );
     
+    
     BUFG bufr_inst_byte(.O(byte_clk), .I(byte_clk_lcl));
-    BUFG bufr_inst_bit(.O(bit_clk), .I(bit_clk_lcl));   
+    BUFG bufr_inst_bit(.O(bit_clk), .I(bit_clk_lcl)); 
 	// User logic ends
 
 	endmodule
