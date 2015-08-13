@@ -63,18 +63,21 @@ module controlLinkMaster(input [31:0] dataOut,
    reg [2:0] outbound_ptr;
 
    always @(posedge byte_clk)
-     outbound_ptr<=outbound_ptr+3'h1;
+        if (outbound_ptr==3'd7) outbound_ptr <= 0;
+        else outbound_ptr<=outbound_ptr+3'h1;
 
    reg [7:0] data_to_send;
    reg 	     k_to_send;
 
    always @(posedge byte_clk) begin
       data_to_send<=outbound_payload[outbound_ptr];
-      k_to_send<=(outbound_ptr==3'h0);      
+      //k_to_send<=(outbound_ptr==3'h0);
+      if (outbound_payload[outbound_ptr]==8'h3c) k_to_send <= 1;
+      else k_to_send <= 0;      
    end
 
-   encode_function encoder(.byteIn(data_to_send),.isK(k_to_send),.bitclk(bit_clk), .byteclk(byte_clk), .idle(state==ST_IDLE),
-			   .sigOut(data_link_out),.clkOut(clk_link_out));
+   encode_function encoder(.byteIn(data_to_send),.isK(k_to_send),.bitclk(bit_clk), .idle(state==ST_IDLE),
+			   .sigOut(data_link_out),.clkOut(clk_link_out),.byte_clk(byte_clk));
 
 // receiver
 
@@ -82,8 +85,6 @@ module controlLinkMaster(input [31:0] dataOut,
    wire       k_recv;
    wire       linkOk;
    reg [7:0]  data_recv_dl;
-   
-   
    
 	      
    decode_function decode(.sigIn(data_link_in),.bitclk(clk_link_in),.byteclk(byte_clk),

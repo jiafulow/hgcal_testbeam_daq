@@ -116,7 +116,7 @@
 	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg0;
 	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg1;
 	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg2;
-	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg3;
+	wire [C_S_AXI_DATA_WIDTH-1:0]	slv_reg3;
 	wire [C_S_AXI_DATA_WIDTH-1:0]	slv_reg4;
 	wire [C_S_AXI_DATA_WIDTH-1:0]	slv_reg5;
 	wire	 slv_reg_rden;
@@ -226,7 +226,7 @@
 	      slv_reg0 <= 0;
 	      slv_reg1 <= 0;
 	      slv_reg2 <= 0;
-	      slv_reg3 <= 0;
+	      // slv_reg3 <= 0;
 	      // slv_reg4 <= 0;
 	      // slv_reg5 <= 0;
 	    end 
@@ -255,13 +255,13 @@
 	                // Slave register 2
 	                slv_reg2[(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
 	              end  
-	          3'h3:
+	          /*3'h3:
 	            for ( byte_index = 0; byte_index <= (C_S_AXI_DATA_WIDTH/8)-1; byte_index = byte_index+1 )
 	              if ( S_AXI_WSTRB[byte_index] == 1 ) begin
 	                // Respective byte enables are asserted as per write strobes 
 	                // Slave register 3
 	                slv_reg3[(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
-	              end  
+	              end  */
 	          /*3'h4:
 	            for ( byte_index = 0; byte_index <= (C_S_AXI_DATA_WIDTH/8)-1; byte_index = byte_index+1 )
 	              if ( S_AXI_WSTRB[byte_index] == 1 ) begin
@@ -280,7 +280,7 @@
 	                      slv_reg0 <= slv_reg0;
 	                      slv_reg1 <= slv_reg1;
 	                      slv_reg2 <= slv_reg2;
-	                      slv_reg3 <= slv_reg3;
+	                      // slv_reg3 <= slv_reg3;
 	                      // slv_reg4 <= slv_reg4;
 	                      // slv_reg5 <= slv_reg5;
 	                    end
@@ -442,6 +442,8 @@
     IBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_in (.I(SIG_IN_P),.IB(SIG_IN_N),.O(SIG_IN));
     OBUFDS #(.IOSTANDARD("LVDS_25")) buf_clk_out (.O(CLK_OUT_P),.OB(CLK_OUT_N),.I(CLK_OUT));
     OBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_out (.O(SIG_OUT_P),.OB(SIG_OUT_N),.I(SIG_OUT));
+    
+    assign slv_reg3 = 32'hffffffff;
     
     controlLinkMaster clm(.dataOut(slv_reg1), .address(slv_reg2[15:0]), .requestIsWrite(slv_reg0[1]), 
     .initiateRequest(slv_reg0[2]), .reset(slv_reg0[0]), .busy(slv_reg4[0]), .done(slv_reg4[1]), .error(error),
