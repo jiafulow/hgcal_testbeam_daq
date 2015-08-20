@@ -466,6 +466,11 @@
             count_2<=count_2+1;
             end
         end
+        
+    always @(posedge byte_clk) begin
+        if (state==rest) rest_count<=rest_count+1;
+        else rest_count<=0;
+        end
     
     always @(posedge byte_clk) begin
         if ((state==active_1)||(state==start)) begin
