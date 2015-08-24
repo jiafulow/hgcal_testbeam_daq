@@ -410,10 +410,10 @@
     
     OBUFDS #(.IOSTANDARD("LVDS_25")) buf_clk_out (.O(CLK_OUT_P),.OB(CLK_OUT_N),.I(CLK_OUT));
     
-    OBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_out_1 (.O(SIG_OUT_P_1),.OB(SIG_OUT_N_1),.I(SIG_OUT_1));
-    OBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_out_2 (.O(SIG_OUT_P_2),.OB(SIG_OUT_N_2),.I(SIG_OUT_2));
-    OBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_out_3 (.O(SIG_OUT_P_3),.OB(SIG_OUT_N_3),.I(SIG_OUT_3));
-    OBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_out_4 (.O(SIG_OUT_P_4),.OB(SIG_OUT_N_4),.I(SIG_OUT_4));
+    OBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_out_1 (.O(SIG_OUT_1_P),.OB(SIG_OUT_1_N),.I(SIG_OUT_1));
+    OBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_out_2 (.O(SIG_OUT_2_P),.OB(SIG_OUT_2_N),.I(SIG_OUT_2));
+    OBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_out_3 (.O(SIG_OUT_3_P),.OB(SIG_OUT_3_N),.I(SIG_OUT_3));
+    OBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_out_4 (.O(SIG_OUT_4_P),.OB(SIG_OUT_4_N),.I(SIG_OUT_4));
     
     always @(posedge byte_clk) begin
         if ((state==idle)&&slv_reg1[0]==1) state<=start;
