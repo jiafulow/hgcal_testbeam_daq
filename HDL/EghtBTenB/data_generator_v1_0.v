@@ -21,7 +21,7 @@
          output SIG_OUT_3_N, SIG_OUT_3_P,
          output SIG_OUT_4_N, SIG_OUT_4_P,
          output CLK_OUT_N, CLK_OUT_P,
-
+	 output test_LED,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -61,9 +61,12 @@
 	    .SIG_OUT_2_N(SIG_OUT_2_N),
 	    .SIG_OUT_2_P(SIG_OUT_2_P),
 	    .SIG_OUT_3_N(SIG_OUT_3_N),
+	    .SIG_OUT_3_P(SIG_OUT_3_P),
+	    .SIG_OUT_4_N(SIG_OUT_4_N),
 	    .SIG_OUT_4_P(SIG_OUT_4_P),
 	    .CLK_OUT_N(CLK_OUT_N),
 	    .CLK_OUT_P(CLK_OUT_P),
+	    .test_LED(test_LED),
 		.S_AXI_ACLK(s00_axi_aclk),
 		.S_AXI_ARESETN(s00_axi_aresetn),
 		.S_AXI_AWADDR(s00_axi_awaddr),

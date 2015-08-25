@@ -21,6 +21,7 @@
         output SIG_OUT_3_N, SIG_OUT_3_P,
         output SIG_OUT_4_N, SIG_OUT_4_P,
         output CLK_OUT_N, CLK_OUT_P,
+	output test_LED,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -424,7 +425,13 @@
         else if((state==done)&&slv_reg1[0]==0) state<=idle;
         else state<=state;
         end
-            
+    
+    always @(posedge byte_clk) begin
+	if(state==idle) test_LED <=0;
+	else if(state==start) test_LED <=1;
+	else test_LED <= test_LED;
+	end
+
     always @(posedge byte_clk) begin
         if((state==idle)||(state==rest)) begin
             idle_1<=1;
