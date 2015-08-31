@@ -19,12 +19,19 @@
         output reg [31:0] daq_buffer_dataOut,
         output wire [12:0] daq_buffer_addr,
         output wire daq_buffer_en, daq_buffer_clk, daq_buffer_reset,
-        input SIG_IN_1_N, SIG_IN_1_P,
+        /*input SIG_IN_1_N, SIG_IN_1_P,
         input SIG_IN_2_N, SIG_IN_2_P,
         input SIG_IN_3_N, SIG_IN_3_P,
         input SIG_IN_4_N, SIG_IN_4_P,
-        input CLK_IN_N, CLK_IN_P,
+        input CLK_IN_N, CLK_IN_P,*/
+        input SIG_IN_1,
+        input SIG_IN_2, 
+        input SIG_IN_3,
+        input SIG_IN_4,
+        input CLK_IN,
         output linkOk_1, linkOk_2, linkOk_3, linkOk_4,
+        output reg active_LED,
+        output reg trig_LED_1, trig_LED_2, trig_LED_3, trig_LED_4,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -83,6 +90,10 @@
 	assign daq_buffer_clk = bit_clk;
 	assign daq_buffer_we = 1;
 	assign daq_buffer_en = 1;
+	wire[7:0] data_recv_1;
+	wire[7:0] data_recv_2;
+	wire[7:0] data_recv_3;
+	wire[7:0] data_recv_4;
 	reg ptr_1, ptr_2, ptr_3, ptr_4;
 	reg[7:0] fifo_1[2:0];
 	reg[7:0] fifo_2[2:0];
@@ -100,15 +111,41 @@
     
     assign evnt = trig_1 || trig_2 || trig_3 || trig_4;
     
-    assign trig_1 = !(fifo_1[0]==8'h3c && k1);
-    assign trig_2 = !(fifo_2[0]==8'h3c && k2);
-    assign trig_3 = !(fifo_3[0]==8'h3c && k3);
-    assign trig_4 = !(fifo_4[0]==8'h3c && k4);
+    assign trig_1 = ((!(fifo_1[0]==8'h3c && k1)) && (linkOk_1));
+    assign trig_2 = ((!(fifo_2[0]==8'h3c && k2)) && (linkOk_2));
+    assign trig_3 = ((!(fifo_3[0]==8'h3c && k3)) && (linkOk_3));
+    assign trig_4 = ((!(fifo_4[0]==8'h3c && k4)) && (linkOk_4));
+    
+    always @(posedge byte_clk) begin
+        if (trig_1) trig_LED_1 <= 1;
+        else trig_LED_1 <= 0;
+        end
+        
+    always @(posedge byte_clk) begin
+        if (trig_2) trig_LED_2 <= 1;
+        else trig_LED_2 <= 0;
+        end
+            
+    always @(posedge byte_clk) begin
+        if (trig_3) trig_LED_3 <= 1;
+        else trig_LED_3 <= 0;
+        end
+                
+    always @(posedge byte_clk) begin
+        if (trig_4) trig_LED_4 <= 1;
+        else trig_LED_4 <= 0;
+        end                            
     
     always @(posedge byte_clk) begin 
         if (state == ST_IDLE && evnt) state <= ST_ACTIVE;
         else if ((state == ST_ACTIVE) && !evnt) state <= ST_IDLE;
         else state <= state;
+        end
+      
+    always @(posedge byte_clk) begin
+        if (state == ST_ACTIVE) active_LED <= 1;
+        else if (state == ST_IDLE) active_LED <= 0;
+        else active_LED <= active_LED;
         end
              
     always @(posedge byte_clk) begin
@@ -157,14 +194,14 @@
         
     assign daq_buffer_addr = address_ptr;
     
-    //BUFR bufr_inst(.O(CLK_IN), .I(CLK_IN_TMP));
+    BUFG bufr_inst(.O(CLK_IN), .I(CLK_IN_TMP));
     
-    IBUFDS #(.IOSTANDARD("LVDS_25")) buf_clk_in (.I(CLK_IN_P),.IB(CLK_IN_N),.O(CLK_IN));
+    /*IBUFDS #(.IOSTANDARD("LVDS_25")) buf_clk_in (.I(CLK_IN_P),.IB(CLK_IN_N),.O(CLK_IN));
     
     IBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_in_1 (.I(SIG_IN_1_P),.IB(SIG_IN_1_N),.O(SIG_IN_1)); 
     IBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_in_2 (.I(SIG_IN_2_P),.IB(SIG_IN_2_N),.O(SIG_IN_2));
     IBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_in_3 (.I(SIG_IN_3_P),.IB(SIG_IN_3_N),.O(SIG_IN_3));
-    IBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_in_4 (.I(SIG_IN_4_P),.IB(SIG_IN_4_N),.O(SIG_IN_4));
+    IBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_in_4 (.I(SIG_IN_4_P),.IB(SIG_IN_4_N),.O(SIG_IN_4));*/
     
     decode_function decode_1(.sigIn(SIG_IN_1),.bitclk(bit_clk),.byteclk(byte_clk),
         .linkOk(linkOk_1),.byteOut(data_recv_1),.isK(k_recv_1));
