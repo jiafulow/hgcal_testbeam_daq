@@ -103,14 +103,17 @@
 	reg[12:0] lst_evnt_wrds;
 	wire trig_1, trig_2, trig_3, trig_4;
     reg[12:0] address_ptr;
-    wire evnt;
-    reg state;
+    wire evnt, error;
+    reg [1:0] state;
     reg k1, k2, k3, k4;
-    parameter ST_ACTIVE = 1;
-    parameter ST_IDLE = 0;
+    parameter ST_ACTIVE = 2'b10;
+    parameter ST_IDLE = 2'b00;
+    parameter ST_ERROR = 2'b11;
+    parameter ST_START = 2'b01;
     
     assign evnt = trig_1 || trig_2 || trig_3 || trig_4;
-    
+    assign error = !(linkOk_1) || !(linkOk_2) || !(linkOk_3) || !(linkOk_4);
+
     assign trig_1 = ((!(fifo_1[0]==8'h3c && k1)) && (linkOk_1));
     assign trig_2 = ((!(fifo_2[0]==8'h3c && k2)) && (linkOk_2));
     assign trig_3 = ((!(fifo_3[0]==8'h3c && k3)) && (linkOk_3));
@@ -137,7 +140,10 @@
         end                            
     
     always @(posedge byte_clk) begin 
-        if (state == ST_IDLE && evnt) state <= ST_ACTIVE;
+	if (error) state <= ST_ERROR;
+	else if (state == ST_ERROR) state <= ST_IDLE;
+        else if (state == ST_IDLE && evnt) state <= ST_START;
+	else if (state == ST_START) state <= ST_ACTIVE;
         else if ((state == ST_ACTIVE) && !evnt) state <= ST_IDLE;
         else state <= state;
         end
@@ -194,7 +200,7 @@
         
     assign daq_buffer_addr = address_ptr;
     
-    BUFG bufr_inst(.O(CLK_IN), .I(CLK_IN_TMP));
+    //BUFG bufr_inst(.O(CLK_IN), .I(CLK_IN_TMP));
     
     /*IBUFDS #(.IOSTANDARD("LVDS_25")) buf_clk_in (.I(CLK_IN_P),.IB(CLK_IN_N),.O(CLK_IN));
     
@@ -299,3 +305,4 @@
 	
 
 	endmodule
+
