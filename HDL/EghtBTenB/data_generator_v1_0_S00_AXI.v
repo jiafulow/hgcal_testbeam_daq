@@ -16,12 +16,18 @@
 	(
 		// Users to add ports here
 		input clkSys,
-        output SIG_OUT_1_N, SIG_OUT_1_P,
+        /*output SIG_OUT_1_N, SIG_OUT_1_P,
         output SIG_OUT_2_N, SIG_OUT_2_P,
         output SIG_OUT_3_N, SIG_OUT_3_P,
         output SIG_OUT_4_N, SIG_OUT_4_P,
-        output CLK_OUT_N, CLK_OUT_P,
-	output test_LED,
+        output CLK_OUT_N, CLK_OUT_P,*/
+        output SIG_OUT_1,
+        output SIG_OUT_2,
+        output SIG_OUT_3,
+        output SIG_OUT_4, 
+        output CLK_OUT,
+	    output reg test_LED,
+	    output reg done_LED,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -397,31 +403,39 @@
 
 	// Add user logic here
     reg[7:0] data_1, data_2, data_3, data_4;
-    reg k_1,k_2,k_3,k_4,idle_1,idle_2,idle_3,idle_4;
+    reg k_1,k_2,k_3,k_4;
+    reg idle_1 = 1;
+    reg idle_2 = 1;
+    reg idle_3 = 1;
+    reg idle_4 = 1;
     wire CLK_OUT_1,CLK_OUT_2,CLK_OUT_3;
-    reg[15:0] count_1, count_2;
-    reg [2:0] state;
+    //reg[15:0] count_1, count_2;
+    reg[15:0] count_1 = 0;
+    reg[15:0] count_2 = 0;  
     reg [2:0] idle = 3'b000;
     reg [2:0] start = 3'b001;
+    reg [2:0] restart = 3'b111;
     reg [2:0] active_1 = 3'b010;
     reg [2:0] rest = 3'b011;
     reg [2:0] active_2 = 3'b100;
     reg [2:0] done = 3'b101;
+    reg [2:0] state = 3'b000;
     reg [3:0] rest_count;
     
-    OBUFDS #(.IOSTANDARD("LVDS_25")) buf_clk_out (.O(CLK_OUT_P),.OB(CLK_OUT_N),.I(CLK_OUT));
+    /*OBUFDS #(.IOSTANDARD("LVDS_25")) buf_clk_out (.O(CLK_OUT_P),.OB(CLK_OUT_N),.I(CLK_OUT));
     
     OBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_out_1 (.O(SIG_OUT_1_P),.OB(SIG_OUT_1_N),.I(SIG_OUT_1));
     OBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_out_2 (.O(SIG_OUT_2_P),.OB(SIG_OUT_2_N),.I(SIG_OUT_2));
     OBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_out_3 (.O(SIG_OUT_3_P),.OB(SIG_OUT_3_N),.I(SIG_OUT_3));
-    OBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_out_4 (.O(SIG_OUT_4_P),.OB(SIG_OUT_4_N),.I(SIG_OUT_4));
+    OBUFDS #(.IOSTANDARD("LVDS_25")) buf_sig_out_4 (.O(SIG_OUT_4_P),.OB(SIG_OUT_4_N),.I(SIG_OUT_4));*/
     
     always @(posedge byte_clk) begin
         if ((state==idle)&&slv_reg1[0]==1) state<=start;
         else if(state==start) state<=active_1;
-        else if((state==active_1)&&(count_1==4000)) state<=rest;
-        else if((state==rest)&&(rest_count==4'b1111)) state<=active_2;
-        else if((state==active_2)&&(count_1==6000)) state<=done;
+        else if((state==active_1)&&(count_1==128)) state<=rest;
+        else if((state==rest)&&(rest_count==4'b1111)) state<=restart;
+        else if(state==restart) state<=active_2;
+        else if((state==active_2)&&(count_1==256)) state<=done;
         else if((state==done)&&slv_reg1[0]==0) state<=idle;
         else state<=state;
         end
@@ -431,9 +445,15 @@
 	else if(state==start) test_LED <=1;
 	else test_LED <= test_LED;
 	end
-
+	
+	always @(posedge byte_clk) begin
+	if(state==idle) done_LED <= 0;
+	else if(state==done) done_LED <=1;
+	else done_LED <= done_LED;
+	end
+	
     always @(posedge byte_clk) begin
-        if((state==idle)||(state==rest)) begin
+        if((state==idle)||(state==rest)||(state==done)) begin
             idle_1<=1;
             idle_2<=1;
             idle_3<=1;
@@ -445,12 +465,12 @@
             idle_3<=1;
             idle_4<=1;
             end
-        else if(count_1==5000) begin
+        else if(count_1==128) begin
             idle_1<=1;
             idle_2<=0;
             idle_3<=0;
             idle_4<=0;
-            end
+            end 
         else begin
             idle_1<=0;
             idle_2<=0;
@@ -460,11 +480,11 @@
         end
     
     always @(posedge byte_clk) begin
-        if ((state==idle)||(state==done)||(state==start)) begin
+        if ((state==idle) || (state==start) || (state==done)) begin
             count_1<=0;
             count_2<=0;
             end
-        else if (state==rest) begin
+        else if ((state==rest) || (state==restart)) begin
             count_1<=count_1;
             count_2<=count_2;
             end

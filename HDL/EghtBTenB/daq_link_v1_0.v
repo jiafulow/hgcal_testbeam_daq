@@ -102,7 +102,7 @@
 	reg[12:0] num_words;
 	reg[12:0] lst_evnt_wrds;
 	wire trig_1, trig_2, trig_3, trig_4;
-    reg[12:0] address_ptr;
+    reg[12:0] address_ptr = 0;
     wire evnt, error;
     reg [1:0] state;
     reg k1, k2, k3, k4;
@@ -180,13 +180,13 @@
         end   
                    
     always @(posedge byte_clk) begin
-        if (state == ST_ACTIVE) begin
+        if ((state == ST_ACTIVE) && evnt) begin
             daq_buffer_dataOut[7:0] <= fifo_1[ptr_1];
             daq_buffer_dataOut[15:8] <= fifo_2[ptr_2];
             daq_buffer_dataOut[23:16] <= fifo_3[ptr_3];
             daq_buffer_dataOut[31:24] <= fifo_4[ptr_4];
             num_words <= num_words + 1;
-            address_ptr <= address_ptr + 1;
+            address_ptr <= address_ptr + 4;
             lst_evnt_wrds <= num_words + 1;
             end
         else begin
@@ -305,4 +305,3 @@
 	
 
 	endmodule
-
