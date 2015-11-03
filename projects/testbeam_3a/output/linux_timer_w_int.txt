@@ -1,0 +1,26 @@
+-- Example program --
+Set timer reset value 0xF0000000
+Set timer mode 0x00000000
+Set timer mode 0x00000020
+Set timer mode 0x00000050
+-- Press BTNR push button to change the LD9 toggle --
+-- Press BTND push button to start the Timer interrupt --
+-- Press BTNL push button to exit --
+-- Change slide switches to see corresponding output on LEDs --
+BTND is pressed
+Starting the Timer
+Wait for the Timer interrupt to trigger 
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Interrupting ZYNQ!
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+Exit interrupt 
+
+BTNL is pressed
+Exiting
+-- Exiting main() --
+

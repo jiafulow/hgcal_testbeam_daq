@@ -1,0 +1,59 @@
+/dts-v1/;
+/include/ "system-conf.dtsi"
+/ {
+};
+
+/ {
+        model = "testbeam_3a";
+        aliases {
+                serial0 = &uart1;
+                ethernet0 = &gem0;
+        };
+        chosen {
+                bootargs = "console=ttyPS0,115200 earlyprintk uio_pdrv_genirq.of_id=generic-uio";
+        };
+        memory {
+                device_type = "memory";
+                reg = <0x0 0x20000000>;
+        };
+};
+
+
+/*
+&axi_bram_ctrl_0 {
+        compatible = "generic-uio";
+};
+*/
+
+
+&axi_timer_0 {
+        compatible = "generic-uio";
+};
+
+
+&btns_5bits {
+        compatible = "generic-uio";
+};
+
+&leds_8bits {
+        compatible = "generic-uio";
+};
+
+&sws_8bits {
+        compatible = "generic-uio";
+};
+
+
+&gem0 {
+  phy-handle = <&phy0>;
+  ps7_ethernet_0_mdio: mdio {
+      #address-cells = <1>;
+      #size-cells = <0>;
+      phy0: phy@0 {
+          compatible = "marvell,88e1510";
+          device_type = "ethernet-phy";
+          reg = <0>;
+      } ;
+  } ;
+};
+
