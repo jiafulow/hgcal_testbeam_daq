@@ -1,0 +1,47 @@
+{
+   guistr: "# # String gsaved with Nlview 6.4.12  2014-12-16 bk=1.3272 VDI=35 GEI=35 GUI=JA:1.8
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 610 -defaultsOSRD
+preplace port sws_8bits -pg 1 -y 670 -defaultsOSRD
+preplace port leds_8bits -pg 1 -y 540 -defaultsOSRD
+preplace port btns_5bits -pg 1 -y 400 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 750 -defaultsOSRD
+preplace inst axi_bram_ctrl_0_bram -pg 1 -lvl 5 -y 70 -defaultsOSRD
+preplace inst rst_processing_system7_0_100M -pg 1 -lvl 2 -y 450 -defaultsOSRD
+preplace inst sws_8bits -pg 1 -lvl 4 -y 670 -defaultsOSRD
+preplace inst leds_8bits -pg 1 -lvl 4 -y 540 -defaultsOSRD
+preplace inst btns_5bits -pg 1 -lvl 4 -y 410 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 1 -y 270 -defaultsOSRD
+preplace inst axi_timer_0 -pg 1 -lvl 4 -y 250 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 4 -y 70 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 3 -y 430 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -y 690 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 2 4 660 630 NJ 740 NJ 740 NJ
+preplace netloc leds_8bits_GPIO 1 4 2 NJ 540 N
+preplace netloc processing_system7_0_axi_periph_M03_AXI 1 3 1 980
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 3 1 N
+preplace netloc btns_5bits_GPIO 1 4 2 N 400 NJ
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 4 1 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 670
+preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 4 1 N
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 230 360 630
+preplace netloc btns_5bits_ip2intc_irpt 1 0 5 30 210 NJ 210 NJ 210 NJ 150 1310
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 3 1 990
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 2 2 680 230 1020
+preplace netloc xlconcat_0_dout 1 1 1 210
+preplace netloc processing_system7_0_FIXED_IO 1 2 4 640 750 NJ 750 NJ 750 NJ
+preplace netloc sws_8bits_GPIO 1 4 2 NJ 670 N
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 2 1 640
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 3 220 350 650 220 1010
+preplace netloc processing_system7_0_axi_periph_M04_AXI 1 3 1 1030
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 3 1 1000
+preplace netloc axi_timer_0_interrupt 1 0 5 20 200 NJ 200 NJ 200 NJ 140 1320
+levelinfo -pg 1 0 120 430 830 1180 1430 1560
+",
+}
+{
+   da_axi4_cnt: "5",
+   da_board_cnt: "3",
+   da_bram_cntlr_cnt: "2",
+   da_ps7_cnt: "1",
+}
