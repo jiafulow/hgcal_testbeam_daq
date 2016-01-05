@@ -56,15 +56,15 @@ inline unsigned int gpio_read(void *gpio_base, unsigned int offset)
     return *((volatile unsigned *)(gpio_base + offset));
 }
 
-void output_low(unsigned char bit) {
+inline void output_low(unsigned char bit) {
     BITCLEAR(dest_register, bit);
 }
 
-void output_high(unsigned char bit) {
+inline void output_high(unsigned char bit) {
     BITSET(dest_register, bit);
 }
 
-void write_to_register() {
+inline void write_to_register() {
     *((volatile unsigned char *)(destination)) = dest_register[0];
 }
 
@@ -174,10 +174,15 @@ void uint640_to_string(struct uint640_t * data, char * string) {
     printf("Parsed '%s'.\n", string);
 }
 
+// Adapted from send_8bit_serial_data()
 void send_616bit_serial_data(struct uint640_t * data_full) {
 	unsigned char data;  // data byte
-	unsigned int data_word;
-	int i=0, j=0, jmax=SK2_SC_NWORDS, k=0;
+
+	// p_data points to the most significant byte in data_full
+	unsigned char * p_data = (unsigned char *) data_full;
+	p_data += (sizeof(struct uint640_t) - 1);
+
+	int i;
 	int delay;
 
 	// ?
@@ -189,22 +194,11 @@ void send_616bit_serial_data(struct uint640_t * data_full) {
 	// send bits 640..(640-616)
 	for (i=0; i<616; i++) {
 
-		// Move to next word after 32 bits
-		if ((i & 0x1F) == 0) {  // faster equivalence of (i % 32 == 0)
-			data_word = data_full->data[jmax-j-1];
-			printf("Write word %d: 0x%08x.\n", j, data_full->data[jmax-j-1]);
-
-			j += 1;
-			k = 0;
-		}
-
 		// Move to next byte after 8 bits
 		if ((i & 0x07) == 0) {  // faster equivalence of (i % 8 == 0)
-			data = (data_word & 0xFF000000) >> 24;
-			printf("Write byte %d: 0x%02x (0b%s).\n", k, data, byte_to_binary(data));
-
-			data_word <<= 8;
-			k += 1;
+			data = *p_data;
+			--p_data;
+			printf("Write byte: 0x%02x (0b%s).\n", data, byte_to_binary(data));
 		}
 
 		// consider leftmost bit
@@ -261,6 +255,8 @@ int main()
             dest_register[0] = 0x0;
             printf("[debug] BITSET(register,%d): 0x%02x\n", i, BITSET(dest_register,i));
         }
+
+        printf("[debug] sizeof uint640_t: %d\n", sizeof(struct uint640_t));
     }
 
 
@@ -348,10 +344,14 @@ int main()
         //control_register.data[18] = 0x22222222;
         //control_register.data[19] = 0x33333333;
 
-        const char * string = "33333333 22222222 11111111 00000000 FFFFFFFF "
-            "EEEEEEEE DDDDDDDD CCCCCCCC BBBBBBBB AAAAAAAA "
-            "99999999 88888888 77777777 66666666 55555555 "
-            "44444444 33333333 22222222 11111111 00000000";
+        //const char * string = "33333333 22222222 11111111 00000000 FFFFFFFF "
+        //            "EEEEEEEE DDDDDDDD CCCCCCCC BBBBBBBB AAAAAAAA "
+        //            "99999999 88888888 77777777 66666666 55555555 "
+        //            "44444444 33333333 22222222 11111111 00000000";
+        const char * string = "FFEEDDCC BBAA9988 77665544 33221100 FFFFFFFF "
+                    "EEEEEEEE DDDDDDDD CCCCCCCC BBBBBBBB AAAAAAAA "
+                    "99999999 88888888 77777777 66666666 55555555 "
+                    "44444444 33333333 22222222 11111111 00000000";
         string_to_uint640(string, &control_register);
 
         // Sanity check

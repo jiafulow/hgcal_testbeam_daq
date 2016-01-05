@@ -20,8 +20,6 @@ lines 4-7: not connected
 -- write to register: 0x06 (0b00000110)
 -- write to register: 0x02 (0b00000010)
 -- write to register: 0x06 (0b00000110)
-macb e000b000.ethernet eth0: link up (1000/Full)
-IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
 -- write to register: 0x02 (0b00000010)
 -- write to register: 0x06 (0b00000110)
 -- write to register: 0x02 (0b00000010)
