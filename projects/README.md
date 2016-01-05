@@ -15,3 +15,5 @@ uses 20 register slices to encode 616 bits.
 This is an example of sending 8 bits of data by bit-banging via 4 lines. In this 
 design, the 4 lines are connected to the LEDs to verify the output data.
 
+##### testbeam_5b
+This includes peek, poke, scan, reset programs for SKIROC2 slow control register. The previous bitbang program is also included.

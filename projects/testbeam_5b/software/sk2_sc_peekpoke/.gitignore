@@ -1,0 +1,8 @@
+*~
+*.pyc
+*.o
+sk2_sc_reset
+sk2_sc_scan
+sk2_sc_peek
+sk2_sc_poke
+sk2_sc_bitbang
