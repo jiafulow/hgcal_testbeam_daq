@@ -15,6 +15,7 @@ skiroc2_slow_control_register_nbits = 616
 skiroc2_slow_control_register_nwords = (skiroc2_slow_control_register_nbits + 31) / 32
 
 skiroc2_slow_control_register = [
+# Tuple format: (register name, number of bits, subaddress, default value, number of channels)
 ("EN_PA"                               ,   1,   0,          0b1,  1),
 ("PP_PA"                               ,   1,   1,          0b0,  1),
 ('GC_PA_Comp'                          ,   3,   2,        0b111,  1),

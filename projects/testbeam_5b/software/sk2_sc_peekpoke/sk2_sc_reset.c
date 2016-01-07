@@ -29,5 +29,7 @@ int main(int argc, char *argv[])
     // Write to file
     dump_register_to_file();
 
+    printf("Created file '%s'.\n", control_register_file);
+
     return 0;
 }
