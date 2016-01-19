@@ -1,0 +1,43 @@
+root@testbeam_6a:~# sk2_sc_write_txn  
+usage: sk2_sc_write_txn N [WORD 1, ..., WORD N]
+
+       N is in decimal, WORD is in HEX, e.g.
+       sk2_sc_write_txn 0
+       sk2_sc_write_txn 4 0x12 0x34 0x99 0xFF
+
+
+root@testbeam_6a:~# sk2_sc_write_txn 0
+Request:
+  addr=0xDEADBEEF, nwords=0, words=
+Dump txn:
+0x0EEF001F
+
+Response:
+  addr=0x00000EEF, nwords=0
+Dump txn:
+0x0EEF0010
+
+
+root@testbeam_6a:~# sk2_sc_write_txn 4 0x12 0x34 0x99 0xFF
+Request:
+  addr=0xDEADBEEF, nwords=4, words=
+  0x00000012 0x00000034 0x00000099 0x000000FF 
+Dump txn:
+0x0EEF041F
+0x00000012
+0x00000034
+0x00000099
+0x000000FF
+
+Response:
+  addr=0x00000EEF, nwords=4
+Dump txn:
+0x0EEF0410
+
+
+root@testbeam_6a:~# sk2_sc_write_txn 6 0x12 0x34 0x99 0xFF 
+usage: sk2_sc_write_txn N [WORD 1, ..., WORD N]
+
+       N is in decimal, WORD is in HEX, e.g.
+       sk2_sc_write_txn 0
+       sk2_sc_write_txn 4 0x12 0x34 0x99 0xFF

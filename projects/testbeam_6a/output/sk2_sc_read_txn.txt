@@ -1,0 +1,38 @@
+root@testbeam_6a:~# sk2_sc_read_txn                       
+usage: sk2_sc_read_txn N
+
+       N is in decimal, e.g.
+       sk2_sc_read_txn 4
+
+
+root@testbeam_6a:~# sk2_sc_read_txn 0
+Request:
+  addr=0xDEADBEEF, nwords=0
+Dump txn:
+0x0EEF000F
+
+Response:
+  addr=0x00000EEF, nwords=0, words=
+Dump txn:
+0x0EEF0000
+
+
+root@testbeam_6a:~# sk2_sc_read_txn 4
+Request:
+  addr=0xDEADBEEF, nwords=4
+Dump txn:
+0x0EEF040F
+
+Response:
+  addr=0x00000EEF, nwords=4, words=
+  0x00000000 0x00000001 0x00000002 0x00000003 
+Dump txn:
+0x0EEF0400
+0x00000000
+0x00000001
+0x00000002
+0x00000003
+
+
+root@testbeam_6a:~# sk2_sc_read_txn 256
+ERROR: More than 255 words: Success

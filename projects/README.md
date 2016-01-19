@@ -17,3 +17,10 @@ design, the 4 lines are connected to the LEDs to verify the output data.
 
 ##### testbeam_5b
 This includes peek, poke, scan, reset programs for SKIROC2 slow control register. The previous bitbang program is also included.
+
+##### testbeam_6a
+(Starting from this project, we switch to Vivado 2015.4 and PetaLinux 2015.4)
+
+This is an example block design with 2 registers and 2 block RAMs for communication between ZedBoard and FMC_IO, using commands encoded by simplified IPbus protocol. This is the implementation of the transport layer.
+
+
