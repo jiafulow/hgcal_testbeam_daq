@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# Vivado v2014.2
+# SW Build 932637 on Wed Jun 11 13:24:38 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Tue Jan 19 10:37:01 2016
+# Process ID: 6200
+# Log file: C:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/vivado.log
+# Journal file: C:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\CMS_HGC\HGC_ZED\ip_repo\hgc_zed_ip_1.0\hgc_zed_ip_v1_0_project\hgc_zed_ip_v1_0_project.xpr}

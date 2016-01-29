@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jan 29 06:34:52 2016" VIVADOVERSION="2015.4">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.0" DEVICE="7z020" NAME="zed_channel" PACKAGE="clg484" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="3" NAME="S00_AXI_awaddr" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="2" NAME="S00_AXI_awprot" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="S00_AXI_awvalid" SIGIS="undef"/>
+    <PORT DIR="O" NAME="S00_AXI_awready" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="31" NAME="S00_AXI_wdata" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="3" NAME="S00_AXI_wstrb" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="S00_AXI_wvalid" SIGIS="undef"/>
+    <PORT DIR="O" NAME="S00_AXI_wready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="1" NAME="S00_AXI_bresp" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="S00_AXI_bvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="S00_AXI_bready" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="3" NAME="S00_AXI_araddr" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="2" NAME="S00_AXI_arprot" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="S00_AXI_arvalid" SIGIS="undef"/>
+    <PORT DIR="O" NAME="S00_AXI_arready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="31" NAME="S00_AXI_rdata" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="1" NAME="S00_AXI_rresp" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="S00_AXI_rvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="S00_AXI_rready" SIGIS="undef"/>
+    <PORT CLKFREQUENCY="40000000" DIR="I" NAME="s00_axi_aclk" SIGIS="clk" SIGNAME="External_Ports_s00_axi_aclk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hgc_zed_ip_channel_0" PORT="s00_axi_aclk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="s00_axi_aresetn" SIGIS="rst" SIGNAME="External_Ports_s00_axi_aresetn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hgc_zed_ip_channel_0" PORT="s00_axi_aresetn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="data_in_from_pins_p" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_data_in_from_pins_p">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="selectio_deserializer" PORT="data_in_from_pins_p"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="data_in_from_pins_n" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_data_in_from_pins_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="selectio_deserializer" PORT="data_in_from_pins_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="320000000" DIR="I" NAME="CLK_320" SIGIS="clk" SIGNAME="External_Ports_CLK_320">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="selectio_deserializer" PORT="clk_in"/>
+        <CONNECTION INSTANCE="selectio_serializer" PORT="clk_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="data_out_to_pins_p" RIGHT="0" SIGIS="undef" SIGNAME="selectio_serializer_data_out_to_pins_p">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="selectio_serializer" PORT="data_out_to_pins_p"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="data_out_to_pins_n" RIGHT="0" SIGIS="undef" SIGNAME="selectio_serializer_data_out_to_pins_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="selectio_serializer" PORT="data_out_to_pins_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="40000000" DIR="I" NAME="CLK_40" SIGIS="clk" SIGNAME="External_Ports_CLK_40">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="selectio_deserializer" PORT="clk_div_in"/>
+        <CONNECTION INSTANCE="selectio_serializer" PORT="clk_div_in"/>
+        <CONNECTION INSTANCE="hgc_zed_ip_channel_0" PORT="CLK_40"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES>
+    <BUSINTERFACE BUSNAME="External_Interface_S00_AXI" DATAWIDTH="32" NAME="S00_AXI" TYPE="SLAVE">
+      <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+      <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="40000000"/>
+      <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
+      <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+      <PARAMETER NAME="HAS_BURST" VALUE="1"/>
+      <PARAMETER NAME="HAS_LOCK" VALUE="1"/>
+      <PARAMETER NAME="HAS_PROT" VALUE="1"/>
+      <PARAMETER NAME="HAS_CACHE" VALUE="1"/>
+      <PARAMETER NAME="HAS_QOS" VALUE="1"/>
+      <PARAMETER NAME="HAS_REGION" VALUE="1"/>
+      <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+      <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+      <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+      <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+      <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+      <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+      <PARAMETER NAME="PHASE" VALUE="0.000"/>
+      <PARAMETER NAME="CLK_DOMAIN" VALUE="zed_channel_s00_axi_aclk"/>
+      <PORTMAPS>
+        <PORTMAP PHYSICAL="S00_AXI_awaddr"/>
+        <PORTMAP PHYSICAL="S00_AXI_awprot"/>
+        <PORTMAP PHYSICAL="S00_AXI_awvalid"/>
+        <PORTMAP PHYSICAL="S00_AXI_awready"/>
+        <PORTMAP PHYSICAL="S00_AXI_wdata"/>
+        <PORTMAP PHYSICAL="S00_AXI_wstrb"/>
+        <PORTMAP PHYSICAL="S00_AXI_wvalid"/>
+        <PORTMAP PHYSICAL="S00_AXI_wready"/>
+        <PORTMAP PHYSICAL="S00_AXI_bresp"/>
+        <PORTMAP PHYSICAL="S00_AXI_bvalid"/>
+        <PORTMAP PHYSICAL="S00_AXI_bready"/>
+        <PORTMAP PHYSICAL="S00_AXI_araddr"/>
+        <PORTMAP PHYSICAL="S00_AXI_arprot"/>
+        <PORTMAP PHYSICAL="S00_AXI_arvalid"/>
+        <PORTMAP PHYSICAL="S00_AXI_arready"/>
+        <PORTMAP PHYSICAL="S00_AXI_rdata"/>
+        <PORTMAP PHYSICAL="S00_AXI_rresp"/>
+        <PORTMAP PHYSICAL="S00_AXI_rvalid"/>
+        <PORTMAP PHYSICAL="S00_AXI_rready"/>
+      </PORTMAPS>
+      <MEMORYMAP>
+        <MEMRANGE ADDRESSBLOCK="S00_AXI_reg" BASENAME="C_S00_AXI_BASEADDR" BASEVALUE="0x44A00000" HIGHNAME="C_S00_AXI_HIGHADDR" HIGHVALUE="0x44A0FFFF" INSTANCE="hgc_zed_ip_channel_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="S00_AXI" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S00_AXI"/>
+      </MEMORYMAP>
+      <PERIPHERALS>
+        <PERIPHERAL INSTANCE="hgc_zed_ip_channel_0"/>
+      </PERIPHERALS>
+    </BUSINTERFACE>
+  </EXTERNALINTERFACES>
+
+  <MODULES>
+    <MODULE FULLNAME="/hgc_zed_ip_channel_0" HWVERSION="1.0" INSTANCE="hgc_zed_ip_channel_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="hgc_zed_ip_channel" VLNV="fnal.gov:user:hgc_zed_ip_channel:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_S00_AXI_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_S00_AXI_ADDR_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="zed_channel_hgc_zed_ip_channel_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+        <PARAMETER NAME="C_S00_AXI_BASEADDR" VALUE="0x44A00000"/>
+        <PARAMETER NAME="C_S00_AXI_HIGHADDR" VALUE="0x44A0FFFF"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="CLK_40" SIGIS="undef" SIGNAME="External_Ports_CLK_40">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_40"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="RX_DATA" RIGHT="0" SIGIS="undef" SIGNAME="selectio_deserializer_data_in_to_device">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="selectio_deserializer" PORT="data_in_to_device"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="TX_DATA" RIGHT="0" SIGIS="undef" SIGNAME="hgc_zed_ip_channel_0_TX_DATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="selectio_serializer" PORT="data_out_from_device"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="40000000" DIR="I" NAME="s00_axi_aclk" SIGIS="clk" SIGNAME="External_Ports_s00_axi_aclk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="s00_axi_aclk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s00_axi_aresetn" SIGIS="rst" SIGNAME="External_Ports_s00_axi_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="s00_axi_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="s00_axi_awaddr" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="s00_axi_awprot" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="s00_axi_awvalid" SIGIS="undef"/>
+        <PORT DIR="O" NAME="s00_axi_awready" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="s00_axi_wdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="s00_axi_wstrb" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="s00_axi_wvalid" SIGIS="undef"/>
+        <PORT DIR="O" NAME="s00_axi_wready" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="1" NAME="s00_axi_bresp" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="s00_axi_bvalid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="s00_axi_bready" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="s00_axi_araddr" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="s00_axi_arprot" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="s00_axi_arvalid" SIGIS="undef"/>
+        <PORT DIR="O" NAME="s00_axi_arready" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="s00_axi_rdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="1" NAME="s00_axi_rresp" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="s00_axi_rvalid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="s00_axi_rready" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="External_Interface_S00_AXI" DATAWIDTH="32" NAME="S00_AXI" TYPE="SLAVE">
+          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="40000000"/>
+          <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="4"/>
+          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+          <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+          <PARAMETER NAME="HAS_PROT" VALUE="1"/>
+          <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+          <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+          <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="zed_channel_s00_axi_aclk"/>
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="s00_axi_awaddr"/>
+            <PORTMAP PHYSICAL="s00_axi_awprot"/>
+            <PORTMAP PHYSICAL="s00_axi_awvalid"/>
+            <PORTMAP PHYSICAL="s00_axi_awready"/>
+            <PORTMAP PHYSICAL="s00_axi_wdata"/>
+            <PORTMAP PHYSICAL="s00_axi_wstrb"/>
+            <PORTMAP PHYSICAL="s00_axi_wvalid"/>
+            <PORTMAP PHYSICAL="s00_axi_wready"/>
+            <PORTMAP PHYSICAL="s00_axi_bresp"/>
+            <PORTMAP PHYSICAL="s00_axi_bvalid"/>
+            <PORTMAP PHYSICAL="s00_axi_bready"/>
+            <PORTMAP PHYSICAL="s00_axi_araddr"/>
+            <PORTMAP PHYSICAL="s00_axi_arprot"/>
+            <PORTMAP PHYSICAL="s00_axi_arvalid"/>
+            <PORTMAP PHYSICAL="s00_axi_arready"/>
+            <PORTMAP PHYSICAL="s00_axi_rdata"/>
+            <PORTMAP PHYSICAL="s00_axi_rresp"/>
+            <PORTMAP PHYSICAL="s00_axi_rvalid"/>
+            <PORTMAP PHYSICAL="s00_axi_rready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE FULLNAME="/selectio_deserializer" HWVERSION="5.1" INSTANCE="selectio_deserializer" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="selectio_wiz" VLNV="xilinx.com:ip:selectio_wiz:5.1">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=selectio_wiz;v=v5_1;d=pg070-selectio-wiz.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="c_component_name" VALUE="zed_channel_selectio_wiz_0_1"/>
+        <PARAMETER NAME="C_INCLUDE_IDELAYCTRL" VALUE="1"/>
+        <PARAMETER NAME="C_INCLUDE_IDELAYCTRL_BUFG" VALUE="1"/>
+        <PARAMETER NAME="C_DEVICE_FAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_NOTES" VALUE="None"/>
+        <PARAMETER NAME="C_BUS_DIR" VALUE="INPUTS"/>
+        <PARAMETER NAME="C_BUS_SIG_TYPE" VALUE="DIFF"/>
+        <PARAMETER NAME="C_BUS_IO_STD" VALUE="LVDS_25"/>
+        <PARAMETER NAME="C_USE_SERIALIZATION" VALUE="true"/>
+        <PARAMETER NAME="C_SERIALIZATION_FACTOR" VALUE="8"/>
+        <PARAMETER NAME="C_USE_PHASE_DETECTOR" VALUE="false"/>
+        <PARAMETER NAME="C_ENABLE_BITSLIP" VALUE="false"/>
+        <PARAMETER NAME="C_ENABLE_TRAIN" VALUE="false"/>
+        <PARAMETER NAME="C_TRAIN_CONSTANT" VALUE="0"/>
+        <PARAMETER NAME="C_SYSTEM_DATA_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_BUS_IN_DELAY" VALUE="NONE"/>
+        <PARAMETER NAME="C_SELIO_BUS_IN_DELAY" VALUE="NONE"/>
+        <PARAMETER NAME="C_BUS_IN_TAP" VALUE="0"/>
+        <PARAMETER NAME="C_SELIO_BUS_IN_TAP" VALUE="0"/>
+        <PARAMETER NAME="C_BUS_TAP_RESET" VALUE="FROM_ZERO"/>
+        <PARAMETER NAME="C_BUS_TAP_WRAP" VALUE="STAY_AT_LIMIT"/>
+        <PARAMETER NAME="C_BUS_OUT_DELAY" VALUE="NONE"/>
+        <PARAMETER NAME="C_SELIO_BUS_OUT_DELAY" VALUE="NONE"/>
+        <PARAMETER NAME="C_BUS_OUT_TAP" VALUE="0"/>
+        <PARAMETER NAME="C_SELIO_BUS_OUT_TAP" VALUE="0"/>
+        <PARAMETER NAME="C_CLK_SIG_TYPE" VALUE="SINGLE"/>
+        <PARAMETER NAME="C_CLK_IO_STD" VALUE="LVCMOS18"/>
+        <PARAMETER NAME="C_SELIO_CLK_SIG_TYPE" VALUE="DIFF"/>
+        <PARAMETER NAME="C_SELIO_CLK_IO_STD" VALUE="LVDS_25"/>
+        <PARAMETER NAME="C_CLK_BUF" VALUE="BUFIO2"/>
+        <PARAMETER NAME="C_SELIO_CLK_BUF" VALUE="MMCM"/>
+        <PARAMETER NAME="C_ACTIVE_EDGE" VALUE="RISING"/>
+        <PARAMETER NAME="C_SELIO_ACTIVE_EDGE" VALUE="SDR"/>
+        <PARAMETER NAME="C_INTERFACE_TYPE" VALUE="NETWORKING"/>
+        <PARAMETER NAME="C_SELIO_INTERFACE_TYPE" VALUE="NETWORKING"/>
+        <PARAMETER NAME="C_DDR_ALIGNMENT" VALUE="C0"/>
+        <PARAMETER NAME="C_SELIO_DDR_ALIGNMENT" VALUE="SAME_EDGE_PIPELINED"/>
+        <PARAMETER NAME="C_SELIO_ODDR_ALIGNMENT" VALUE="SAME_EDGE"/>
+        <PARAMETER NAME="C_CLK_DELAY" VALUE="NONE"/>
+        <PARAMETER NAME="C_CLK_TAP" VALUE="0"/>
+        <PARAMETER NAME="C_CLK_TAP_reset" VALUE="FROM_ZERO"/>
+        <PARAMETER NAME="C_CLK_TAP_wrap" VALUE="STAY_AT_LIMIT"/>
+        <PARAMETER NAME="C_CLK_FWD" VALUE="false"/>
+        <PARAMETER NAME="C_USE_TEMPLATE" VALUE="Custom"/>
+        <PARAMETER NAME="C_DATA_RATE_STRING" VALUE="8"/>
+        <PARAMETER NAME="C_DEVICE" VALUE="2"/>
+        <PARAMETER NAME="C_IDDR_RST_TYPE" VALUE="ASYNC"/>
+        <PARAMETER NAME="C_SELIO_IDDR_RST_TYPE" VALUE="ASYNC"/>
+        <PARAMETER NAME="C_CLK_EN" VALUE="false"/>
+        <PARAMETER NAME="C_CLK_FWD_SIG_TYPE" VALUE="DIFF"/>
+        <PARAMETER NAME="C_CLK_FWD_IO_STD" VALUE="LVDS_25"/>
+        <PARAMETER NAME="C_CONFIG_CLK_FWD" VALUE="false"/>
+        <PARAMETER NAME="C_DDR_CLK_BUF" VALUE="BUFR"/>
+        <PARAMETER NAME="Component_Name" VALUE="zed_channel_selectio_wiz_0_1"/>
+        <PARAMETER NAME="NOTES" VALUE="None"/>
+        <PARAMETER NAME="USE_TEMPLATE" VALUE="Custom"/>
+        <PARAMETER NAME="BUS_DIR" VALUE="INPUTS"/>
+        <PARAMETER NAME="BUS_SIG_TYPE" VALUE="DIFF"/>
+        <PARAMETER NAME="BUS_IO_STD" VALUE="LVDS_25"/>
+        <PARAMETER NAME="USE_PHASE_DETECTOR" VALUE="false"/>
+        <PARAMETER NAME="SELIO_ACTIVE_EDGE" VALUE="SDR"/>
+        <PARAMETER NAME="USE_SERIALIZATION" VALUE="true"/>
+        <PARAMETER NAME="SERIALIZATION_FACTOR" VALUE="8"/>
+        <PARAMETER NAME="ENABLE_BITSLIP" VALUE="false"/>
+        <PARAMETER NAME="ENABLE_TRAIN" VALUE="false"/>
+        <PARAMETER NAME="TRAIN_CONSTANT" VALUE="0"/>
+        <PARAMETER NAME="SYSTEM_DATA_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="INTERFACE_TYPE" VALUE="NETWORKING"/>
+        <PARAMETER NAME="SELIO_INTERFACE_TYPE" VALUE="NETWORKING"/>
+        <PARAMETER NAME="BUS_IN_DELAY" VALUE="NONE"/>
+        <PARAMETER NAME="SELIO_BUS_IN_DELAY" VALUE="NONE"/>
+        <PARAMETER NAME="BUS_IN_TAP" VALUE="0"/>
+        <PARAMETER NAME="SELIO_BUS_IN_TAP" VALUE="0"/>
+        <PARAMETER NAME="BUS_TAP_RESET" VALUE="NOT_APP"/>
+        <PARAMETER NAME="BUS_TAP_WRAP" VALUE="NOT_APP"/>
+        <PARAMETER NAME="BUS_OUT_DELAY" VALUE="NONE"/>
+        <PARAMETER NAME="SELIO_BUS_OUT_DELAY" VALUE="NONE"/>
+        <PARAMETER NAME="BUS_OUT_TAP" VALUE="0"/>
+        <PARAMETER NAME="SELIO_BUS_OUT_TAP" VALUE="0"/>
+        <PARAMETER NAME="CLK_SIG_TYPE" VALUE="SINGLE"/>
+        <PARAMETER NAME="SELIO_CLK_SIG_TYPE" VALUE="DIFF"/>
+        <PARAMETER NAME="CLK_IO_STD" VALUE="LVCMOS18"/>
+        <PARAMETER NAME="SELIO_CLK_IO_STD" VALUE="LVDS_25"/>
+        <PARAMETER NAME="CLK_BUF" VALUE="BUFIO2"/>
+        <PARAMETER NAME="SELIO_CLK_BUF" VALUE="MMCM"/>
+        <PARAMETER NAME="ACTIVE_EDGE" VALUE="RISING"/>
+        <PARAMETER NAME="DDR_ALIGNMENT" VALUE="C0"/>
+        <PARAMETER NAME="SELIO_DDR_ALIGNMENT" VALUE="SAME_EDGE_PIPELINED"/>
+        <PARAMETER NAME="SELIO_ODDR_ALIGNMENT" VALUE="SAME_EDGE"/>
+        <PARAMETER NAME="CLK_DELAY" VALUE="NONE"/>
+        <PARAMETER NAME="CLK_TAP" VALUE="0"/>
+        <PARAMETER NAME="CLK_FWD" VALUE="false"/>
+        <PARAMETER NAME="IDDR_RST_TYPE" VALUE="ASYNC"/>
+        <PARAMETER NAME="SELIO_IDDR_RST_TYPE" VALUE="ASYNC"/>
+        <PARAMETER NAME="CLK_EN" VALUE="false"/>
+        <PARAMETER NAME="CONFIG_CLK_FWD" VALUE="false"/>
+        <PARAMETER NAME="CLK_FWD_SIG_TYPE" VALUE="DIFF"/>
+        <PARAMETER NAME="CLK_FWD_IO_STD" VALUE="LVDS_25"/>
+        <PARAMETER NAME="DDR_CLK_BUF" VALUE="BUFR"/>
+        <PARAMETER NAME="INCLUDE_IDELAYCTRL" VALUE="true"/>
+        <PARAMETER NAME="INCLUDE_IDELAYCTRL_BUFG" VALUE="true"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="data_in_from_pins_p" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_data_in_from_pins_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="data_in_from_pins_p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="data_in_from_pins_n" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_data_in_from_pins_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="data_in_from_pins_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="320000000" DIR="I" NAME="clk_in" SIGIS="clk" SIGNAME="External_Ports_CLK_320">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_320"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk_div_in" SIGIS="undef" SIGNAME="External_Ports_CLK_40">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_40"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="io_reset" SIGIS="rst"/>
+        <PORT DIR="I" LEFT="0" NAME="bitslip" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="7" NAME="data_in_to_device" RIGHT="0" SIGIS="data" SIGNAME="selectio_deserializer_data_in_to_device">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hgc_zed_ip_channel_0" PORT="RX_DATA"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/selectio_serializer" HWVERSION="5.1" INSTANCE="selectio_serializer" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="selectio_wiz" VLNV="xilinx.com:ip:selectio_wiz:5.1">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=selectio_wiz;v=v5_1;d=pg070-selectio-wiz.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="c_component_name" VALUE="zed_channel_selectio_wiz_0_0"/>
+        <PARAMETER NAME="C_INCLUDE_IDELAYCTRL" VALUE="1"/>
+        <PARAMETER NAME="C_INCLUDE_IDELAYCTRL_BUFG" VALUE="1"/>
+        <PARAMETER NAME="C_DEVICE_FAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_NOTES" VALUE="None"/>
+        <PARAMETER NAME="C_BUS_DIR" VALUE="OUTPUTS"/>
+        <PARAMETER NAME="C_BUS_SIG_TYPE" VALUE="DIFF"/>
+        <PARAMETER NAME="C_BUS_IO_STD" VALUE="LVDS_25"/>
+        <PARAMETER NAME="C_USE_SERIALIZATION" VALUE="true"/>
+        <PARAMETER NAME="C_SERIALIZATION_FACTOR" VALUE="8"/>
+        <PARAMETER NAME="C_USE_PHASE_DETECTOR" VALUE="false"/>
+        <PARAMETER NAME="C_ENABLE_BITSLIP" VALUE="false"/>
+        <PARAMETER NAME="C_ENABLE_TRAIN" VALUE="false"/>
+        <PARAMETER NAME="C_TRAIN_CONSTANT" VALUE="0"/>
+        <PARAMETER NAME="C_SYSTEM_DATA_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_BUS_IN_DELAY" VALUE="NONE"/>
+        <PARAMETER NAME="C_SELIO_BUS_IN_DELAY" VALUE="NONE"/>
+        <PARAMETER NAME="C_BUS_IN_TAP" VALUE="0"/>
+        <PARAMETER NAME="C_SELIO_BUS_IN_TAP" VALUE="0"/>
+        <PARAMETER NAME="C_BUS_TAP_RESET" VALUE="FROM_ZERO"/>
+        <PARAMETER NAME="C_BUS_TAP_WRAP" VALUE="STAY_AT_LIMIT"/>
+        <PARAMETER NAME="C_BUS_OUT_DELAY" VALUE="NONE"/>
+        <PARAMETER NAME="C_SELIO_BUS_OUT_DELAY" VALUE="NONE"/>
+        <PARAMETER NAME="C_BUS_OUT_TAP" VALUE="0"/>
+        <PARAMETER NAME="C_SELIO_BUS_OUT_TAP" VALUE="0"/>
+        <PARAMETER NAME="C_CLK_SIG_TYPE" VALUE="SINGLE"/>
+        <PARAMETER NAME="C_CLK_IO_STD" VALUE="LVCMOS18"/>
+        <PARAMETER NAME="C_SELIO_CLK_SIG_TYPE" VALUE="DIFF"/>
+        <PARAMETER NAME="C_SELIO_CLK_IO_STD" VALUE="LVDS_25"/>
+        <PARAMETER NAME="C_CLK_BUF" VALUE="BUFIO2"/>
+        <PARAMETER NAME="C_SELIO_CLK_BUF" VALUE="MMCM"/>
+        <PARAMETER NAME="C_ACTIVE_EDGE" VALUE="RISING"/>
+        <PARAMETER NAME="C_SELIO_ACTIVE_EDGE" VALUE="SDR"/>
+        <PARAMETER NAME="C_INTERFACE_TYPE" VALUE="NETWORKING"/>
+        <PARAMETER NAME="C_SELIO_INTERFACE_TYPE" VALUE="NETWORKING"/>
+        <PARAMETER NAME="C_DDR_ALIGNMENT" VALUE="C0"/>
+        <PARAMETER NAME="C_SELIO_DDR_ALIGNMENT" VALUE="SAME_EDGE_PIPELINED"/>
+        <PARAMETER NAME="C_SELIO_ODDR_ALIGNMENT" VALUE="SAME_EDGE"/>
+        <PARAMETER NAME="C_CLK_DELAY" VALUE="NONE"/>
+        <PARAMETER NAME="C_CLK_TAP" VALUE="0"/>
+        <PARAMETER NAME="C_CLK_TAP_reset" VALUE="FROM_ZERO"/>
+        <PARAMETER NAME="C_CLK_TAP_wrap" VALUE="STAY_AT_LIMIT"/>
+        <PARAMETER NAME="C_CLK_FWD" VALUE="false"/>
+        <PARAMETER NAME="C_USE_TEMPLATE" VALUE="Custom"/>
+        <PARAMETER NAME="C_DATA_RATE_STRING" VALUE="8"/>
+        <PARAMETER NAME="C_DEVICE" VALUE="2"/>
+        <PARAMETER NAME="C_IDDR_RST_TYPE" VALUE="ASYNC"/>
+        <PARAMETER NAME="C_SELIO_IDDR_RST_TYPE" VALUE="ASYNC"/>
+        <PARAMETER NAME="C_CLK_EN" VALUE="false"/>
+        <PARAMETER NAME="C_CLK_FWD_SIG_TYPE" VALUE="DIFF"/>
+        <PARAMETER NAME="C_CLK_FWD_IO_STD" VALUE="LVDS_25"/>
+        <PARAMETER NAME="C_CONFIG_CLK_FWD" VALUE="false"/>
+        <PARAMETER NAME="C_DDR_CLK_BUF" VALUE="BUFR"/>
+        <PARAMETER NAME="Component_Name" VALUE="zed_channel_selectio_wiz_0_0"/>
+        <PARAMETER NAME="NOTES" VALUE="None"/>
+        <PARAMETER NAME="USE_TEMPLATE" VALUE="Custom"/>
+        <PARAMETER NAME="BUS_DIR" VALUE="OUTPUTS"/>
+        <PARAMETER NAME="BUS_SIG_TYPE" VALUE="DIFF"/>
+        <PARAMETER NAME="BUS_IO_STD" VALUE="LVDS_25"/>
+        <PARAMETER NAME="USE_PHASE_DETECTOR" VALUE="false"/>
+        <PARAMETER NAME="SELIO_ACTIVE_EDGE" VALUE="SDR"/>
+        <PARAMETER NAME="USE_SERIALIZATION" VALUE="true"/>
+        <PARAMETER NAME="SERIALIZATION_FACTOR" VALUE="8"/>
+        <PARAMETER NAME="ENABLE_BITSLIP" VALUE="false"/>
+        <PARAMETER NAME="ENABLE_TRAIN" VALUE="false"/>
+        <PARAMETER NAME="TRAIN_CONSTANT" VALUE="0"/>
+        <PARAMETER NAME="SYSTEM_DATA_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="INTERFACE_TYPE" VALUE="NETWORKING"/>
+        <PARAMETER NAME="SELIO_INTERFACE_TYPE" VALUE="NETWORKING"/>
+        <PARAMETER NAME="BUS_IN_DELAY" VALUE="NONE"/>
+        <PARAMETER NAME="SELIO_BUS_IN_DELAY" VALUE="NONE"/>
+        <PARAMETER NAME="BUS_IN_TAP" VALUE="0"/>
+        <PARAMETER NAME="SELIO_BUS_IN_TAP" VALUE="0"/>
+        <PARAMETER NAME="BUS_TAP_RESET" VALUE="NOT_APP"/>
+        <PARAMETER NAME="BUS_TAP_WRAP" VALUE="NOT_APP"/>
+        <PARAMETER NAME="BUS_OUT_DELAY" VALUE="NONE"/>
+        <PARAMETER NAME="SELIO_BUS_OUT_DELAY" VALUE="NONE"/>
+        <PARAMETER NAME="BUS_OUT_TAP" VALUE="0"/>
+        <PARAMETER NAME="SELIO_BUS_OUT_TAP" VALUE="0"/>
+        <PARAMETER NAME="CLK_SIG_TYPE" VALUE="SINGLE"/>
+        <PARAMETER NAME="SELIO_CLK_SIG_TYPE" VALUE="DIFF"/>
+        <PARAMETER NAME="CLK_IO_STD" VALUE="LVCMOS18"/>
+        <PARAMETER NAME="SELIO_CLK_IO_STD" VALUE="LVDS_25"/>
+        <PARAMETER NAME="CLK_BUF" VALUE="BUFIO2"/>
+        <PARAMETER NAME="SELIO_CLK_BUF" VALUE="MMCM"/>
+        <PARAMETER NAME="ACTIVE_EDGE" VALUE="RISING"/>
+        <PARAMETER NAME="DDR_ALIGNMENT" VALUE="C0"/>
+        <PARAMETER NAME="SELIO_DDR_ALIGNMENT" VALUE="SAME_EDGE_PIPELINED"/>
+        <PARAMETER NAME="SELIO_ODDR_ALIGNMENT" VALUE="SAME_EDGE"/>
+        <PARAMETER NAME="CLK_DELAY" VALUE="NONE"/>
+        <PARAMETER NAME="CLK_TAP" VALUE="0"/>
+        <PARAMETER NAME="CLK_FWD" VALUE="false"/>
+        <PARAMETER NAME="IDDR_RST_TYPE" VALUE="ASYNC"/>
+        <PARAMETER NAME="SELIO_IDDR_RST_TYPE" VALUE="ASYNC"/>
+        <PARAMETER NAME="CLK_EN" VALUE="false"/>
+        <PARAMETER NAME="CONFIG_CLK_FWD" VALUE="false"/>
+        <PARAMETER NAME="CLK_FWD_SIG_TYPE" VALUE="DIFF"/>
+        <PARAMETER NAME="CLK_FWD_IO_STD" VALUE="LVDS_25"/>
+        <PARAMETER NAME="DDR_CLK_BUF" VALUE="BUFR"/>
+        <PARAMETER NAME="INCLUDE_IDELAYCTRL" VALUE="true"/>
+        <PARAMETER NAME="INCLUDE_IDELAYCTRL_BUFG" VALUE="true"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="data_out_to_pins_p" RIGHT="0" SIGIS="undef" SIGNAME="selectio_serializer_data_out_to_pins_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="data_out_to_pins_p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="data_out_to_pins_n" RIGHT="0" SIGIS="undef" SIGNAME="selectio_serializer_data_out_to_pins_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="data_out_to_pins_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="320000000" DIR="I" NAME="clk_in" SIGIS="clk" SIGNAME="External_Ports_CLK_320">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_320"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk_div_in" SIGIS="undef" SIGNAME="External_Ports_CLK_40">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_40"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="data_out_from_device" RIGHT="0" SIGIS="data" SIGNAME="hgc_zed_ip_channel_0_TX_DATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hgc_zed_ip_channel_0" PORT="TX_DATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="io_reset" SIGIS="rst"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

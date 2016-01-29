@@ -1,0 +1,546 @@
+
+*** Running vivado
+    with args -log hgc_zed_ip_v1_0.vds -m64 -mode batch -messageDb vivado.pb -notrace -source hgc_zed_ip_v1_0.tcl
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source hgc_zed_ip_v1_0.tcl -notrace
+Command: synth_design -top hgc_zed_ip_v1_0 -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1004.918 ; gain = 160.766 ; free physical = 406 ; free virtual = 7735
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'hgc_zed_ip_v1_0' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hdl/hgc_zed_ip_v1_0.vhd:58]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'hgc_zed_ip_v1_0_S00_AXI' declared at '/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hdl/hgc_zed_ip_v1_0_S00_AXI.vhd:6' bound to instance 'hgc_zed_ip_v1_0_S00_AXI_inst' of component 'hgc_zed_ip_v1_0_S00_AXI' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hdl/hgc_zed_ip_v1_0.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'hgc_zed_ip_v1_0_S00_AXI' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hdl/hgc_zed_ip_v1_0_S00_AXI.vhd:97]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hdl/hgc_zed_ip_v1_0_S00_AXI.vhd:235]
+INFO: [Synth 8-226] default block is never used [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hdl/hgc_zed_ip_v1_0_S00_AXI.vhd:369]
+INFO: [Synth 8-256] done synthesizing module 'hgc_zed_ip_v1_0_S00_AXI' (1#1) [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hdl/hgc_zed_ip_v1_0_S00_AXI.vhd:97]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'hgc_zed_channel' declared at '/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_zed_channel.vhd:26' bound to instance 'hgc_zed_channel_inst' of component 'hgc_zed_channel' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hdl/hgc_zed_ip_v1_0.vhd:189]
+INFO: [Synth 8-638] synthesizing module 'hgc_zed_channel' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_zed_channel.vhd:50]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'menc_nibble' declared at '/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/menc_nibble.vhd:33' bound to instance 'menc_nibble_inst' of component 'menc_nibble' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_zed_channel.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'menc_nibble' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/menc_nibble.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'menc_nibble' (2#1) [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/menc_nibble.vhd:42]
+INFO: [Synth 8-3491] module 'mdec_nibble' declared at '/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/mdec_nibble.vhd:33' bound to instance 'mdec_nibble_inst' of component 'mdec_nibble' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_zed_channel.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'mdec_nibble' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/mdec_nibble.vhd:42]
+	Parameter INIT bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000110011000000000011001100000000000000000000000000000000000000000011001100000000001100110000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'inst_ROM256X1_data_valid' to cell 'ROM256X1' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/mdec_nibble.vhd:94]
+	Parameter INIT bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000100010000000000010001000000000000000000000000000000000000000000010001000000000001000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'inst_ROM256X1_data_bit0' to cell 'ROM256X1' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/mdec_nibble.vhd:116]
+	Parameter INIT bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000000000000011000000000000000000000000000000000000000000000011000000000000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'inst_ROM256X1_data_bit1' to cell 'ROM256X1' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/mdec_nibble.vhd:138]
+	Parameter INIT bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000110011000000000000000000000000000000000000000000000000000000000011001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'inst_ROM256X1_data_bit2' to cell 'ROM256X1' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/mdec_nibble.vhd:160]
+	Parameter INIT bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000110011000000000011001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'inst_ROM256X1_data_bit3' to cell 'ROM256X1' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/mdec_nibble.vhd:182]
+INFO: [Synth 8-256] done synthesizing module 'mdec_nibble' (3#1) [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/mdec_nibble.vhd:42]
+INFO: [Synth 8-3491] module 'ctrl_send_mem' declared at '/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/ctrl_send_mem.vhd:26' bound to instance 'ctrl_send_mem_inst' of component 'ctrl_send_mem' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_zed_channel.vhd:244]
+INFO: [Synth 8-638] synthesizing module 'ctrl_send_mem' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/ctrl_send_mem.vhd:50]
+INFO: [Synth 8-3491] module 'tdpram_32x256' declared at '/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.runs/synth_1/.Xil/Vivado-17319-athena/realtime/tdpram_32x256_stub.v:7' bound to instance 'send_mem_inst' of component 'tdpram_32x256' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/ctrl_send_mem.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'tdpram_32x256' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.runs/synth_1/.Xil/Vivado-17319-athena/realtime/tdpram_32x256_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'tdpram_32x256' (4#1) [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.runs/synth_1/.Xil/Vivado-17319-athena/realtime/tdpram_32x256_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'ctrl_send_mem' (5#1) [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/ctrl_send_mem.vhd:50]
+INFO: [Synth 8-3491] module 'ctrl_rcv_mem' declared at '/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/ctrl_rcv_mem.vhd:26' bound to instance 'ctrl_rcv_mem_inst' of component 'ctrl_rcv_mem' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_zed_channel.vhd:267]
+INFO: [Synth 8-638] synthesizing module 'ctrl_rcv_mem' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/ctrl_rcv_mem.vhd:47]
+INFO: [Synth 8-3491] module 'tdpram_32x256' declared at '/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.runs/synth_1/.Xil/Vivado-17319-athena/realtime/tdpram_32x256_stub.v:7' bound to instance 'rcv_mem_inst' of component 'tdpram_32x256' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/ctrl_rcv_mem.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'ctrl_rcv_mem' (6#1) [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/ctrl_rcv_mem.vhd:47]
+INFO: [Synth 8-3491] module 'MasterFSM' declared at '/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/MasterFSM.vhd:25' bound to instance 'MasterFSM_inst' of component 'MasterFSM' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_zed_channel.vhd:287]
+INFO: [Synth 8-638] synthesizing module 'MasterFSM' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/MasterFSM.vhd:34]
+WARNING: [Synth 8-3848] Net ZYNQ_OUT[rcv_memb_wdata_done] in module/entity MasterFSM does not have driver. [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/MasterFSM.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'MasterFSM' (7#1) [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/MasterFSM.vhd:34]
+INFO: [Synth 8-3491] module 'align_deser_data' declared at '/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/align_deser_data.vhd:23' bound to instance 'align_deser_data_inst' of component 'align_deser_data' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_zed_channel.vhd:310]
+INFO: [Synth 8-638] synthesizing module 'align_deser_data' [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/align_deser_data.vhd:32]
+INFO: [Synth 8-226] default block is never used [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/align_deser_data.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'align_deser_data' (8#1) [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/align_deser_data.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'hgc_zed_channel' (9#1) [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_zed_channel.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'hgc_zed_ip_v1_0' (10#1) [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hdl/hgc_zed_ip_v1_0.vhd:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1045.301 ; gain = 201.148 ; free physical = 366 ; free virtual = 7695
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1045.301 ; gain = 201.148 ; free physical = 366 ; free virtual = 7695
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.runs/synth_1/.Xil/Vivado-17319-athena/dcp/tdpram_32x256_in_context.xdc] for cell 'hgc_zed_channel_inst/ctrl_send_mem_inst/send_mem_inst'
+Finished Parsing XDC File [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.runs/synth_1/.Xil/Vivado-17319-athena/dcp/tdpram_32x256_in_context.xdc] for cell 'hgc_zed_channel_inst/ctrl_send_mem_inst/send_mem_inst'
+Parsing XDC File [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.runs/synth_1/.Xil/Vivado-17319-athena/dcp/tdpram_32x256_in_context.xdc] for cell 'hgc_zed_channel_inst/ctrl_rcv_mem_inst/rcv_mem_inst'
+Finished Parsing XDC File [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.runs/synth_1/.Xil/Vivado-17319-athena/dcp/tdpram_32x256_in_context.xdc] for cell 'hgc_zed_channel_inst/ctrl_rcv_mem_inst/rcv_mem_inst'
+Parsing XDC File [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/constrs_1/new/hgc_zed_ip.xdc]
+Finished Parsing XDC File [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/constrs_1/new/hgc_zed_ip.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  ROM256X1 => ROM256X1 (LUT6, LUT6, LUT6, LUT6, MUXF7, MUXF7, MUXF8): 5 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1361.988 ; gain = 0.000 ; free physical = 191 ; free virtual = 7509
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17332 
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1361.992 ; gain = 517.840 ; free physical = 217 ; free virtual = 7505
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1361.992 ; gain = 517.840 ; free physical = 217 ; free virtual = 7505
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1361.992 ; gain = 517.840 ; free physical = 217 ; free virtual = 7505
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'MasterFSM'
+INFO: [Synth 8-5544] ROM "rcv_memb_wdata" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rcv_memb_wdata_stb" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "delay_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "time_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "rcv_memb_rst_wpointer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "sym_to_send_type" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-3936] Found unconnected internal register 'deser_data_15to0_ff_reg' and it is trimmed from '16' to '15' bits. [/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/align_deser_data.vhd:50]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                            00000 |                            00000
+               sync_find |                            00001 |                            00001
+             sync_stable |                            00010 |                            00010
+               idle_find |                            00011 |                            00011
+             idle_stable |                            00100 |                            00100
+             error_state |                            00101 |                            11100
+                    idle |                            00110 |                            00101
+               send_trig |                            00111 |                            00110
+           wait_trig_rcv |                            01000 |                            00111
+         send_data_start |                            01001 |                            01000
+         send_data_body1 |                            01010 |                            01001
+         send_data_body2 |                            01011 |                            01010
+         send_data_body3 |                            01100 |                            01011
+         send_data_body4 |                            01101 |                            01100
+         send_data_body5 |                            01110 |                            01101
+         send_data_body6 |                            01111 |                            01110
+         send_data_body7 |                            10000 |                            01111
+         send_data_body8 |                            10001 |                            10000
+           send_data_end |                            10010 |                            10001
+          rcv_data_start |                            10011 |                            10010
+          rcv_data_body1 |                            10100 |                            10011
+          rcv_data_body2 |                            10101 |                            10100
+          rcv_data_body3 |                            10110 |                            10101
+          rcv_data_body4 |                            10111 |                            10110
+          rcv_data_body5 |                            11000 |                            10111
+          rcv_data_body6 |                            11001 |                            11000
+          rcv_data_body7 |                            11010 |                            11001
+          rcv_data_body8 |                            11011 |                            11010
+            rcv_data_end |                            11100 |                            11011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'MasterFSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1361.992 ; gain = 517.840 ; free physical = 202 ; free virtual = 7489
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               15 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 8     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 5     
+	  29 Input     32 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 8     
+	   3 Input     12 Bit        Muxes := 3     
+	   4 Input     12 Bit        Muxes := 1     
+	  29 Input     12 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 18    
+	  29 Input      8 Bit        Muxes := 1     
+	  64 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  29 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	  29 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 14    
+	   5 Input      1 Bit        Muxes := 1     
+	  29 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module hgc_zed_ip_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 4     
+Module menc_nibble 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      8 Bit        Muxes := 1     
+Module mdec_nibble 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module ctrl_send_mem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
+Module ctrl_rcv_mem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
+Module MasterFSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	  29 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 8     
+	   3 Input     12 Bit        Muxes := 3     
+	   4 Input     12 Bit        Muxes := 1     
+	  29 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 18    
+	  29 Input      8 Bit        Muxes := 1     
+	  64 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  29 Input      4 Bit        Muxes := 1     
+	  29 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	  29 Input      1 Bit        Muxes := 11    
+Module align_deser_data 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1361.996 ; gain = 517.844 ; free physical = 202 ; free virtual = 7490
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "hgc_zed_channel_inst/MasterFSM_inst/time_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-3331] design hgc_zed_ip_v1_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design hgc_zed_ip_v1_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design hgc_zed_ip_v1_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design hgc_zed_ip_v1_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design hgc_zed_ip_v1_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design hgc_zed_ip_v1_0 has unconnected port s00_axi_arprot[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1361.996 ; gain = 517.844 ; free physical = 204 ; free virtual = 7491
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1361.996 ; gain = 517.844 ; free physical = 204 ; free virtual = 7491
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance '\hgc_zed_ip_v1_0_S00_AXI_inst/axi_rresp_reg[0] ' (FDRE) to '\hgc_zed_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance '\hgc_zed_ip_v1_0_S00_AXI_inst/axi_bresp_reg[0] ' (FDRE) to '\hgc_zed_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[1] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[0] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3_reg[31] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3_reg[30] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3_reg[29] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3_reg[28] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3_reg[27] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3_reg[26] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3_reg[25] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3_reg[24] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3_reg[23] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3_reg[22] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3_reg[21] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3_reg[20] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3_reg[19] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3_reg[18] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3_reg[17] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3_reg[16] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3_reg[7] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3_reg[6] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3_reg[3] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/axi_bresp_reg[0] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/axi_araddr_reg[1] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/axi_araddr_reg[0] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\hgc_zed_ip_v1_0_S00_AXI_inst/axi_rresp_reg[0] ) is unused and will be removed from module hgc_zed_ip_v1_0.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1361.996 ; gain = 517.844 ; free physical = 188 ; free virtual = 7475
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1361.996 ; gain = 517.844 ; free physical = 188 ; free virtual = 7475
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1361.996 ; gain = 517.844 ; free physical = 139 ; free virtual = 7427
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1369.121 ; gain = 524.969 ; free physical = 137 ; free virtual = 7404
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1377.129 ; gain = 532.977 ; free physical = 143 ; free virtual = 7398
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1377.129 ; gain = 532.977 ; free physical = 143 ; free virtual = 7398
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1377.129 ; gain = 532.977 ; free physical = 143 ; free virtual = 7398
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1377.129 ; gain = 532.977 ; free physical = 142 ; free virtual = 7397
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1377.129 ; gain = 532.977 ; free physical = 142 ; free virtual = 7397
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1377.129 ; gain = 532.977 ; free physical = 142 ; free virtual = 7397
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1377.129 ; gain = 532.977 ; free physical = 142 ; free virtual = 7397
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1377.129 ; gain = 532.977 ; free physical = 142 ; free virtual = 7396
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1377.129 ; gain = 532.977 ; free physical = 142 ; free virtual = 7396
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |tdpram_32x256 |         2|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |tdpram_32x256    |     1|
+|2     |tdpram_32x256__1 |     1|
+|3     |BUFG             |     2|
+|4     |CARRY4           |     3|
+|5     |LUT1             |    16|
+|6     |LUT2             |    36|
+|7     |LUT3             |    40|
+|8     |LUT4             |    96|
+|9     |LUT5             |    93|
+|10    |LUT6             |   170|
+|11    |MUXF7            |    13|
+|12    |ROM256X1         |     5|
+|13    |FDRE             |   275|
+|14    |FDSE             |     2|
+|15    |IBUF             |    56|
+|16    |OBUF             |    49|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+-------------------------------+------------------------+------+
+|      |Instance                       |Module                  |Cells |
++------+-------------------------------+------------------------+------+
+|1     |top                            |                        |   984|
+|2     |  hgc_zed_channel_inst         |hgc_zed_channel         |   674|
+|3     |    MasterFSM_inst             |MasterFSM               |   310|
+|4     |    align_deser_data_inst      |align_deser_data        |    40|
+|5     |    ctrl_rcv_mem_inst          |ctrl_rcv_mem            |   116|
+|6     |    ctrl_send_mem_inst         |ctrl_send_mem           |   141|
+|7     |    mdec_nibble_inst           |mdec_nibble             |    51|
+|8     |    menc_nibble_inst           |menc_nibble             |    16|
+|9     |  hgc_zed_ip_v1_0_S00_AXI_inst |hgc_zed_ip_v1_0_S00_AXI |   203|
++------+-------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1377.129 ; gain = 532.977 ; free physical = 142 ; free virtual = 7396
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1377.129 ; gain = 98.516 ; free physical = 142 ; free virtual = 7396
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1377.129 ; gain = 532.977 ; free physical = 142 ; free virtual = 7396
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  ROM256X1 => ROM256X1 (LUT6, LUT6, LUT6, LUT6, MUXF7, MUXF7, MUXF8): 5 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+83 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1377.133 ; gain = 461.645 ; free physical = 140 ; free virtual = 7395
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1409.148 ; gain = 0.000 ; free physical = 145 ; free virtual = 7396
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 29 05:15:28 2016...

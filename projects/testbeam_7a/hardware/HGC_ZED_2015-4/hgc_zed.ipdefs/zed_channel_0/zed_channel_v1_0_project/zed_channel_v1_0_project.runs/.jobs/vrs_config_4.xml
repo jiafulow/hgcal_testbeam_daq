@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="zed_channel_hgc_zed_ip_channel_0_0_synth_1" LaunchDir="/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/hgc_zed/hgc_zed.srcs/sources_1/bd/zed_channel/zed_channel_v1_0_project/zed_channel_v1_0_project.runs/zed_channel_hgc_zed_ip_channel_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zed_channel_selectio_wiz_0_0_synth_1" LaunchDir="/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/hgc_zed/hgc_zed.srcs/sources_1/bd/zed_channel/zed_channel_v1_0_project/zed_channel_v1_0_project.runs/zed_channel_selectio_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zed_channel_selectio_wiz_0_1_synth_1" LaunchDir="/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/hgc_zed/hgc_zed.srcs/sources_1/bd/zed_channel/zed_channel_v1_0_project/zed_channel_v1_0_project.runs/zed_channel_selectio_wiz_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

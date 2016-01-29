@@ -1,0 +1,30 @@
+{
+   guistr: "# # String gsaved with Nlview version 6.4-r1  2014-02-28 bk=1.3047 VDI=34 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port s00_axi_aresetn -pg 1 -y 360 -defaultsOSRD
+preplace port S00_AXI -pg 1 -y 280 -defaultsOSRD
+preplace port CLK_320 -pg 1 -y 100 -defaultsOSRD
+preplace port CLK_40 -pg 1 -y 120 -defaultsOSRD
+preplace port s00_axi_aclk -pg 1 -y 340 -defaultsOSRD
+preplace portBus data_out_to_pins_n -pg 1 -y 250 -defaultsOSRD
+preplace portBus data_out_to_pins_p -pg 1 -y 230 -defaultsOSRD
+preplace portBus data_in_from_pins_n -pg 1 -y 80 -defaultsOSRD
+preplace portBus data_in_from_pins_p -pg 1 -y 60 -defaultsOSRD
+preplace inst hgc_zed_ip_channel_0 -pg 1 -lvl 2 -y 320 -defaultsOSRD
+preplace inst selectio_deserializer -pg 1 -lvl 1 -y 110 -defaultsOSRD
+preplace inst selectio_serializer -pg 1 -lvl 3 -y 240 -defaultsOSRD
+preplace netloc selectio_serializer_data_out_to_pins_n 1 3 1 N
+preplace netloc CLK_40_1 1 0 3 220 220 560 230 NJ
+preplace netloc selectio_serializer_data_out_to_pins_p 1 3 1 N
+preplace netloc data_in_from_pins_n_1 1 0 1 N
+preplace netloc S00_AXI_1 1 0 2 NJ 280 N
+preplace netloc CLK_320_1 1 0 3 220 10 NJ 10 830
+preplace netloc s00_axi_aclk_1 1 0 2 NJ 340 N
+preplace netloc s00_axi_aresetn_1 1 0 2 NJ 360 N
+preplace netloc data_in_from_pins_p_1 1 0 1 N
+preplace netloc selectio_deserializer_data_in_to_device 1 1 1 570
+preplace netloc hgc_zed_ip_channel_0_TX_DATA 1 2 1 830
+levelinfo -pg 1 200 390 710 1010 1220
+",
+}
+0

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2014.2
+# SW Build 932637 on Wed Jun 11 13:24:38 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Fri Jan 22 10:46:46 2016
+# Process ID: 2568
+# Log file: C:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/vivado.log
+# Journal file: C:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\CMS_HGC\HGC_ZED\ip_repo\hgc_zed_ip_1.0\hgc_zed_ip_v1_0_project\hgc_zed_ip_v1_0_project.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project' since last save.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/VHDLCodeLib/Vivado142/CodeLib/prepdiscr'; using path 'C:/Cristian/CodeLib/VHDLCodeLib/Vivado142/CodeLib/prepdiscr' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/VHDLCodeLib/Vivado142/CodeLib/prepdiscr'; using path 'C:/Cristian/CodeLib/VHDLCodeLib/Vivado142/CodeLib/prepdiscr' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'c:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project'.)
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Cristian/CodeLib/VHDLCodeLib/Vivado142/CodeLib/prepdiscr'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 679.609 ; gain = 54.344
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 22 18:18:26 2016...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Fri Jan 29 05:15:39 2016
+# Process ID: 17468
+# Current directory: /home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.runs/impl_1
+# Command line: vivado -log hgc_zed_ip_v1_0.vdi -applog -messageDb vivado.pb -mode batch -source hgc_zed_ip_v1_0.tcl -notrace
+# Log file: /home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.runs/impl_1/hgc_zed_ip_v1_0.vdi
+# Journal file: /home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source hgc_zed_ip_v1_0.tcl -notrace

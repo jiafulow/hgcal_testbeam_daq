@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2
+# SW Build 932637 on Wed Jun 11 13:24:38 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Tue Jan 19 10:06:52 2016
+# Process ID: 5452
+# Log file: C:/CMS_HGC/HGC_ZED/hgc_zed/hgc_zed.runs/impl_1/top_wrapper.vdi
+# Journal file: C:/CMS_HGC/HGC_ZED/hgc_zed/hgc_zed.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_wrapper.tcl -notrace

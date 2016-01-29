@@ -1,0 +1,4 @@
+#!/bin/sh
+
+## Auto login as root
+exec /bin/login -f root

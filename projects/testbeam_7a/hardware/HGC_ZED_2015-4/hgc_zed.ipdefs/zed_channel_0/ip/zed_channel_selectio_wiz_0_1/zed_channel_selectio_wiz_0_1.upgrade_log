@@ -1,0 +1,16 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Fri Jan 29 05:26:25 2016
+| Host         : athena running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'zed_channel_selectio_wiz_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of zed_channel_selectio_wiz_0_1 (xilinx.com:ip:selectio_wiz:5.1) from (Rev. 2) to (Rev. 6)
+

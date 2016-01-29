@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2014.2
+# SW Build 932637 on Wed Jun 11 13:24:38 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Mon Jan 25 10:47:09 2016
+# Process ID: 7784
+# Log file: C:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/vivado.log
+# Journal file: C:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\CMS_HGC\HGC_ZED\ip_repo\hgc_zed_ip_1.0\hgc_zed_ip_v1_0_project\hgc_zed_ip_v1_0_project.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project' since last save.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/VHDLCodeLib/Vivado142/CodeLib/prepdiscr'; using path 'C:/Cristian/CodeLib/VHDLCodeLib/Vivado142/CodeLib/prepdiscr' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/VHDLCodeLib/Vivado142/CodeLib/prepdiscr'; using path 'C:/Cristian/CodeLib/VHDLCodeLib/Vivado142/CodeLib/prepdiscr' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'c:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project'.)
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Cristian/CodeLib/VHDLCodeLib/Vivado142/CodeLib/prepdiscr'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 689.598 ; gain = 53.531
+launch_modelsim -install_path C:/modeltech_pe_6.6b/win32pe -simset sim_1 -mode behavioral -noclean_dir
+INFO: [Runs 36-97] Finding pre-compiled library information...
+INFO: [Runs 36-126]  > checking default directory path (compxlib.compiled_library_dir)...file does not exist [C:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.cache/compile_simlib/modelsim.ini]
+INFO: [Runs 36-124]  > checking MODELSIM...not set
+INFO: [Runs 36-121]  > checking MGC_WD...not set
+INFO: [Runs 36-128]  > checking simulation run dir...file does not exist [C:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.sim/sim_1/behav/modelsim.ini]
+CRITICAL WARNING: [Runs 36-95] Failed to find the pre-compiled simulation library information!
+INFO: [Runs 36-135] To resolve this issue, perform either of the following:-
+      - set the 'compxlib.compiled_library_dir' project property to the compiled library directory, or
+      - set the MODELSIM environment variable to point to the modelsim.ini file, or
+      - set the WD_MGC environment variable to point to the directory containing the modelsim.ini file
+
+INFO: [Runs 36-86] Creating automatic 'do' files...
+INFO: [Runs 36-81]  [FDO ] Added display options in the 'do' file: [C:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.sim/sim_1/behav/hgc_zed_channel_tb.do]
+INFO: [Runs 36-109]  [FDO ] Main functional simulation 'do' file created: [C:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.sim/sim_1/behav/hgc_zed_channel_tb.do]
+INFO: [Runs 36-190] Using ModelSim executable from 'C:/modeltech_pe_6.6b/win32pe/vsim.exe'
+INFO: [Runs 36-75] Launching ModelSim simulation...
+INFO: [Runs 36-194]  > cmd:"C:/modeltech_pe_6.6b/win32pe/vsim.exe" -do "do {C:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.sim/sim_1/behav/hgc_zed_channel_tb.do}"
+INFO: [Runs 36-94]  > vsim process forked (RETURN-CODE=5336)
+INFO: [Runs 36-99] Please wait for the ModelSim GUI to launch...

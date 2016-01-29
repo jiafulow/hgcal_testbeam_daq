@@ -23,4 +23,6 @@ This includes peek, poke, scan, reset programs for SKIROC2 slow control register
 
 This is an example block design with 2 registers and 2 block RAMs for communication between ZedBoard and FMC_IO, using commands encoded by simplified IPbus protocol. This is the implementation of the transport layer.
 
+##### testbeam_7a
+Finally using real firmware design. The hardware/firmware is implemented by Cristian Gingu, imported and upgraded from Vivado 2014.2 to 2015.4. The software is identical to 'testbeam_6a'.
 

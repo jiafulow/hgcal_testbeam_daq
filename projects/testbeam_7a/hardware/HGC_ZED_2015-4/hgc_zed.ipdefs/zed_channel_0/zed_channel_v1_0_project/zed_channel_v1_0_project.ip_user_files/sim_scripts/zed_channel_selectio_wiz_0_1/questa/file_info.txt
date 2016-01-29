@@ -1,0 +1,4 @@
+Language File-Name                                    IP                            Library         File-Path                                                                                 
+Verilog, zed_channel_selectio_wiz_0_1_selectio_wiz.v, zed_channel_selectio_wiz_0_1, xil_defaultlib, ../../../../../ip/zed_channel_selectio_wiz_0_1/zed_channel_selectio_wiz_0_1_selectio_wiz.v
+Verilog, zed_channel_selectio_wiz_0_1.v,              zed_channel_selectio_wiz_0_1, xil_defaultlib, ../../../../../ip/zed_channel_selectio_wiz_0_1/zed_channel_selectio_wiz_0_1.v             
+Verilog, glbl.v,                                      *,                            xil_defaultlib, glbl.v                                                                                    

@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2014.2
+# SW Build 932637 on Wed Jun 11 13:24:38 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Mon Dec 07 16:30:53 2015
+# Process ID: 5608
+# Log file: C:/Cristian/CodeLib/VHDLCodeLib/Vivado142/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.runs/impl_1/hgc_zed_ip_v1_0.vdi
+# Journal file: C:/Cristian/CodeLib/VHDLCodeLib/Vivado142/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source hgc_zed_ip_v1_0.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.2
+#-----------------------------------------------------------
+# Vivado v2014.2
+# SW Build 932637 on Wed Jun 11 13:24:38 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Tue Dec 08 16:28:02 2015
+# Process ID: 7320
+# Log file: C:/Cristian/CodeLib/VHDLCodeLib/Vivado142/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.runs/impl_1/hgc_zed_ip_v1_0.vdi
+# Journal file: C:/Cristian/CodeLib/VHDLCodeLib/Vivado142/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source hgc_zed_ip_v1_0.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.2
+Loading clock regions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.2/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.2/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+Parsing XDC File [C:/Cristian/CodeLib/VHDLCodeLib/Vivado142/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/constrs_1/new/hgc_zed_ip.xdc]
+Finished Parsing XDC File [C:/Cristian/CodeLib/VHDLCodeLib/Vivado142/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/constrs_1/new/hgc_zed_ip.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 17 instances were transformed.
+  IOBUFDS => IOBUFDS (IBUFDS, OBUFTDS): 17 instances
+
+link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 495.195 ; gain = 175.586
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.165 . Memory (MB): peak = 495.543 ; gain = 0.348

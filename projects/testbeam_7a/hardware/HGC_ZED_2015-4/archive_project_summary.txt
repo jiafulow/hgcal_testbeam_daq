@@ -1,0 +1,442 @@
+***************************************************************************************
+*                      PROJECT ARCHIVE SUMMARY REPORT
+*
+*                      (archive_project_summary.txt)
+*
+*  PLEASE READ THIS REPORT TO GET THE DETAILED INFORMATION ABOUT THE PROJECT DATA THAT
+*  WAS ARCHIVED FOR THE CURRENT PROJECT
+*
+* The report is divided into following five sections:-
+*
+* Section (1) - PROJECT INFORMATION
+*  This section provides the details of the current project that was archived
+*
+* Section (2) - INCLUDED/EXCLUDED RUNS
+*  This section summarizes the list of design runs for which the results were included
+*  or excluded from the archive
+*
+* Section (3) - ARCHIVED SOURCES
+*  This section summarizes the list of files that were added to the archive
+*
+* Section (3.1) - INCLUDE FILES
+*  This section summarizes the list of 'include' files that were added to the archive
+*
+* Section (3.1.1) - INCLUDE_DIRS SETTINGS
+*  This section summarizes the 'verilog include directory' path settings, if any
+*
+* Section (3.2) - REMOTE SOURCES
+*  This section summarizes the list of referenced 'remote' files that were 'imported'
+*  into the archived project
+*
+* Section (3.3) - SOURCES SUMMARY
+*  This section summarizes the list of all the files present in the archive
+*
+* Section (3.4) - REMOTE IP DEFINITIONS
+*  This section summarizes the list of all the remote IP's present in the archive
+*
+* Section (4) - JOURNAL/LOG FILES
+*  This section summarizes the list of journal/log files that were added to the archive
+*
+***************************************************************************************
+
+Section (1) - PROJECT INFORMATION
+---------------------------------
+Name      = hgc_zed
+Directory = /home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/hgc_zed
+
+WARNING: Please verify the compiled library directory path for the following property in the
+         current project. The path may point to an invalid location after opening this project.
+         This could happen if the project was unarchived in a location where this path is not
+         accessible. To resolve this issue, please set this property with the desired path
+         before launching simulation:-
+
+Property = compxlib.xsim_compiled_library_dir
+Path     = /home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/hgc_zed/hgc_zed.cache/compile_simlib/xsim
+
+Section (2) - INCLUDED RUNS
+---------------------------
+The run results were included for the following runs in the archived project:-
+
+<synth_1>
+<impl_1>
+
+Section (3) - ARCHIVED SOURCES
+------------------------------
+The following sub-sections describes the list of sources that were archived for the current project:-
+
+Section (3.1) - INCLUDE FILES
+-----------------------------
+List of referenced 'RTL Include' files that were 'imported' into the archived project:-
+
+None
+
+Section (3.1.1) - INCLUDE_DIRS SETTINGS
+---------------------------------------
+List of the "INCLUDE_DIRS" fileset property settings that may or may not be applicable in the archived
+project, since most the 'RTL Include' files referenced in the original project were 'imported' into the
+archived project.
+
+<sources_1> fileset RTL include directory paths (INCLUDE_DIRS):-
+None
+
+<sim_1> fileset RTL include directory paths (INCLUDE_DIRS):-
+None
+
+Section (3.2) - REMOTE SOURCES
+------------------------------
+List of referenced 'remote' design files that were 'imported' into the archived project:-
+
+<constrs_1>
+None
+
+<sim_1>
+None
+
+<sources_1>
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/fixedio.xml
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/fixedio_rtl.xml
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/hpstatusctrl.xml
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/hpstatusctrl_rtl.xml
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/usbctrl.xml
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/usbctrl_rtl.xml
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_local_params.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_wr.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_rd.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_wr_4.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_rd_4.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_hp2_3.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_hp0_1.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_ssw_hp.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_sparse_mem.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_reg_params.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_reg_init.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_reg_map.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_ocm_mem.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_intr_wr_mem.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_intr_rd_mem.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_fmsw_gp.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_regc.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_ocmc.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_interconnect_model.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_gen_reset.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_gen_clock.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_ddrc.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_axi_slave.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_axi_master.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_afi_slave.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_apis.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_unused_ports.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_axi_gp.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_axi_acp.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_axi_hp.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_processing_system7_bfm.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/hdl/verilog/processing_system7_v5_5_aw_atc.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/hdl/verilog/processing_system7_v5_5_b_atc.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/hdl/verilog/processing_system7_v5_5_w_atc.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/hdl/verilog/processing_system7_v5_5_atc.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/hdl/verilog/processing_system7_v5_5_trace_buffer.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/upcnt_n.vhd
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/sequence_psr.vhd
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/lpf.vhd
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/proc_sys_reset.vhd
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/fnal.gov/zed_channel_v1_0/hdl/zed_channel.vhd
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/fnal.gov/hgc_zed_common_v1_0/new/hgc_zed_common.vhd
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/fnal.gov/hgc_zed_common_v1_0/new/ref_clk.vhd
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_latch_and.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_latch_or.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_or.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_command_fifo.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_mask_static.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_mask.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask_static.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_static.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_nto1_mux.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/fifo_generator_v13_0/simulation/fifo_generator_vhdl_beh.vhd
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/fifo_generator_v13_0/hdl/fifo_generator_v13_0_rfs.vhd
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_ndeep_srl.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axi_data_fifo.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_0_header.vh
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axic_srl_fifo.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axilite_conv.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_decerr_slave.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3.vhd
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/fifo_generator_v13_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd
+/home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/.Xil/Vivado-10195-athena/PrjAr/_X_/hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/fifo_generator_v13_0/hdl/fifo_generator_v13_0.vhd
+
+Section (3.3) - SOURCES SUMMARY
+-------------------------------
+List of all the source files present in the archived project:-
+
+<sources_1>
+./hgc_zed.srcs/sources_1/bd/top/top.bd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0.xci
+./hgc_zed.srcs/sources_1/bd/top/ip/top_processing_system7_0_0/doc/processing_system7_v5_5_changelog.txt
+./hgc_zed.srcs/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0.vho
+./hgc_zed.srcs/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0.veo
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/fixedio.xml
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/fixedio_rtl.xml
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/hpstatusctrl.xml
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/hpstatusctrl_rtl.xml
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/usbctrl.xml
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/usbctrl_rtl.xml
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_local_params.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_wr.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_rd.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_wr_4.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_rd_4.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_hp2_3.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_hp0_1.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_ssw_hp.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_sparse_mem.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_reg_params.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_reg_init.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_reg_map.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_ocm_mem.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_intr_wr_mem.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_intr_rd_mem.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_fmsw_gp.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_regc.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_ocmc.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_interconnect_model.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_gen_reset.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_gen_clock.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_ddrc.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_axi_slave.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_axi_master.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_afi_slave.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_apis.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_unused_ports.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_axi_gp.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_axi_acp.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_axi_hp.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_processing_system7_bfm.v
+./hgc_zed.srcs/sources_1/bd/top/ip/top_processing_system7_0_0/sim/top_processing_system7_0_0.v
+./hgc_zed.srcs/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0.xdc
+./hgc_zed.srcs/sources_1/bd/top/ip/top_processing_system7_0_0/hdl/verilog/top_processing_system7_0_0.hwdef
+./hgc_zed.srcs/sources_1/bd/top/ip/top_processing_system7_0_0/ps7_init.c
+./hgc_zed.srcs/sources_1/bd/top/ip/top_processing_system7_0_0/ps7_init.h
+./hgc_zed.srcs/sources_1/bd/top/ip/top_processing_system7_0_0/ps7_init_gpl.c
+./hgc_zed.srcs/sources_1/bd/top/ip/top_processing_system7_0_0/ps7_init_gpl.h
+./hgc_zed.srcs/sources_1/bd/top/ip/top_processing_system7_0_0/ps7_init.tcl
+./hgc_zed.srcs/sources_1/bd/top/ip/top_processing_system7_0_0/ps7_init.html
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/hdl/verilog/processing_system7_v5_5_aw_atc.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/hdl/verilog/processing_system7_v5_5_b_atc.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/hdl/verilog/processing_system7_v5_5_w_atc.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/hdl/verilog/processing_system7_v5_5_atc.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/processing_system7_v5_5/hdl/verilog/processing_system7_v5_5_trace_buffer.v
+./hgc_zed.srcs/sources_1/bd/top/ip/top_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v
+./hgc_zed.srcs/sources_1/bd/top/ip/top_processing_system7_0_0/synth/top_processing_system7_0_0.v
+./hgc_zed.srcs/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0.xml
+./hgc_zed.srcs/sources_1/bd/top/ip/top_processing_system7_0_axi_periph_0/top_processing_system7_0_axi_periph_0.xci
+./hgc_zed.srcs/sources_1/bd/top/ip/top_processing_system7_0_axi_periph_0/top_processing_system7_0_axi_periph_0.xml
+./hgc_zed.srcs/sources_1/bd/top/ip/top_rst_processing_system7_0_100M_0/top_rst_processing_system7_0_100M_0.xci
+./hgc_zed.srcs/sources_1/bd/top/ip/top_rst_processing_system7_0_100M_0/doc/proc_sys_reset_v5_0_changelog.txt
+./hgc_zed.srcs/sources_1/bd/top/ip/top_rst_processing_system7_0_100M_0/top_rst_processing_system7_0_100M_0_board.xdc
+./hgc_zed.srcs/sources_1/bd/top/ip/top_rst_processing_system7_0_100M_0/top_rst_processing_system7_0_100M_0.vho
+./hgc_zed.srcs/sources_1/bd/top/ip/top_rst_processing_system7_0_100M_0/top_rst_processing_system7_0_100M_0.veo
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/upcnt_n.vhd
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/sequence_psr.vhd
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/lpf.vhd
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/proc_sys_reset.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_rst_processing_system7_0_100M_0/sim/top_rst_processing_system7_0_100M_0.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_rst_processing_system7_0_100M_0/top_rst_processing_system7_0_100M_0.xdc
+./hgc_zed.srcs/sources_1/bd/top/ip/top_rst_processing_system7_0_100M_0/synth/top_rst_processing_system7_0_100M_0.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_rst_processing_system7_0_100M_0/top_rst_processing_system7_0_100M_0_ooc.xdc
+./hgc_zed.srcs/sources_1/bd/top/ip/top_rst_processing_system7_0_100M_0/top_rst_processing_system7_0_100M_0.xml
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/top_zed_channel_0_0.xci
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/zed_channel_hgc_zed_ip_channel_0_0.xci
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/xil_defaultlib/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_pck.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/ip/tdpram_32x256/tdpram_32x256.xci
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/ip/tdpram_32x256/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/ip/tdpram_32x256/sim/tdpram_32x256.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/ip/tdpram_32x256/tdpram_32x256_ooc.xdc
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/ip/tdpram_32x256/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/ip/tdpram_32x256/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/ip/tdpram_32x256/synth/tdpram_32x256.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/ip/tdpram_32x256/tdpram_32x256.xml
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/xil_defaultlib/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_zed_channel.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/xil_defaultlib/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/menc_nibble.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/xil_defaultlib/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/mdec_nibble.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/xil_defaultlib/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/ctrl_send_mem.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/xil_defaultlib/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/ctrl_rcv_mem.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/xil_defaultlib/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/MasterFSM.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/xil_defaultlib/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/align_deser_data.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/sim/zed_channel_hgc_zed_ip_channel_0_0.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/constrs_1/new/hgc_zed_ip.xdc
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/hdl/hgc_zed_ip_v1_0.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/hdl/hgc_zed_ip_v1_0_S00_AXI.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/synth/zed_channel_hgc_zed_ip_channel_0_0.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_hgc_zed_ip_channel_0_0/zed_channel_hgc_zed_ip_channel_0_0.xml
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_selectio_wiz_0_0/zed_channel_selectio_wiz_0_0.xci
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_selectio_wiz_0_0/zed_channel_selectio_wiz_0_0_selectio_wiz.v
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_selectio_wiz_0_0/zed_channel_selectio_wiz_0_0.v
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_selectio_wiz_0_0/zed_channel_selectio_wiz_0_0_ooc.xdc
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_selectio_wiz_0_0/zed_channel_selectio_wiz_0_0.xdc
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_selectio_wiz_0_0/zed_channel_selectio_wiz_0_0.xml
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_selectio_wiz_0_1/zed_channel_selectio_wiz_0_1.xci
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_selectio_wiz_0_1/zed_channel_selectio_wiz_0_1_selectio_wiz.v
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_selectio_wiz_0_1/zed_channel_selectio_wiz_0_1.v
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_selectio_wiz_0_1/zed_channel_selectio_wiz_0_1_ooc.xdc
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_selectio_wiz_0_1/zed_channel_selectio_wiz_0_1.xdc
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/ip/zed_channel_selectio_wiz_0_1/zed_channel_selectio_wiz_0_1.xml
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/top_zed_channel_0_0.vho
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/top_zed_channel_0_0.veo
+./hgc_zed.srcs/sources_1/bd/top/ipshared/fnal.gov/zed_channel_v1_0/hdl/zed_channel.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/sim/top_zed_channel_0_0.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/zed_channel_ooc.xdc
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/synth/top_zed_channel_0_0.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/top_zed_channel_0_0.xml
+./hgc_zed.srcs/sources_1/bd/top/ip/top_clk_wiz_0_0/top_clk_wiz_0_0.xci
+./hgc_zed.srcs/sources_1/bd/top/ip/top_clk_wiz_0_0/doc/clk_wiz_v5_2_changelog.txt
+./hgc_zed.srcs/sources_1/bd/top/ip/top_clk_wiz_0_0/top_clk_wiz_0_0_board.xdc
+./hgc_zed.srcs/sources_1/bd/top/ip/top_clk_wiz_0_0/top_clk_wiz_0_0.vho
+./hgc_zed.srcs/sources_1/bd/top/ip/top_clk_wiz_0_0/top_clk_wiz_0_0_clk_wiz.v
+./hgc_zed.srcs/sources_1/bd/top/ip/top_clk_wiz_0_0/top_clk_wiz_0_0.v
+./hgc_zed.srcs/sources_1/bd/top/ip/top_clk_wiz_0_0/top_clk_wiz_0_0.xdc
+./hgc_zed.srcs/sources_1/bd/top/ip/top_clk_wiz_0_0/top_clk_wiz_0_0_ooc.xdc
+./hgc_zed.srcs/sources_1/bd/top/ip/top_clk_wiz_0_0/top_clk_wiz_0_0.xml
+./hgc_zed.srcs/sources_1/bd/top/ip/top_hgc_zed_common_0_0/top_hgc_zed_common_0_0.xci
+./hgc_zed.srcs/sources_1/bd/top/ip/top_hgc_zed_common_0_0/top_hgc_zed_common_0_0.vho
+./hgc_zed.srcs/sources_1/bd/top/ip/top_hgc_zed_common_0_0/top_hgc_zed_common_0_0.veo
+./hgc_zed.srcs/sources_1/bd/top/ipshared/fnal.gov/hgc_zed_common_v1_0/new/hgc_zed_common.vhd
+./hgc_zed.srcs/sources_1/bd/top/ipshared/fnal.gov/hgc_zed_common_v1_0/new/ref_clk.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_hgc_zed_common_0_0/sim/top_hgc_zed_common_0_0.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_hgc_zed_common_0_0/synth/top_hgc_zed_common_0_0.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_hgc_zed_common_0_0/top_hgc_zed_common_0_0.xml
+./hgc_zed.srcs/sources_1/bd/top/ip/top_auto_pc_0/top_auto_pc_0.xci
+./hgc_zed.srcs/sources_1/bd/top/ip/top_auto_pc_0/axi_protocol_converter_v2_1_7/doc/axi_protocol_converter_v2_1_changelog.txt
+./hgc_zed.srcs/sources_1/bd/top/ip/top_auto_pc_0/top_auto_pc_0.vho
+./hgc_zed.srcs/sources_1/bd/top/ip/top_auto_pc_0/top_auto_pc_0.veo
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_latch_and.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_latch_or.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_or.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_command_fifo.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_mask_static.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_mask.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask_static.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_static.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_nto1_mux.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/fifo_generator_v13_0/simulation/fifo_generator_vhdl_beh.vhd
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/fifo_generator_v13_0/hdl/fifo_generator_v13_0_rfs.vhd
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_ndeep_srl.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axi_data_fifo.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_0_header.vh
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axic_srl_fifo.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axilite_conv.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_decerr_slave.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v
+./hgc_zed.srcs/sources_1/bd/top/ip/top_auto_pc_0/sim/top_auto_pc_0.v
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3.vhd
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/fifo_generator_v13_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd
+./hgc_zed.srcs/sources_1/bd/top/ipshared/xilinx.com/fifo_generator_v13_0/hdl/fifo_generator_v13_0.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_auto_pc_0/top_auto_pc_0_ooc.xdc
+./hgc_zed.srcs/sources_1/bd/top/ip/top_auto_pc_0/synth/top_auto_pc_0.v
+./hgc_zed.srcs/sources_1/bd/top/ip/top_auto_pc_0/top_auto_pc_0.xml
+./hgc_zed.srcs/sources_1/bd/top/hdl/top.vhd
+./hgc_zed.srcs/sources_1/bd/top/top_ooc.xdc
+./hgc_zed.srcs/sources_1/bd/top/hw_handoff/top.hwh
+./hgc_zed.srcs/sources_1/bd/top/hw_handoff/top_bd.tcl
+./hgc_zed.srcs/sources_1/bd/top/hdl/top.hwdef
+./hgc_zed.srcs/sources_1/bd/top/hdl/top_wrapper.vhd
+./hgc_zed.srcs/sources_1/bd/top/ip/top_zed_channel_0_0/top_zed_channel_0_0.upgrade_log
+./hgc_zed.srcs/sources_1/bd/zed_channel/ip/zed_channel_hgc_zed_ip_channel_0_0/zed_channel_hgc_zed_ip_channel_0_0.upgrade_log
+./hgc_zed.srcs/sources_1/bd/top/ip/top_clk_wiz_0_0/top_clk_wiz_0_0.upgrade_log
+./hgc_zed.srcs/sources_1/bd/top/ip/top_hgc_zed_common_0_0/top_hgc_zed_common_0_0.upgrade_log
+./hgc_zed.srcs/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0.upgrade_log
+./hgc_zed.srcs/sources_1/bd/top/ip/top_processing_system7_0_axi_periph_0/top_processing_system7_0_axi_periph_0.upgrade_log
+./hgc_zed.srcs/sources_1/bd/top/ip/top_rst_processing_system7_0_100M_0/top_rst_processing_system7_0_100M_0.upgrade_log
+
+<constrs_1>
+./hgc_zed.srcs/constrs_1/new/top.xdc
+
+<sim_1>
+None
+
+Section (3.4) - REMOTE IP DEFINITIONS
+-------------------------------------
+List of all the remote IP's present in the archived project:-
+
+<sources_1>
+./hgc_zed.ipdefs/zed_channel_0/
+./hgc_zed.ipdefs/hgc_zed_ip_1.0_0/
+./hgc_zed.ipdefs/hgc_zed_common_0/hgc_zed_common.srcs/sources_1
+
+Section (4) - JOURNAL/LOG FILES
+-------------------------------
+List of Journal/Log files that were added to the archived project:-
+
+Source File = /home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/vivado.jou
+Archived Location = ./hgc_zed/vivado.jou
+
+Source File = /home/jlow/Work/Vivado/testbeam_7a/HGC_ZED_0/vivado.log
+Archived Location = ./hgc_zed/vivado.log
+

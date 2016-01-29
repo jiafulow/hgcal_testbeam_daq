@@ -1,0 +1,14 @@
+###############################################################################
+# Please modify this file if you want to configure your own application.
+# You can uncommon and/or change the following Kconfig elements.
+###############################################################################
+
+
+if ROOTFS_COMPONENT_APPS_NAME_SK2_SC_TRANSPORT
+	comment "No additional options for SK2_SC_TRANSPORT"
+
+# 	config APPS_SK2_SC_TRANSPORT_OPTION0
+#	bool "option0"
+#	help
+#	  Help text
+endif

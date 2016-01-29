@@ -1,0 +1,278 @@
+# do {C:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.sim/sim_1/behav/hgc_zed_channel_tb.do} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# ** Warning: (vlib-34) Library already exists at "msim/blk_mem_gen_v8_2".
+# ** Warning: (vlib-34) Library already exists at "msim/xil_defaultlib".
+# Modifying C:\modeltech_pe_6.6b\win32pe/../modelsim.ini
+# Modifying C:\modeltech_pe_6.6b\win32pe/../modelsim.ini
+# Model Technology ModelSim PE vlog 6.6b Compiler 2010.05 May 21 2010
+# 
+# Top level modules:
+# Model Technology ModelSim PE vlog 6.6b Compiler 2010.05 May 21 2010
+# -- Skipping module tdpram_32x256
+# 
+# Top level modules:
+# 	tdpram_32x256
+# Model Technology ModelSim PE vcom 6.6b Compiler 2010.05 May 21 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package hgc_pck
+# -- Compiling entity ctrl_send_mem
+# -- Compiling architecture rtl of ctrl_send_mem
+# Model Technology ModelSim PE vcom 6.6b Compiler 2010.05 May 21 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package hgc_pck
+# -- Compiling entity ctrl_rcv_mem
+# -- Compiling architecture rtl of ctrl_rcv_mem
+# Model Technology ModelSim PE vcom 6.6b Compiler 2010.05 May 21 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package hgc_pck
+# -- Compiling entity masterfsm
+# -- Compiling architecture rtl of masterfsm
+# Model Technology ModelSim PE vcom 6.6b Compiler 2010.05 May 21 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Loading package hgc_pck
+# -- Compiling entity hgc_zed_channel
+# -- Compiling architecture rtl of hgc_zed_channel
+# Model Technology ModelSim PE vcom 6.6b Compiler 2010.05 May 21 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Loading package hgc_pck
+# -- Compiling entity mdec_nibble
+# -- Compiling architecture rtl of mdec_nibble
+# Model Technology ModelSim PE vcom 6.6b Compiler 2010.05 May 21 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package hgc_pck
+# -- Compiling entity menc_nibble
+# -- Compiling architecture rtl of menc_nibble
+# Model Technology ModelSim PE vcom 6.6b Compiler 2010.05 May 21 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Compiling entity align_deser_data
+# -- Compiling architecture rtl of align_deser_data
+# Model Technology ModelSim PE vcom 6.6b Compiler 2010.05 May 21 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling package hgc_pck
+# -- Compiling package body hgc_pck
+# -- Loading package hgc_pck
+# Model Technology ModelSim PE vcom 6.6b Compiler 2010.05 May 21 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package hgc_pck
+# -- Compiling entity hgc_zed_channel_tb
+# -- Compiling architecture bhv of hgc_zed_channel_tb
+# Model Technology ModelSim PE vlog 6.6b Compiler 2010.05 May 21 2010
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L unisims_ver -L unimacro_ver -L secureip -L blk_mem_gen_v8_2 -L xil_defaultlib -lib xil_defaultlib -voptargs=\"+acc\" -t 1ps xil_defaultlib.hgc_zed_channel_tb xil_defaultlib.glbl 
+# //  ModelSim PE 6.6b May 21 2010 
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading xil_defaultlib.hgc_pck(body)
+# Loading xil_defaultlib.hgc_zed_channel_tb(bhv)
+# Loading xil_defaultlib.glbl
+# Loading unisim.vcomponents
+# Loading xil_defaultlib.hgc_zed_channel(rtl)
+# Loading xil_defaultlib.menc_nibble(rtl)
+# Loading xil_defaultlib.mdec_nibble(rtl)
+# Loading std.textio(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.rom256x1(rom256x1_v)
+# Loading xil_defaultlib.ctrl_send_mem(rtl)
+# Loading xil_defaultlib.tdpram_32x256
+# Loading xil_defaultlib.ctrl_rcv_mem(rtl)
+# Loading xil_defaultlib.masterfsm(rtl)
+# Loading xil_defaultlib.align_deser_data(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Block Memory Generator module hgc_zed_channel_tb.uut.ctrl_send_mem_inst.send_mem_inst.inst.<protected>.<protected> is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator module hgc_zed_channel_tb.uut.ctrl_rcv_mem_inst.rcv_mem_inst.inst.<protected>.<protected> is using a behavioral model for simulation which will not precisely model memory collision behavior.
+pwd
+# C:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.sim/sim_1/behav
+do hgc_zed_channel_tb.udo
+do tb_channel.udo
+# ** Warning: (vlib-34) Library already exists at "work".
+# ** Warning: (vlib-34) Library already exists at "msim/blk_mem_gen_v8_2".
+# ** Warning: (vlib-34) Library already exists at "msim/xil_defaultlib".
+# Modifying C:\modeltech_pe_6.6b\win32pe/../modelsim.ini
+# Modifying C:\modeltech_pe_6.6b\win32pe/../modelsim.ini
+# Model Technology ModelSim PE vlog 6.6b Compiler 2010.05 May 21 2010
+# 
+# Top level modules:
+# Model Technology ModelSim PE vlog 6.6b Compiler 2010.05 May 21 2010
+# -- Skipping module tdpram_32x256
+# 
+# Top level modules:
+# 	tdpram_32x256
+# Model Technology ModelSim PE vcom 6.6b Compiler 2010.05 May 21 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling package hgc_pck
+# -- Compiling package body hgc_pck
+# -- Loading package hgc_pck
+# Model Technology ModelSim PE vcom 6.6b Compiler 2010.05 May 21 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity hgc_zed_ip_v1_0_s00_axi
+# -- Compiling architecture arch_imp of hgc_zed_ip_v1_0_s00_axi
+# Model Technology ModelSim PE vcom 6.6b Compiler 2010.05 May 21 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Loading package vcomponents
+# -- Loading package hgc_pck
+# -- Compiling entity hgc_zed_ip_v1_0
+# -- Compiling architecture arch_imp of hgc_zed_ip_v1_0
+# Model Technology ModelSim PE vcom 6.6b Compiler 2010.05 May 21 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package hgc_pck
+# -- Compiling entity ctrl_send_mem
+# -- Compiling architecture rtl of ctrl_send_mem
+# Model Technology ModelSim PE vcom 6.6b Compiler 2010.05 May 21 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package hgc_pck
+# -- Compiling entity ctrl_rcv_mem
+# -- Compiling architecture rtl of ctrl_rcv_mem
+# Model Technology ModelSim PE vcom 6.6b Compiler 2010.05 May 21 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package hgc_pck
+# -- Compiling entity masterfsm
+# -- Compiling architecture rtl of masterfsm
+# Model Technology ModelSim PE vcom 6.6b Compiler 2010.05 May 21 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Loading package hgc_pck
+# -- Compiling entity hgc_zed_channel
+# -- Compiling architecture rtl of hgc_zed_channel
+# Model Technology ModelSim PE vcom 6.6b Compiler 2010.05 May 21 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Loading package hgc_pck
+# -- Compiling entity mdec_nibble
+# -- Compiling architecture rtl of mdec_nibble
+# Model Technology ModelSim PE vcom 6.6b Compiler 2010.05 May 21 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package hgc_pck
+# -- Compiling entity menc_nibble
+# -- Compiling architecture rtl of menc_nibble
+# Model Technology ModelSim PE vcom 6.6b Compiler 2010.05 May 21 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Compiling entity align_deser_data
+# -- Compiling architecture rtl of align_deser_data
+# Model Technology ModelSim PE vcom 6.6b Compiler 2010.05 May 21 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package hgc_pck
+# -- Compiling entity hgc_zed_channel_tb
+# -- Compiling architecture bhv of hgc_zed_channel_tb
+# Model Technology ModelSim PE vlog 6.6b Compiler 2010.05 May 21 2010
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L unisims_ver -L unimacro_ver -L secureip -L blk_mem_gen_v8_2 -L xil_defaultlib -lib xil_defaultlib -voptargs=\"+acc\" -t 1ps xil_defaultlib.hgc_zed_channel_tb xil_defaultlib.glbl 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading xil_defaultlib.hgc_pck(body)
+# Loading xil_defaultlib.hgc_zed_channel_tb(bhv)
+# Loading xil_defaultlib.glbl
+# Loading unisim.vcomponents
+# Loading xil_defaultlib.hgc_zed_channel(rtl)
+# Loading xil_defaultlib.menc_nibble(rtl)
+# Loading xil_defaultlib.mdec_nibble(rtl)
+# Loading std.textio(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.rom256x1(rom256x1_v)
+# Loading xil_defaultlib.ctrl_send_mem(rtl)
+# Loading xil_defaultlib.tdpram_32x256
+# Loading xil_defaultlib.ctrl_rcv_mem(rtl)
+# Loading xil_defaultlib.masterfsm(rtl)
+# Loading xil_defaultlib.align_deser_data(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Block Memory Generator module hgc_zed_channel_tb.uut.ctrl_send_mem_inst.send_mem_inst.inst.<protected>.<protected> is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator module hgc_zed_channel_tb.uut.ctrl_rcv_mem_inst.rcv_mem_inst.inst.<protected>.<protected> is using a behavioral model for simulation which will not precisely model memory collision behavior.
+run
+run
+# blk_mem_gen_v8_2 collision detected at time: 23862500, A write address: 0, B  read address: 0
+# blk_mem_gen_v8_2 collision detected at time: 26987500, A read address: 0, B write address: 0

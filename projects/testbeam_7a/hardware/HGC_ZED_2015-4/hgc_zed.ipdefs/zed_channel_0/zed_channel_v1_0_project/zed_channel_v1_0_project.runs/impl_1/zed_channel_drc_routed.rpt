@@ -1,0 +1,57 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Fri Jan 29 06:17:16 2016
+| Host         : athena running 64-bit Ubuntu 14.04.3 LTS
+| Command      : report_drc
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 6
+
+2. REPORT DETAILS
+-----------------
+NSTD-1#1 Critical Warning
+Unspecified I/O Standard  
+90 out of 94 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: CLK_320, S00_AXI_wstrb[3:0], S00_AXI_wdata[31:0], S00_AXI_rresp[1:0], S00_AXI_araddr[3], S00_AXI_araddr[2], S00_AXI_awaddr[3], S00_AXI_awaddr[2], S00_AXI_bresp[1:0], S00_AXI_rdata[31:0], S00_AXI_arready, S00_AXI_arvalid, S00_AXI_awready, S00_AXI_awvalid, S00_AXI_bready (the first 15 of 23 listed).
+Related violations: <none>
+
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+94 out of 94 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: data_out_to_pins_p[0], data_in_from_pins_n[0], data_out_to_pins_n[0], data_in_from_pins_p[0], CLK_320, S00_AXI_wstrb[3:0], S00_AXI_wdata[31:0], S00_AXI_rresp[1:0], S00_AXI_araddr[3], S00_AXI_araddr[2], S00_AXI_awaddr[3], S00_AXI_awaddr[2], S00_AXI_bresp[1:0], S00_AXI_rdata[31:0], S00_AXI_arready (the first 15 of 27 listed).
+Related violations: <none>
+
+CKLD-2#1 Warning
+Clock Net has direct IO Driver  
+Clock net CLK_320_IBUF is directly driven by an IO rather than a Clock Buffer. Driver(s): CLK_320_IBUF_inst/O
+Related violations: <none>
+
+REQP-1580#1 Warning
+Phase alignment  
+Unsupported clocking topology used for  selectio_deserializer/inst/pins[0].iserdese2_master. This can result in corrupted data. The selectio_deserializer/inst/pins[0].iserdese2_master/CLK / selectio_deserializer/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship ISERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#2 Warning
+Phase alignment  
+Unsupported clocking topology used for  selectio_serializer/inst/pins[0].oserdese2_master. This can result in corrupted data. The selectio_serializer/inst/pins[0].oserdese2_master/CLK / selectio_serializer/inst/pins[0].oserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

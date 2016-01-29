@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2014.2
+# SW Build 932637 on Wed Jun 11 13:24:38 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Fri Jan 15 13:25:23 2016
+# Process ID: 820
+# Log file: C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/vivado.log
+# Journal file: C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Cristian\CodeLib\CMS_HGC\HGC_ZED\ip_repo\hgc_zed_ip_1.0\hgc_zed_ip_v1_0_project\hgc_zed_ip_v1_0_project.xpr}
+ipx::open_ipxact_file {C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/component.xml}
+remove_files C:/Cristian/CodeLib/CMS_HGC/HGC_FMC_IO/HGC_FMC_IO.srcs/sources_1/new/hgc_pck.vhd
+add_files -norecurse C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_pck.vhd
+ipx::reorder_files -before {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/menc_nibble.vhd} {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/menc_nibble.vhd} [ipx::get_file_group xilinx_vhdlsynthesis [ipx::current_core]]
+ipx::reorder_files -before {hdl/hgc_zed_ip_v1_0_S00_AXI.vhd} {hdl/hgc_zed_ip_v1_0.vhd} [ipx::get_file_group xilinx_vhdlsynthesis [ipx::current_core]]
+ipx::add_file {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_pck.vhd} [ipx::get_file_group xilinx_vhdlsynthesis [ipx::current_core]]
+set_property type {{vhdlSource}} [ipx::get_file hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_pck.vhd [ipx::get_file_group xilinx_vhdlsynthesis [ipx::current_core]]]
+set_property library_name {xil_defaultlib} [ipx::get_file hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_pck.vhd [ipx::get_file_group xilinx_vhdlsynthesis [ipx::current_core]]]
+ipx::reorder_files -before {hdl/hgc_zed_ip_v1_0.vhd} {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_pck.vhd} [ipx::get_file_group xilinx_vhdlsynthesis [ipx::current_core]]
+ipx::add_file {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_pck.vhd} [ipx::get_file_group xilinx_vhdlbehavioralsimulation [ipx::current_core]]
+set_property type {{vhdlSource}} [ipx::get_file hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_pck.vhd [ipx::get_file_group xilinx_vhdlbehavioralsimulation [ipx::current_core]]]
+set_property library_name {xil_defaultlib} [ipx::get_file hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_pck.vhd [ipx::get_file_group xilinx_vhdlbehavioralsimulation [ipx::current_core]]]
+ipx::reorder_files -after {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.sim/sim_1/behav/hgc_zed_channel_tb.vhd} {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_pck.vhd} [ipx::get_file_group xilinx_vhdlbehavioralsimulation [ipx::current_core]]
+ipx::reorder_files -after {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_pck.vhd} {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_zed_channel.vhd} [ipx::get_file_group xilinx_vhdlbehavioralsimulation [ipx::current_core]]
+ipx::reorder_files -before {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/ctrl_rcv_mem.vhd} {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/menc_nibble.vhd} [ipx::get_file_group xilinx_vhdlbehavioralsimulation [ipx::current_core]]
+ipx::reorder_files -before {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/ctrl_rcv_mem.vhd} {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/mdec_nibble.vhd} [ipx::get_file_group xilinx_vhdlbehavioralsimulation [ipx::current_core]]
+ipx::reorder_files -before {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/ctrl_send_mem.vhd} {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/ctrl_send_mem.vhd} [ipx::get_file_group xilinx_vhdlbehavioralsimulation [ipx::current_core]]
+ipx::reorder_files -before {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/ctrl_rcv_mem.vhd} {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/ctrl_send_mem.vhd} [ipx::get_file_group xilinx_vhdlbehavioralsimulation [ipx::current_core]]
+ipx::reorder_files -after {hdl/hgc_zed_ip_v1_0_S00_AXI.vhd} {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_pck.vhd} [ipx::get_file_group xilinx_vhdlsynthesis [ipx::current_core]]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::unload_core {c:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/component.xml}
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+ipx::open_ipxact_file {C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/component.xml}
+ipx::add_file {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/ip/tdpram_32x256/tdpram_32x256.xci} [ipx::get_file_group xilinx_vhdlsynthesis [ipx::current_core]]
+set_property type {{xci}} [ipx::get_file hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/ip/tdpram_32x256/tdpram_32x256.xci [ipx::get_file_group xilinx_vhdlsynthesis [ipx::current_core]]]
+set_property library_name {} [ipx::get_file hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/ip/tdpram_32x256/tdpram_32x256.xci [ipx::get_file_group xilinx_vhdlsynthesis [ipx::current_core]]]
+ipx::reorder_files -after {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_pck.vhd} {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/ip/tdpram_32x256/tdpram_32x256.xci} [ipx::get_file_group xilinx_vhdlsynthesis [ipx::current_core]]
+ipx::add_file {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/ip/tdpram_32x256/tdpram_32x256.xci} [ipx::get_file_group xilinx_vhdlbehavioralsimulation [ipx::current_core]]
+set_property type {{xci}} [ipx::get_file hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/ip/tdpram_32x256/tdpram_32x256.xci [ipx::get_file_group xilinx_vhdlbehavioralsimulation [ipx::current_core]]]
+set_property library_name {} [ipx::get_file hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/ip/tdpram_32x256/tdpram_32x256.xci [ipx::get_file_group xilinx_vhdlbehavioralsimulation [ipx::current_core]]]
+ipx::reorder_files -before {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/hgc_zed_channel.vhd} {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/ip/tdpram_32x256/tdpram_32x256.xci} [ipx::get_file_group xilinx_vhdlbehavioralsimulation [ipx::current_core]]
+set_property core_revision {22} [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0

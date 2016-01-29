@@ -1,0 +1,85 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Fri Jan 29 05:16:11 2016
+| Host         : athena running 64-bit Ubuntu 14.04.3 LTS
+| Command      : report_control_sets -verbose -file hgc_zed_ip_v1_0_control_sets_placed.rpt
+| Design       : hgc_zed_ip_v1_0
+| Device       : xc7z020
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    32 |
+| Minimum Number of register sites lost to control set restrictions |    59 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              62 |           23 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              18 |           11 |
+| Yes          | No                    | No                     |              20 |           13 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             185 |           56 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+----------------------------------------------------------------+----------------------------------------------------------------+------------------+----------------+
+|       Clock Signal      |                          Enable Signal                         |                        Set/Reset Signal                        | Slice Load Count | Bel Load Count |
++-------------------------+----------------------------------------------------------------+----------------------------------------------------------------+------------------+----------------+
+|  CLK_40_IBUF_BUFG       | hgc_zed_channel_inst/MasterFSM_inst/rcv_memb_wdata[7]_i_2_n_0  | hgc_zed_channel_inst/MasterFSM_inst/rcv_memb_wdata[7]_i_1_n_0  |                1 |              4 |
+|  CLK_40_IBUF_BUFG       | hgc_zed_channel_inst/MasterFSM_inst/rcv_memb_wdata[3]_i_2_n_0  | hgc_zed_channel_inst/MasterFSM_inst/rcv_memb_wdata[3]_i_1_n_0  |                1 |              4 |
+|  CLK_40_IBUF_BUFG       | hgc_zed_channel_inst/MasterFSM_inst/rcv_memb_wdata[31]_i_2_n_0 | hgc_zed_channel_inst/MasterFSM_inst/rcv_memb_wdata[31]_i_1_n_0 |                2 |              4 |
+|  CLK_40_IBUF_BUFG       | hgc_zed_channel_inst/MasterFSM_inst/rcv_memb_wdata[27]_i_2_n_0 | hgc_zed_channel_inst/MasterFSM_inst/rcv_memb_wdata[27]_i_1_n_0 |                2 |              4 |
+|  CLK_40_IBUF_BUFG       | hgc_zed_channel_inst/MasterFSM_inst/rcv_memb_wdata[23]_i_2_n_0 | hgc_zed_channel_inst/MasterFSM_inst/rcv_memb_wdata[23]_i_1_n_0 |                2 |              4 |
+|  CLK_40_IBUF_BUFG       | hgc_zed_channel_inst/MasterFSM_inst/rcv_memb_wdata[19]_i_2_n_0 | hgc_zed_channel_inst/MasterFSM_inst/rcv_memb_wdata[19]_i_1_n_0 |                1 |              4 |
+|  CLK_40_IBUF_BUFG       | hgc_zed_channel_inst/MasterFSM_inst/rcv_memb_wdata[15]_i_2_n_0 | hgc_zed_channel_inst/MasterFSM_inst/rcv_memb_wdata[15]_i_1_n_0 |                1 |              4 |
+|  CLK_40_IBUF_BUFG       | hgc_zed_channel_inst/MasterFSM_inst/rcv_memb_wdata[11]_i_2_n_0 | hgc_zed_channel_inst/MasterFSM_inst/rcv_memb_wdata[11]_i_1_n_0 |                1 |              4 |
+|  CLK_40_IBUF_BUFG       | hgc_zed_channel_inst/MasterFSM_inst/time_out[3]_i_1_n_0        |                                                                |                3 |              4 |
+|  CLK_40_IBUF_BUFG       | hgc_zed_channel_inst/MasterFSM_inst/sym_to_send[3]_i_2_n_0     | hgc_zed_channel_inst/MasterFSM_inst/sym_to_send[3]_i_1_n_0     |                2 |              4 |
+|  CLK_40_IBUF_BUFG       |                                                                | hgc_zed_channel_inst/align_deser_data_inst/SR[0]               |                2 |              4 |
+|  s00_axi_aclk_IBUF_BUFG | hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3[5]_i_1_n_0               | hgc_zed_ip_v1_0_S00_AXI_inst/axi_awready_i_1_n_0               |                2 |              5 |
+|  CLK_40_IBUF_BUFG       |                                                                | hgc_zed_ip_v1_0_S00_AXI_inst/Q[5]                              |                5 |              5 |
+|  CLK_40_IBUF_BUFG       | hgc_zed_channel_inst/ctrl_rcv_mem_inst/rcv_memb_addr_cnt       | hgc_zed_ip_v1_0_S00_AXI_inst/rcv_memb_addr_cnt_reg[0][0]       |                2 |              8 |
+|  CLK_40_IBUF_BUFG       | hgc_zed_ip_v1_0_S00_AXI_inst/rcv_mema_addr_cnt_reg[0]_0[0]     | hgc_zed_ip_v1_0_S00_AXI_inst/rcv_mema_addr_cnt_reg[0][0]       |                2 |              8 |
+|  CLK_40_IBUF_BUFG       | hgc_zed_channel_inst/ctrl_send_mem_inst/send_memb_addr_cnt     | hgc_zed_ip_v1_0_S00_AXI_inst/send_memb_addr_cnt_reg[0][0]      |                2 |              8 |
+|  CLK_40_IBUF_BUFG       | hgc_zed_channel_inst/MasterFSM_inst/status[7]_i_1_n_0          |                                                                |                5 |              8 |
+|  CLK_40_IBUF_BUFG       | hgc_zed_channel_inst/MasterFSM_inst/time_out[11]_i_1_n_0       |                                                                |                5 |              8 |
+|  CLK_40_IBUF_BUFG       | hgc_zed_ip_v1_0_S00_AXI_inst/send_mema_addr_cnt_reg[0][0]      | hgc_zed_ip_v1_0_S00_AXI_inst/SR[0]                             |                3 |              8 |
+|  CLK_40_IBUF_BUFG       | hgc_zed_ip_v1_0_S00_AXI_inst/E[0]                              | hgc_zed_ip_v1_0_S00_AXI_inst/SR[0]                             |                2 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg3[15]_i_1_n_0              | hgc_zed_ip_v1_0_S00_AXI_inst/axi_awready_i_1_n_0               |                2 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg2[7]_i_1_n_0               | hgc_zed_ip_v1_0_S00_AXI_inst/axi_awready_i_1_n_0               |                2 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg2[31]_i_1_n_0              | hgc_zed_ip_v1_0_S00_AXI_inst/axi_awready_i_1_n_0               |                3 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg2[23]_i_1_n_0              | hgc_zed_ip_v1_0_S00_AXI_inst/axi_awready_i_1_n_0               |                2 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg2[15]_i_1_n_0              | hgc_zed_ip_v1_0_S00_AXI_inst/axi_awready_i_1_n_0               |                3 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg0[7]_i_1_n_0               | hgc_zed_ip_v1_0_S00_AXI_inst/axi_awready_i_1_n_0               |                2 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg0[31]_i_1_n_0              | hgc_zed_ip_v1_0_S00_AXI_inst/axi_awready_i_1_n_0               |                2 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg0[23]_i_1_n_0              | hgc_zed_ip_v1_0_S00_AXI_inst/axi_awready_i_1_n_0               |                2 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | hgc_zed_ip_v1_0_S00_AXI_inst/slv_reg0[15]_i_1_n_0              | hgc_zed_ip_v1_0_S00_AXI_inst/axi_awready_i_1_n_0               |                1 |              8 |
+|  s00_axi_aclk_IBUF_BUFG |                                                                | hgc_zed_ip_v1_0_S00_AXI_inst/axi_awready_i_1_n_0               |                4 |              9 |
+|  s00_axi_aclk_IBUF_BUFG | hgc_zed_ip_v1_0_S00_AXI_inst/axi_rdata[31]_i_1_n_0             | hgc_zed_ip_v1_0_S00_AXI_inst/axi_awready_i_1_n_0               |               11 |             32 |
+|  CLK_40_IBUF_BUFG       |                                                                |                                                                |               23 |             62 |
++-------------------------+----------------------------------------------------------------+----------------------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1454066139">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="hgc_zed_ip_v1_0.vdi"/>
+  <File Type="BG-DRC" Name="hgc_zed_ip_v1_0.drc"/>
+  <File Type="BG-BGN" Name="hgc_zed_ip_v1_0.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="hgc_zed_ip_v1_0.sysdef"/>
+  <File Type="BITSTR-MMI" Name="hgc_zed_ip_v1_0.mmi"/>
+  <File Type="BITSTR-BMM" Name="hgc_zed_ip_v1_0_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="hgc_zed_ip_v1_0.nky"/>
+  <File Type="BITSTR-RBT" Name="hgc_zed_ip_v1_0.rbt"/>
+  <File Type="BITSTR-MSK" Name="hgc_zed_ip_v1_0.msk"/>
+  <File Type="BG-BIN" Name="hgc_zed_ip_v1_0.bin"/>
+  <File Type="BG-BIT" Name="hgc_zed_ip_v1_0.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="hgc_zed_ip_v1_0_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="hgc_zed_ip_v1_0_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="hgc_zed_ip_v1_0_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="hgc_zed_ip_v1_0_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="hgc_zed_ip_v1_0_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="hgc_zed_ip_v1_0_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="hgc_zed_ip_v1_0_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="hgc_zed_ip_v1_0_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="hgc_zed_ip_v1_0_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="hgc_zed_ip_v1_0_route_status.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="hgc_zed_ip_v1_0_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="hgc_zed_ip_v1_0_power_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="hgc_zed_ip_v1_0_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="hgc_zed_ip_v1_0_drc_routed.rpt"/>
+  <File Type="ROUTE-DCP" Name="hgc_zed_ip_v1_0_routed.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="hgc_zed_ip_v1_0_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="hgc_zed_ip_v1_0_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="hgc_zed_ip_v1_0_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="hgc_zed_ip_v1_0_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="hgc_zed_ip_v1_0_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="hgc_zed_ip_v1_0_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="hgc_zed_ip_v1_0_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="hgc_zed_ip_v1_0_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="hgc_zed_ip_v1_0_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="hgc_zed_ip_v1_0_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="hgc_zed_ip_v1_0_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="hgc_zed_ip_v1_0_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="hgc_zed_ip_v1_0_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="hgc_zed_ip_v1_0_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="hgc_zed_ip_v1_0_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="hgc_zed_ip_v1_0_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="hgc_zed_ip_v1_0_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="hgc_zed_ip_v1_0_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="hgc_zed_ip_v1_0.hwdef"/>
+  <File Type="OPT-DRC" Name="hgc_zed_ip_v1_0_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="hgc_zed_ip_v1_0_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="hgc_zed_ip_v1_0_timing_summary_init.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="hgc_zed_ip_v1_0_timing_summary_postroute_physopted.pb"/>
+  <File Type="PA-TCL" Name="hgc_zed_ip_v1_0.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../hdl/hgc_zed_ip_v1_0_S00_AXI.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdl/hgc_zed_ip_v1_0.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ctrl_send_mem.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ctrl_rcv_mem.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MasterFSM.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/hgc_zed_channel.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mdec_nibble.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/menc_nibble.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/align_deser_data.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/hgc_pck.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/tdpram_32x256/tdpram_32x256.upgrade_log"/>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="hgc_zed_ip_v1_0"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/hgc_zed_ip.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/hgc_zed_ip.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="tdpram_32x256"/>
+</GenRun>

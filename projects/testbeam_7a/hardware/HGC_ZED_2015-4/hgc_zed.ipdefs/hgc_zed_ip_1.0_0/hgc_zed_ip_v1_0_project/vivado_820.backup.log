@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2014.2
+# SW Build 932637 on Wed Jun 11 13:24:38 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Fri Jan 15 09:37:18 2016
+# Process ID: 1660
+# Log file: C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/vivado.log
+# Journal file: C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Cristian\CodeLib\CMS_HGC\HGC_ZED\ip_repo\hgc_zed_ip_1.0\hgc_zed_ip_v1_0_project\hgc_zed_ip_v1_0_project.xpr}
+INFO: [Project 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'c:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project'.)
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Cristian/CodeLib/VHDLCodeLib/Vivado142/CodeLib/prepdiscr'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 688.262 ; gain = 48.504
+reset_run synth_1
+launch_runs synth_1
+[Fri Jan 15 09:51:17 2016] Launched synth_1...
+Run output will be captured here: C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.runs/synth_1/runme.log
+launch_runs impl_1
+INFO: [Memdata 28-152] Did  not create MIG processor data. C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/ip/tdpram_32x256/tdpram_32x256.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/ip/tdpram_32x256/tdpram_32x256.xci
+[Fri Jan 15 09:52:17 2016] Launched impl_1...
+Run output will be captured here: C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.runs/impl_1/runme.log
+launch_modelsim -install_path C:/modeltech_pe_6.6b/win32pe -simset sim_1 -mode behavioral -noclean_dir
+INFO: [Runs 36-97] Finding pre-compiled library information...
+INFO: [Runs 36-126]  > checking default directory path (compxlib.compiled_library_dir)...file does not exist [C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.cache/compile_simlib/modelsim.ini]
+INFO: [Runs 36-124]  > checking MODELSIM...not set
+INFO: [Runs 36-121]  > checking MGC_WD...not set
+INFO: [Runs 36-128]  > checking simulation run dir...file does not exist [C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.sim/sim_1/behav/modelsim.ini]
+CRITICAL WARNING: [Runs 36-95] Failed to find the pre-compiled simulation library information!
+INFO: [Runs 36-135] To resolve this issue, perform either of the following:-
+      - set the 'compxlib.compiled_library_dir' project property to the compiled library directory, or
+      - set the MODELSIM environment variable to point to the modelsim.ini file, or
+      - set the WD_MGC environment variable to point to the directory containing the modelsim.ini file
+
+INFO: [Runs 36-86] Creating automatic 'do' files...
+INFO: [Runs 36-81]  [FDO ] Added display options in the 'do' file: [C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.sim/sim_1/behav/hgc_zed_channel_tb.do]
+INFO: [Runs 36-109]  [FDO ] Main functional simulation 'do' file created: [C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.sim/sim_1/behav/hgc_zed_channel_tb.do]
+INFO: [Runs 36-190] Using ModelSim executable from 'C:/modeltech_pe_6.6b/win32pe/vsim.exe'
+INFO: [Runs 36-75] Launching ModelSim simulation...
+INFO: [Runs 36-194]  > cmd:"C:/modeltech_pe_6.6b/win32pe/vsim.exe" -do "do {C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.sim/sim_1/behav/hgc_zed_channel_tb.do}"
+INFO: [Runs 36-94]  > vsim process forked (RETURN-CODE=6984)
+INFO: [Runs 36-99] Please wait for the ModelSim GUI to launch...
+ipx::open_ipxact_file {C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/component.xml}
+ipx::add_file {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.sim/sim_1/behav/hgc_zed_channel_tb.vhd} [ipx::get_file_group xilinx_vhdlbehavioralsimulation [ipx::current_core]]
+set_property type {{vhdlSource}} [ipx::get_file hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.sim/sim_1/behav/hgc_zed_channel_tb.vhd [ipx::get_file_group xilinx_vhdlbehavioralsimulation [ipx::current_core]]]
+set_property library_name {xil_defaultlib} [ipx::get_file hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.sim/sim_1/behav/hgc_zed_channel_tb.vhd [ipx::get_file_group xilinx_vhdlbehavioralsimulation [ipx::current_core]]]
+ipx::reorder_files -before {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.srcs/sources_1/new/ctrl_rcv_mem.vhd} {hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.sim/sim_1/behav/hgc_zed_channel_tb.vhd} [ipx::get_file_group xilinx_vhdlbehavioralsimulation [ipx::current_core]]
+set_property core_revision {21} [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0'
+ipx::unload_core {c:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/component.xml}
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 15 10:01:55 2016...

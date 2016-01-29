@@ -1,0 +1,631 @@
+/*
+
+Vivado v2014.2
+SW Build 932637 on Wed Jun 11 13:24:38 MDT 2014
+Process ID: 7784
+
+Current time: 	1/25/16 10:47:32 AM
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 7
+Version: 6.1
+Architecture: x86
+Available processors (cores): 2
+
+Screen size: 1600x1200
+Screen resolution (DPI): 120
+Available screens: 2
+
+Java version: 	1.7.0_40 32-bit
+Java home: 	C:/Xilinx/Vivado/2014.2/tps/win32/jre
+
+User name: 	gingu
+User directory: C:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Gui allocated memory:	155 mb
+Gui max memory:		227 mb
+Engine allocated memory: 471 mb
+
+*/
+
+// TclEventType: START_GUI
+// HColorUtils.generateUniqueColorPalette (num colors: 55) elapsed time: 0.6s
+// TclEventType: START_PROGRESS_DIALOG
+// co:P (cg:JFrame):  Opening project 'C:\CMS_HGC\HGC_ZED\ip_repo\hgc_zed_ip_1.0\hgc_zed_ip_v1_0_project\hgc_zed_ip_v1_0_project.xpr' : addNotify
+// Tcl Message: open_project {C:\CMS_HGC\HGC_ZED\ip_repo\hgc_zed_ip_1.0\hgc_zed_ip_v1_0_project\hgc_zed_ip_v1_0_project.xpr} 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 487 MB. GUI used memory: 24 MB. Current time: 1/25/16 10:47:33 AM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 33 mb (+31648kb) [00:00:16]
+// [Engine Memory]: 489 mb (+360753kb) [00:00:16]
+// [GUI Memory]: 49 mb (+17096kb) [00:00:17]
+// [Engine Memory]: 496 mb (+8290kb) [00:00:17]
+// [GUI Memory]: 82 mb (+34726kb) [00:00:18]
+// [Engine Memory]: 521 mb (+25714kb) [00:00:18]
+// [Engine Memory]: 536 mb (+15527kb) [00:00:20]
+// [Engine Memory]: 537 mb (+802kb) [00:00:20]
+// [Engine Memory]: 537 mb (+303kb) [00:00:21]
+// [GUI Memory]: 86 mb (+4123kb) [00:00:21]
+// [Engine Memory]: 539 mb (+1925kb) [00:00:21]
+// [Engine Memory]: 539 mb (+12kb) [00:00:21]
+// [Engine Memory]: 539 mb (+118kb) [00:00:21]
+// [Engine Memory]: 539 mb (+139kb) [00:00:21]
+// [Engine Memory]: 540 mb (+774kb) [00:00:21]
+// Tcl Message: open_project {C:\CMS_HGC\HGC_ZED\ip_repo\hgc_zed_ip_1.0\hgc_zed_ip_v1_0_project\hgc_zed_ip_v1_0_project.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Cristian/CodeLib/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project' since last save. INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/VHDLCodeLib/Vivado142/CodeLib/prepdiscr'; using path 'C:/Cristian/CodeLib/VHDLCodeLib/Vivado142/CodeLib/prepdiscr' instead. INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/VHDLCodeLib/Vivado142/CodeLib/prepdiscr'; using path 'C:/Cristian/CodeLib/VHDLCodeLib/Vivado142/CodeLib/prepdiscr' instead. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Cristian/CodeLib/VHDLCodeLib/Vivado142/CodeLib/prepdiscr'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 689.598 ; gain = 53.531 
+// TclEventType: STOP_PROGRESS_DIALOG
+// [Engine Memory]: 550 mb (+11165kb) [00:00:22]
+dismissDialog("Opening project 'C:\\CMS_HGC\\HGC_ZED\\ip_repo\\hgc_zed_ip_1.0\\hgc_zed_ip_v1_0_project\\hgc_zed_ip_v1_0_project.xpr'"); // co:P (cg:JFrame)
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 552 mb (+1314kb) [00:00:24]
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 558 mb (+6631kb) [00:00:28]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd)]", 1); // u:k (w:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd), hgc_zed_channel_inst - hgc_zed_channel - rtl (hgc_zed_channel.vhd)]", 3); // u:k (w:JPanel, cg:JFrame)
+// PAPropertyPanels.initPanels (hgc_zed_channel.vhd) elapsed time: 0.2s
+// [GUI Memory]: 91 mb (+5139kb) [00:00:34]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd), hgc_zed_channel_inst - hgc_zed_channel - rtl (hgc_zed_channel.vhd)]", 3, true); // u:k (w:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd), hgc_zed_channel_inst - hgc_zed_channel - rtl (hgc_zed_channel.vhd)]", 3, true, false, false, false, false, true); // u:k (w:JPanel, cg:JFrame) - Double Click - Node
+selectCodeEditor("hgc_zed_channel.vhd", 508, 274); // aU:J (JPanel:JComponent, cg:JFrame)
+// [Engine Memory]: 559 mb (+1105kb) [00:00:48]
+// [Engine Memory]: 560 mb (+753kb) [00:01:21]
+// Elapsed time: 45 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 481, 433); // aU:J (JPanel:JComponent, cg:JFrame)
+// [Engine Memory]: 560 mb (+393kb) [00:01:29]
+// [Engine Memory]: 567 mb (+7348kb) [00:01:34]
+// Elapsed time: 12 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 548, 534); // aU:J (JPanel:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 569 MB. GUI used memory: 27 MB. Current time: 1/25/16 10:48:58 AM
+// [Engine Memory]: 569 mb (+2068kb) [00:01:40]
+// Elapsed time: 48 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 238, 454); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 25, 601); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 294, 471); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 26 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 328, 508); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 84 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 319, 282); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 319, 282, false, false, false, false, true); // aU:J (JPanel:JComponent, cg:JFrame) - Double Click
+// [Engine Memory]: 569 mb (+200kb) [00:04:55]
+// Elapsed time: 48 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 288, 300); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 289, 300); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 289, 300, false, false, false, false, true); // aU:J (JPanel:JComponent, cg:JFrame) - Double Click
+// [Engine Memory]: 576 mb (+6873kb) [00:05:41]
+// Elapsed time: 16 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd), hgc_zed_channel_inst - hgc_zed_channel - rtl (hgc_zed_channel.vhd)]", 3); // u:k (w:JPanel, cg:JFrame)
+// Elapsed time: 117 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 248, 433); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 248, 433, false, false, false, false, true); // aU:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("hgc_zed_channel.vhd", 379, 439); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 189, 435); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 32 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 351, 452); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 375, 482); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 188, 450); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 414, 501); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 191, 469); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 270, 352); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 167, 283); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 225, 305); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 170, 296); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 240, 502); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 166, 620); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 196, 654); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 169, 640); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 260 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 380, 538); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 32 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 171, 604); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 168, 585); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 253 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 282, 575); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 75 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 493, 434); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 27 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 265, 334); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 266, 353); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 439, 432); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 268, 384); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 266, 401); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 318, 425); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 267, 421); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 300, 437); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 266, 431); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 442, 458); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 266, 452); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 505, 467); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 323, 434); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 323, 434, false, false, false, false, true); // aU:J (JPanel:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 21 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 422, 438); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 264, 384); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 265, 402); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 265, 416); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 612, 443); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 266, 436); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 263, 470); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 297, 500); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 267, 484); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 621, 498); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 267, 505); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 425, 578); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 265, 314); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 264, 340); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 264, 332); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 349, 358); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 264, 351); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 327, 344); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 266, 334); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 414, 349); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 263, 352); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 443, 407); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 266, 385); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 469, 419); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 266, 401); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 315, 425); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 268, 421); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 399, 480); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 264, 456); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 366, 478); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 267, 471); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 411, 503); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 267, 486); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 158 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 248, 579); // aU:J (JPanel:JComponent, cg:JFrame)
+// [Engine Memory]: 584 mb (+8622kb) [00:29:10]
+// Elapsed time: 100 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 294, 379); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 431, 358); // aU:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 92 mb (+781kb) [00:30:19]
+// Elapsed time: 39 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 490, 525); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 46, 505); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 56 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 636, 356); // aU:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 95 mb (+3600kb) [00:31:33]
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 47 MB. Current time: 1/25/16 11:18:59 AM
+// Elapsed time: 20 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 493, 428); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 299, 473); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 419, 483); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 291, 655); // aU:J (JPanel:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 41 MB. Current time: 1/25/16 11:48:59 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 37 MB. Current time: 1/25/16 12:18:59 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 38 MB. Current time: 1/25/16 12:48:59 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 39 MB. Current time: 1/25/16 1:18:59 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 37 MB. Current time: 1/25/16 1:48:59 PM
+// Elapsed time: 9203 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 405, 427); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 1, 43); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 366, 177); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 387, 193); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 365, 178); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 301, 281); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 82 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 461, 316); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 230 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 634, 373); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 336, 419); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 336, 419, false, false, false, false, true); // aU:J (JPanel:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 43 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 475, 580); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 658 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 175, 480); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 529, 453); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 71 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 387, 335); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 82 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 605, 367); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 190 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 288, 442); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 383, 418); // aU:J (JPanel:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 40 MB. Current time: 1/25/16 2:19:00 PM
+// Elapsed time: 294 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 336, 477); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 108 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 255, 559); // aU:J (JPanel:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 39 MB. Current time: 1/25/16 2:49:00 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 39 MB. Current time: 1/25/16 3:19:00 PM
+// Elapsed time: 3351 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd), hgc_zed_channel_inst - hgc_zed_channel - rtl (hgc_zed_channel.vhd), MasterFSM_inst - MasterFSM - rtl (MasterFSM.vhd)]", 8, false); // u:k (w:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd), hgc_zed_channel_inst - hgc_zed_channel - rtl (hgc_zed_channel.vhd), MasterFSM_inst - MasterFSM - rtl (MasterFSM.vhd)]", 8, false); // u:k (w:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd), hgc_zed_channel_inst - hgc_zed_channel - rtl (hgc_zed_channel.vhd), MasterFSM_inst - MasterFSM - rtl (MasterFSM.vhd)]", 8, false, false, false, false, false, true); // u:k (w:JPanel, cg:JFrame) - Double Click
+// Elapsed time: 347 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_zed_channel.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_zed_channel.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+// Elapsed time: 331 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // g:JideTabbedPane (I:aC, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // u:k (w:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL]", 1); // u:k (w:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib]", 2); // u:k (w:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, hgc_pck.vhd]", 12, false); // u:k (w:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, hgc_pck.vhd]", 12, false, false, false, false, false, true); // u:k (w:JPanel, cg:JFrame) - Double Click
+selectCodeEditor("hgc_pck.vhd", 712, 278); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 926 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MasterFSM.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MasterFSM.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 42 MB. Current time: 1/25/16 3:49:00 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 39 MB. Current time: 1/25/16 4:19:00 PM
+// Elapsed time: 3223 seconds
+selectCodeEditor("MasterFSM.vhd", 500, 539); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 96 seconds
+selectCodeEditor("MasterFSM.vhd", 650, 391); // aU:J (JPanel:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 40 MB. Current time: 1/25/16 4:49:01 PM
+// Elapsed time: 1511 seconds
+selectCodeEditor("MasterFSM.vhd", 210, 454); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 167 seconds
+selectCodeEditor("MasterFSM.vhd", 556, 304); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("MasterFSM.vhd", 428, 434); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 258 seconds
+selectCodeEditor("MasterFSM.vhd", 569, 446); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 134 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 0); // g:JideTabbedPane (I:aC, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 12); // u:k (w:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hgc_zed_channel_tb - bhv (hgc_zed_channel_tb.vhd)]", 14, true); // u:k (w:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hgc_zed_channel_tb - bhv (hgc_zed_channel_tb.vhd)]", 14, true, false, false, false, false, true); // u:k (w:JPanel, cg:JFrame) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 41 MB. Current time: 1/25/16 5:19:01 PM
+// Elapsed time: 887 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd)]", 1, true); // u:k (w:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd)]", 1, true, false, false, false, false, true); // u:k (w:JPanel, cg:JFrame) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd)]", 1); // u:k (w:JPanel, cg:JFrame)
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd), hgc_zed_ip_v1_0_S00_AXI_inst - hgc_zed_ip_v1_0_S00_AXI - arch_imp (hgc_zed_ip_v1_0_S00_AXI.vhd)]", 2, false); // u:k (w:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd), hgc_zed_ip_v1_0_S00_AXI_inst - hgc_zed_ip_v1_0_S00_AXI - arch_imp (hgc_zed_ip_v1_0_S00_AXI.vhd)]", 2, false, false, false, false, false, true); // u:k (w:JPanel, cg:JFrame) - Double Click
+// Elapsed time: 82 seconds
+selectCodeEditor("hgc_zed_ip_v1_0_S00_AXI.vhd", 109, 656); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_ip_v1_0_S00_AXI.vhd", 109, 656, false, false, false, false, true); // aU:J (JPanel:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 420 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd), hgc_zed_channel_inst - hgc_zed_channel - rtl (hgc_zed_channel.vhd)]", 3, true); // u:k (w:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd), hgc_zed_channel_inst - hgc_zed_channel - rtl (hgc_zed_channel.vhd)]", 3, true, false, false, false, false, true); // u:k (w:JPanel, cg:JFrame) - Double Click - Node
+// Elapsed time: 395 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd)]", 1, true); // u:k (w:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd)]", 1, true, false, false, false, false, true); // u:k (w:JPanel, cg:JFrame) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd)]", 1); // u:k (w:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd), hgc_zed_channel_inst - hgc_zed_channel - rtl (hgc_zed_channel.vhd)]", 3, true); // u:k (w:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd), hgc_zed_channel_inst - hgc_zed_channel - rtl (hgc_zed_channel.vhd)]", 3, true, false, false, false, false, true); // u:k (w:JPanel, cg:JFrame) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 43 MB. Current time: 1/25/16 5:49:05 PM
+// Elapsed time: 185 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd), hgc_zed_channel_inst - hgc_zed_channel - rtl (hgc_zed_channel.vhd), MasterFSM_inst - MasterFSM - rtl (MasterFSM.vhd)]", 8, false); // u:k (w:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd), hgc_zed_channel_inst - hgc_zed_channel - rtl (hgc_zed_channel.vhd), MasterFSM_inst - MasterFSM - rtl (MasterFSM.vhd)]", 8, false, false, false, false, false, true); // u:k (w:JPanel, cg:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd), hgc_zed_channel_inst - hgc_zed_channel - rtl (hgc_zed_channel.vhd), MasterFSM_inst - MasterFSM - rtl (MasterFSM.vhd)]", 8, false); // u:k (w:JPanel, cg:JFrame)
+// Elapsed time: 573 seconds
+selectCodeEditor("MasterFSM.vhd", 221, 330); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("MasterFSM.vhd", 261, 330); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("MasterFSM.vhd", 152, 350); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("MasterFSM.vhd", 295, 347); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("MasterFSM.vhd", 391, 197); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("MasterFSM.vhd", 289, 207); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 28 seconds
+selectCodeEditor("MasterFSM.vhd", 442, 452); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("MasterFSM.vhd", 214, 568); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 138 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd)]", 1, true); // u:k (w:JPanel, cg:JFrame) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 51 MB. Current time: 1/25/16 6:19:10 PM
+// [GUI Memory]: 95 mb (+403kb) [08:01:16]
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 47 MB. Current time: 1/25/16 6:49:10 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/25/16 7:19:10 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 47 MB. Current time: 1/25/16 7:49:15 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/25/16 8:19:15 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/25/16 8:49:15 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/25/16 9:19:15 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/25/16 9:49:15 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/25/16 10:19:15 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 47 MB. Current time: 1/25/16 10:49:15 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/25/16 11:19:15 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/25/16 11:49:15 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/26/16 12:19:15 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 47 MB. Current time: 1/26/16 12:49:15 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/26/16 1:19:20 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/26/16 1:49:20 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 47 MB. Current time: 1/26/16 2:19:20 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/26/16 2:49:20 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/26/16 3:19:23 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/26/16 3:49:24 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 47 MB. Current time: 1/26/16 4:19:24 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 47 MB. Current time: 1/26/16 4:49:24 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/26/16 5:19:26 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/26/16 5:49:26 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/26/16 6:19:27 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/26/16 6:49:28 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/26/16 7:19:29 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/26/16 7:49:29 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 46 MB. Current time: 1/26/16 8:19:30 AM
+// Elapsed time: 52257 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hgc_zed_channel_tb - bhv (hgc_zed_channel_tb.vhd)]", 14, true); // u:k (w:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hgc_zed_channel_tb - bhv (hgc_zed_channel_tb.vhd)]", 14, true, false, false, false, true, false); // u:k (w:JPanel, cg:JFrame) - Popup Trigger - Node
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:X (v:w, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ag:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:co (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_modelsim -install_path C:/modeltech_pe_6.6b/win32pe -simset sim_1 -mode behavioral -noclean_dir 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [Runs 36-97] Finding pre-compiled library information... INFO: [Runs 36-126]  > checking default directory path (compxlib.compiled_library_dir)...file does not exist [C:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.cache/compile_simlib/modelsim.ini] INFO: [Runs 36-124]  > checking MODELSIM...not set INFO: [Runs 36-121]  > checking MGC_WD...not set INFO: [Runs 36-128]  > checking simulation run dir...file does not exist [C:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.sim/sim_1/behav/modelsim.ini] 
+// Tcl Message: INFO: [Runs 36-194]  > cmd:"C:/modeltech_pe_6.6b/win32pe/vsim.exe" -do "do {C:/CMS_HGC/HGC_ZED/ip_repo/hgc_zed_ip_1.0/hgc_zed_ip_v1_0_project/hgc_zed_ip_v1_0_project.sim/sim_1/behav/hgc_zed_channel_tb.do}" INFO: [Runs 36-94]  > vsim process forked (RETURN-CODE=5336) INFO: [Runs 36-99] Please wait for the ModelSim GUI to launch... 
+// a:a (cg:JFrame): Critical Messages: addNotify
+dismissDialog("Run Simulation"); // e:co (cg:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+// Elapsed time: 168 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hgc_zed_channel_tb - bhv (hgc_zed_channel_tb.vhd)]", 14); // u:k (w:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hgc_zed_channel_tb - bhv (hgc_zed_channel_tb.vhd)]", 14, true); // u:k (w:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hgc_zed_channel_tb - bhv (hgc_zed_channel_tb.vhd)]", 14, true, false, false, false, false, true); // u:k (w:JPanel, cg:JFrame) - Double Click - Node
+selectCodeEditor("hgc_zed_channel_tb.vhd", 585, 360); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("hgc_zed_channel_tb.vhd", 296, 501); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("hgc_zed_channel_tb.vhd", 204, 453); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_zed_ip_v1_0.vhd", 5); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_zed_ip_v1_0.vhd", 5); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // I:b
+// Elapsed time: 85 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_zed_ip_v1_0_S00_AXI.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_zed_ip_v1_0_S00_AXI.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectCodeEditor("MasterFSM.vhd", 390, 365); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("MasterFSM.vhd", 134, 450); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("MasterFSM.vhd", 134, 450, false, false, false, false, true); // aU:J (JPanel:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 112 seconds
+selectCodeEditor("MasterFSM.vhd", 468, 602); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 169 seconds
+selectCodeEditor("MasterFSM.vhd", 544, 602); // aU:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 98 mb (+2695kb) [21:58:26]
+// Elapsed time: 73 seconds
+selectCodeEditor("MasterFSM.vhd", 483, 493); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 175 seconds
+selectCodeEditor("MasterFSM.vhd", 421, 525); // aU:J (JPanel:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 37 MB. Current time: 1/26/16 8:49:30 AM
+// Elapsed time: 34 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MasterFSM.vhd", 5); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MasterFSM.vhd", 5); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // I:b
+selectCodeEditor("hgc_zed_channel_tb.vhd", 598, 303); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 216 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_zed_channel_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_zed_channel_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+// Elapsed time: 34 seconds
+selectCodeEditor("MasterFSM.vhd", 687, 376); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 1130 seconds
+selectCodeEditor("MasterFSM.vhd", 635, 525); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 87 seconds
+selectCodeEditor("MasterFSM.vhd", 426, 547); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("MasterFSM.vhd", 377, 547); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 31 seconds
+selectCodeEditor("MasterFSM.vhd", 170, 538); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("MasterFSM.vhd", 167, 571); // aU:J (JPanel:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 28 MB. Current time: 1/26/16 9:19:30 AM
+// Elapsed time: 233 seconds
+selectCodeEditor("MasterFSM.vhd", 294, 598); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("MasterFSM.vhd", 471, 549); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 205 seconds
+selectCodeEditor("MasterFSM.vhd", 398, 633); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 349 seconds
+selectCodeEditor("MasterFSM.vhd", 602, 345); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 304 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MasterFSM.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MasterFSM.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+// Elapsed time: 901 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_pck.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_pck.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectCodeEditor("MasterFSM.vhd", 467, 452); // aU:J (JPanel:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 26 MB. Current time: 1/26/16 9:49:31 AM
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MasterFSM.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MasterFSM.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("hgc_pck.vhd", 444, 112); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_pck.vhd", 444, 112, false, false, false, false, true); // aU:J (JPanel:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 61 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_pck.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_pck.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("MasterFSM.vhd", 400, 369); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("MasterFSM.vhd", 167, 484); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 46 seconds
+selectCodeEditor("MasterFSM.vhd", 221, 642); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 302 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MasterFSM.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MasterFSM.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectCodeEditor("hgc_pck.vhd", 681, 382); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 67 seconds
+selectCodeEditor("hgc_pck.vhd", 125, 483); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_pck.vhd", 125, 483, false, false, false, false, true); // aU:J (JPanel:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_pck.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_pck.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectCodeEditor("MasterFSM.vhd", 299, 246); // aU:J (JPanel:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 28 MB. Current time: 1/26/16 10:19:31 AM
+// Elapsed time: 1333 seconds
+selectCodeEditor("MasterFSM.vhd", 501, 406); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("MasterFSM.vhd", 162, 499); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("MasterFSM.vhd", 162, 499, false, false, false, false, true); // aU:J (JPanel:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 799 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MasterFSM.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MasterFSM.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+// Elapsed time: 599 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_pck.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_pck.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd), hgc_zed_channel_inst - hgc_zed_channel - rtl (hgc_zed_channel.vhd)]", 3, true); // u:k (w:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd), hgc_zed_channel_inst - hgc_zed_channel - rtl (hgc_zed_channel.vhd)]", 3, true, false, false, false, false, true); // u:k (w:JPanel, cg:JFrame) - Double Click - Node
+selectCodeEditor("hgc_zed_channel.vhd", 547, 382); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 105 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 455, 641); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 47 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_zed_channel.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_zed_channel.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_pck.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_pck.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 27 MB. Current time: 1/26/16 10:49:32 AM
+// Elapsed time: 149 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 328, 562); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 257, 614); // aU:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_zed_channel.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_zed_channel.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+// Elapsed time: 48 seconds
+selectCodeEditor("hgc_pck.vhd", 443, 437); // aU:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_pck.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_pck.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+// Elapsed time: 64 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 407, 435); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 99 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_zed_channel.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_zed_channel.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+// Elapsed time: 66 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_pck.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_pck.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+// Elapsed time: 59 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 1, 213); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 230, 214); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 45 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 12, 163); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 2, 162); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 68, 164); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 68, 164, false, false, false, false, true); // aU:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("hgc_zed_channel.vhd", 154, 164); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 1, 162); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 42 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 100, 698); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 253 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 231, 214); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 501, 230); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 44 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 504, 295); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 473, 307); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 32 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 607, 438); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 213 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 294, 476); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 703, 609); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 30, 623); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 26, 618); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 243 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 244, 631); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 18, 603); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 304 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 94, 583); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("hgc_zed_channel.vhd", 177, 437); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 45 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 423, 469); // aU:J (JPanel:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 28 MB. Current time: 1/26/16 11:19:32 AM
+// Elapsed time: 483 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 350, 446); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 30 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 388, 554); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 477 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 159, 619); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 34 seconds
+selectCodeEditor("hgc_zed_channel.vhd", 260, 337); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 140 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_zed_channel.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_zed_channel.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+// Elapsed time: 237 seconds
+selectCodeEditor("MasterFSM.vhd", 444, 426); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("MasterFSM.vhd", 169, 451); // aU:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("MasterFSM.vhd", 169, 451, false, false, false, false, true); // aU:J (JPanel:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 67 seconds
+selectCodeEditor("MasterFSM.vhd", 418, 518); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 199 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hgc_zed_channel_tb - bhv (hgc_zed_channel_tb.vhd)]", 8); // u:k (w:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hgc_zed_channel_tb - bhv (hgc_zed_channel_tb.vhd), uut - hgc_zed_channel - rtl (hgc_zed_channel.vhd)]", 9); // u:k (w:JPanel, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 27 MB. Current time: 1/26/16 11:49:35 AM
+// Elapsed time: 753 seconds
+selectCodeEditor("MasterFSM.vhd", 548, 228); // aU:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 989 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MasterFSM.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MasterFSM.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 26 MB. Current time: 1/26/16 12:19:36 PM
+// Elapsed time: 319 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hgc_zed_ip_v1_0 - arch_imp (hgc_zed_ip_v1_0.vhd), hgc_zed_channel_inst - hgc_zed_channel - rtl (hgc_zed_channel.vhd)]", 3); // u:k (w:JPanel, cg:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hgc_zed_channel_tb - bhv (hgc_zed_channel_tb.vhd), uut - hgc_zed_channel - rtl (hgc_zed_channel.vhd)]", 15); // u:k (w:JPanel, cg:JFrame)
+// Elapsed time: 1535 seconds
+selectCodeEditor("hgc_pck.vhd", 733, 592); // aU:J (JPanel:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 26 MB. Current time: 1/26/16 12:49:36 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 27 MB. Current time: 1/26/16 1:19:37 PM
+// Elapsed time: 3305 seconds
+selectCodeEditor("hgc_pck.vhd", 543, 539); // aU:J (JPanel:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 26 MB. Current time: 1/26/16 1:49:37 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 25 MB. Current time: 1/26/16 2:19:37 PM
+// Elapsed time: 3512 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_pck.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_pck.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MasterFSM.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MasterFSM.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_zed_channel.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hgc_zed_channel.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 26 MB. Current time: 1/26/16 2:49:37 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 26 MB. Current time: 1/26/16 3:19:37 PM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 27 MB. Current time: 1/26/16 3:49:37 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 25 MB. Current time: 1/26/16 4:19:37 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 26 MB. Current time: 1/26/16 4:49:37 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 25 MB. Current time: 1/26/16 5:19:37 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 25 MB. Current time: 1/26/16 5:49:37 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 25 MB. Current time: 1/26/16 6:19:37 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 25 MB. Current time: 1/26/16 6:49:37 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 25 MB. Current time: 1/26/16 7:19:37 PM
