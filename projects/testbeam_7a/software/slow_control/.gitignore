@@ -1,0 +1,15 @@
+*~
+*.pyc
+*.o
+_sk2_sc_cur_state
+_sk2_sc_configure
+sk2_sc_reset
+sk2_sc_scan
+sk2_sc_peek
+sk2_sc_poke
+sk2_sc_bitbang
+sk2_sc_write_txn
+sk2_sc_read_txn
+sk2_sc_response_txn
+sk2_sc_send_mem
+sk2_sc_rcv_mem

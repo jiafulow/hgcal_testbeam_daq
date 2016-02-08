@@ -1,0 +1,96 @@
+ifndef PETALINUX
+$(error "Error: PETALINUX environment variable not set.  Change to the root of your PetaLinux install, and source the settings.sh file")
+endif
+
+include apps.common.mk
+
+RESET = sk2_sc_reset
+SCAN = sk2_sc_scan
+PEEK = sk2_sc_peek
+POKE = sk2_sc_poke
+BITBANG = sk2_sc_bitbang
+WRITETXN = sk2_sc_write_txn
+READTXN = sk2_sc_read_txn
+RESPTXN = sk2_sc_response_txn
+SENDMEM = sk2_sc_send_mem
+RCVMEM = sk2_sc_rcv_mem
+CONFIGURING = sk2_sc_configuring
+
+APPS = $(RESET) $(SCAN) $(PEEK) $(POKE) $(BITBANG) $(WRITETXN) $(READTXN) $(RESPTXN) $(SENDMEM) $(RCVMEM) $(CONFIGURING)
+TMPS = _sk2_sc_cur_state _sk2_sc_configure
+
+# Add any other object files to this list below
+RESET_OBJS = sk2_sc_reset.o SKIROC2_SC.o zed_system.o
+SCAN_OBJS = sk2_sc_scan.o SKIROC2_SC.o zed_system.o
+PEEK_OBJS = sk2_sc_peek.o SKIROC2_SC.o zed_system.o
+POKE_OBJS = sk2_sc_poke.o SKIROC2_SC.o zed_system.o
+BITBANG_OBJS = sk2_sc_bitbang.o SKIROC2_SC.o zed_system.o
+WRITETXN_OBJS = sk2_sc_write_txn.o IPbusLite.o
+READTXN_OBJS = sk2_sc_read_txn.o IPbusLite.o
+RESPTXN_OBJS = sk2_sc_response_txn.o IPbusLite.o
+SENDMEM_OBJS = sk2_sc_send_mem.o zed_system.o
+RCVMEM_OBJS = sk2_sc_rcv_mem.o zed_system.o
+CONFIGURING_SCRIPT = sk2_sc_configuring.sh
+
+all: build install
+
+build: $(APPS)
+
+$(RESET): $(RESET_OBJS)
+	$(CC) $(LDFLAGS) -o $@ $(RESET_OBJS) $(LDLIBS)
+
+$(SCAN): $(SCAN_OBJS)
+	$(CC) $(LDFLAGS) -o $@ $(SCAN_OBJS) $(LDLIBS)
+
+$(PEEK): $(PEEK_OBJS)
+	$(CC) $(LDFLAGS) -o $@ $(PEEK_OBJS) $(LDLIBS)
+
+$(POKE): $(POKE_OBJS)
+	$(CC) $(LDFLAGS) -o $@ $(POKE_OBJS) $(LDLIBS)
+
+$(BITBANG): $(BITBANG_OBJS)
+	$(CC) $(LDFLAGS) -o $@ $(BITBANG_OBJS) $(LDLIBS)
+
+$(WRITETXN): $(WRITETXN_OBJS)
+	$(CC) $(LDFLAGS) -o $@ $(WRITETXN_OBJS) $(LDLIBS)
+
+$(READTXN): $(READTXN_OBJS)
+	$(CC) $(LDFLAGS) -o $@ $(READTXN_OBJS) $(LDLIBS)
+
+$(RESPTXN): $(RESPTXN_OBJS)
+	$(CC) $(LDFLAGS) -o $@ $(RESPTXN_OBJS) $(LDLIBS)
+
+$(SENDMEM): $(SENDMEM_OBJS)
+	$(CC) $(LDFLAGS) -o $@ $(SENDMEM_OBJS) $(LDLIBS)
+
+$(RCVMEM): $(RCVMEM_OBJS)
+	$(CC) $(LDFLAGS) -o $@ $(RCVMEM_OBJS) $(LDLIBS)
+
+$(CONFIGURING): $(CONFIGURING_SCRIPT)
+	cp -f $(CONFIGURING_SCRIPT) $(CONFIGURING)
+
+clean:
+	-rm -f $(APPS) $(TMPS) *.elf *.gdb *.o
+
+.PHONY: install image
+
+install: $(APPS)
+	$(foreach APP, $(APPS), $(TARGETINST) -d $(APP) /bin/$(APP);)
+
+zed_system.o: zed_system.c zed_system.h
+	$(CC) -c $(CFLAGS) -o $@ $<
+
+SKIROC2_SC.o: SKIROC2_SC.c SKIROC2_SC.h SKIROC2_SC_hw.h
+	$(CC) -c $(CFLAGS) -o $@ $<
+
+%.o: %.c
+	$(CC) -c $(CFLAGS) -o $@ $<
+
+help:
+	@echo ""
+	@echo "Quick reference for various supported build targets for $(INSTANCE)."
+	@echo "----------------------------------------------------"
+	@echo "  clean                  clean out build objects"
+	@echo "  all                    build $(INSTANCE) and install to rootfs host copy"
+	@echo "  build                  build subsystem"
+	@echo "  install                install built objects to rootfs host copy"
