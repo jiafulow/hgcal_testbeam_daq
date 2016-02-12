@@ -11,9 +11,10 @@ READTXN = sk2_sc_read_txn
 RESPTXN = sk2_sc_response_txn
 SENDMEM = sk2_sc_send_mem
 RCVMEM = sk2_sc_rcv_mem
+QUERY = sk2_sc_query
 CONFIGURING = sk2_sc_configuring
 
-APPS = $(RESET) $(SCAN) $(PEEK) $(POKE) $(BITBANG) $(WRITETXN) $(READTXN) $(RESPTXN) $(SENDMEM) $(RCVMEM) $(CONFIGURING)
+APPS = $(RESET) $(SCAN) $(PEEK) $(POKE) $(BITBANG) $(WRITETXN) $(READTXN) $(RESPTXN) $(SENDMEM) $(RCVMEM) $(QUERY) $(CONFIGURING)
 TMPS = _sk2_sc_cur_state _sk2_sc_configure
 
 # Add any other object files to this list below
@@ -27,6 +28,7 @@ READTXN_OBJS = sk2_sc_read_txn.o IPbusLite.o
 RESPTXN_OBJS = sk2_sc_response_txn.o IPbusLite.o
 SENDMEM_OBJS = sk2_sc_send_mem.o zed_system.o
 RCVMEM_OBJS = sk2_sc_rcv_mem.o zed_system.o
+QUERY_OBJS = sk2_sc_query.o zed_system.o
 CONFIGURING_SCRIPT = sk2_sc_configuring.sh
 
 all: build install
@@ -62,6 +64,9 @@ $(SENDMEM): $(SENDMEM_OBJS)
 
 $(RCVMEM): $(RCVMEM_OBJS)
 	$(CC) $(LDFLAGS) -o $@ $(RCVMEM_OBJS) $(LDLIBS)
+
+$(QUERY): $(QUERY_OBJS)
+	$(CC) $(LDFLAGS) -o $@ $(QUERY_OBJS) $(LDLIBS)
 
 $(CONFIGURING): $(CONFIGURING_SCRIPT)
 	cp -f $(CONFIGURING_SCRIPT) $(CONFIGURING)
