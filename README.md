@@ -1,2 +1,3 @@
-# test_beam_DAQ_2015
-A repository for collaborative development related to the test beam data acquisition project. Share and access relevant code, slides, notes, and documents here.
+# hgcal_testbeam_daq
+
+This repository contains the firmware and software developed for the data acquisition system (DAQ) for the high-granularity calorimeter (HGCal) at the Fermilab test beam program.
